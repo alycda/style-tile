@@ -64,6 +64,28 @@ h1 {
   left: 5px;
   top: 5px; }
 
+/*=================
+	HEADER
+==================*/
+header .top-bar {
+  background: none; }
+
+#topborder {
+  border-top: solid 5px #000;
+  position: relative;
+  z-index: 2; }
+
+#logo {
+  height: 64px;
+  width: 64px;
+  background: url("../img/logo.jpg");
+  position: relative;
+  z-index: 1;
+  bottom: 1px;
+  -webkit-box-shadow: 0px 3px 15px #818181;
+  -moz-box-shadow: 0px 3px 15px #818181;
+  box-shadow: 0px 3px 15px #818181; }
+
 /**
 	May need to change to this?
 	h1.subheader{
