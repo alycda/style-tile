@@ -272,7 +272,9 @@ legend {
   padding: 0;
   /* 2 */
 }
-
+section p,a{
+	font-size: 100%;
+}
 /**
  * 1. Correct font family not being inherited in all browsers.
  * 2. Correct font size not being inherited in all browsers.
