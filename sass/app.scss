@@ -1,10 +1,45 @@
 // Global Foundation Settings
 @import "settings";
-
 @import "style";
 
+footer{
+	margin-top: 300px;
+}
+
+
+p:not(.button){
+	font-family: "Lato";
+}
+.video.large{
+	min-width:100%;
+	height:520px;
+}
+
+footer{
+	margin-top: 100px;
+}
+
+
+/**
+	May need to change to this?
+	h1.subheader{
+	font-size: 250%;
+}
+
+h2.subheader{
+ 	font-size: 200%;
+	
+}
+
+h3.subheader{
+	font-size: 170%
+}
+*/
+
+
+
 // Comment out this import if you are customizing you imports below
-@import "foundation";
+//@import "foundation";
 
 // Import specific parts of Foundation by commenting the import "foundation"
 // and uncommenting what you want below. You must uncomment the following if customizing
@@ -44,4 +79,6 @@
 // @import "foundation/components/thumbs";
 // @import "foundation/components/tooltips";
 // @import "foundation/components/dropdown";
+
+
 

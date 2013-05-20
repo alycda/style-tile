@@ -7,9 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Foundation Docs: Kitchen Sink</title>
     <link rel="stylesheet" href="stylesheets/normalize.css" />
-    <link rel="stylesheet" href="stylesheets/app.css" />
+	<link rel="stylesheet" href="stylesheets/app.css" />
+     <link rel="stylesheet" href="sass/app.css" />
+    
     
     <link rel="stylesheet" href="stylesheets/custom_fonts.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
     
     <script src="javascripts/vendor/custom.modernizr.js"></script>
     
@@ -27,9 +30,10 @@
       </ul>
 
       <section class="top-bar-section">
-        <!-- Right Nav Section 
+        <!-- Right Nav Section -->
         <ul class="right">
-          <li class="divider"></li>
+       	<!--
+       	 <li class="divider"></li>
           <li><a href="/grid.php">Features</a></li>
           <li class="divider"></li>
           <li><a href="/templates.php">Add-ons</a></li>
@@ -43,8 +47,8 @@
           <li class="has-form">
             <a href="#" class="button">Getting Started</a>
           </li>
+-->  
         </ul>
-      -->
       </section>
     </nav>
 
@@ -52,8 +56,8 @@
 
 <div class="row">
     <div class="large-12 columns">
-      <h2>Team One Website Redesign</h2>
-      <h3>Style Tile</h3>
+      <h2>Team One Site Website Redesign</h2>
+      <p></p>
       <hr />
     </div>
   </div>
@@ -117,11 +121,196 @@
     </div>
 
     <div class="large-4 columns">
-      <h4>Sidebar Section</h4>
-      <p></p>
+      <h4>Sidebar area</h4>
+      <p>We're stoked you want to try Foundation! To get going, this file (index.html) includes some basic styles you can modify, play around with, or totally destroy to get going.</p>
+
+      <h4>Other Resources</h4>
+      <p>Once you've exhausted the fun in this document, you should check out:</p>
+      <ul class="disc">
+        <li><a href="http://foundation.zurb.com/docs">Foundation Documentation</a><br />Everything you need to know about using the framework.</li>
+        <li><a href="http://github.com/zurb/foundation">Foundation on Github</a><br />Latest code, issue reports, feature requests and more.</li>
+        <li><a href="http://twitter.com/foundationzurb">@foundationzurb</a><br />Ping us on Twitter if you have questions. If you build something with this we'd love to see it (and send you a totally boss sticker).</li>
+      </ul>
     </div>
-  </div>
-    <footer class="row full-width">
+    
+    
+    <!--type -->
+    <div class="large-12 columns">
+    	<h1> Headings and Copy </h1>
+    	<hr/>
+        <!--headings -->
+        <h1>h1 This is a very large header</h1>
+        <h2>h2 This is a large header</h2>
+	    <h3>h3 This is a medium header</h3>
+	    <h4>h4 This is a moderate header</h4>
+	    <!--end headings-->
+	    
+	    
+	    <!--sub headings -->
+        <h1 class="subheader">h1 subhead</h1>
+        <h2 class="subheader">h2 subhead</h2>
+	    <h3 class="subheader">h3  subhead</h3>
+	    <h4 class="subheader">h4 subhead</h4>
+	    <!--end headings-->
+	    
+	    
+	    <!-- body copy -->
+	    <p>
+	    	Conspiracy. We love it. Team One created a new trailer for 2K and 2K Marin’s launch of The Bureau: XCOM Declassified video game.   Set in 1962 during the height of the Cold War, The Bureau: XCOM Declassified trailer tells the story of the covert XCOM organization’s first encounter with the enemy. While video game
+	    </p>
+	
+	</div>
+	<!-- end type -->
+	
+	<!--video-->
+	<div class="large-12 columns">
+    	<h1>Video</h1>
+    	<hr/>
+    	<div class="flex-video">	
+    		<iframe src="http://player.vimeo.com/video/61680767" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+		</div><!--end video-->
+    	
+    	 <p><a href="http://vimeo.com/61680767">100 Year Starship screensaver</a> from <a href="http://vimeo.com/flight404">flight404</a> on <a href="http://vimeo.com">Vimeo</a>.</p>
+
+	</div>
+	<!-- end video -->
+	
+	<!-- Breadcrumbs -->
+	<div class="large-12 columns">
+		<h1>Breadcrumbs</h1>
+		<hr/>
+		
+		<ul class="breadcrumbs">
+			<li><a href="#">Home</a></li>
+			<li><a href="#">Features</a></li>
+			<li class="unavailable"><a href="#">Gene Splicing</a></li>
+			<li class="current"><a href="#">Cloning</a></li>
+		</ul>
+	
+	</div>
+	<!-- end breadcrumbs -->
+	
+	<!-- sections -->
+	
+	<div class="large-12 columns">
+		<h1>Sections</h1>
+		<hr/>
+		
+		
+		<!-- vertical section-->
+		 <div class="section-container vertical-nav" data-section="vertical-nav">
+			 <section class="section">
+                <p class="title"><a href="#">Section 1</a></p>
+                <div class="content">
+                  <ul class="side-nav">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 1</a></li>
+                  </ul>
+                </div>
+              </section>
+              
+              
+              <section class="section">
+                <p class="title"><a href="#">Section 2</a></p>
+                <div class="content">
+                  <ul class="side-nav">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 1</a></li>
+                  </ul>
+                </div>
+              </section>
+		 
+		 </div><!--end vertical section-->
+		 
+		 
+		 <!-- horizontal section-->
+		 <div class="section-container horizontal-nav" data-section="horizontal-nav" style="height: 50px;">
+              <section class="section">
+                <p class="title" style="left: 0px;"><a href="#">Section 1</a></p>
+                <div class="content" style="left: -1px; top: 48px;">
+                  <ul class="side-nav">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 1</a></li>
+                  </ul>
+                </div>
+              </section>
+              <section class="section">
+                <p class="title" style="left: 87px;"><a href="#">Section 2</a></p>
+                <div class="content" style="left: 86px; top: 48px;">
+                  <ul class="side-nav">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                    <li class="divider"></li>
+                    <li><a href="#">Link 1</a></li>
+                  </ul>
+                </div>
+              </section>
+              
+              
+            </div>
+		 
+		 <!--end horizontal section-->
+		 
+		 <!-- 
+		 start tabs
+		 NOTE : Tabs need Zepto specifically for some wierd reason
+		-->
+		<div class="section-container tabs" data-section="tabs">
+			<section>
+			  <p class="title" data-section-title><a href="#">Section 1</a></p>
+			  <div class="content" data-section-content>
+			    <p>Content of section 1.</p>
+			  </div>
+			</section>
+			<section>
+			  <p class="title" data-section-title><a href="#">Section 2</a></p>
+			  <div class="content" data-section-content>
+			    <p>Content of section 2.</p>
+			  </div>
+			</section>
+		</div>
+		<!--end tabs-->
+
+
+</div>
+		 
+	<!--end sections -->
+	
+	
+	<!--Form Elements-->
+	<div class="large-12 columns">
+    	<h1>Form Elements</h1>
+    	<hr/>
+		<form class="custom">
+         
+            <div class="large-4 columns">
+              <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
+              <label for="checkbox2"><input type="checkbox" id="checkbox2" CHECKED style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
+              <label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
+            </div>
+                    
+		
+        </form>
+		
+		
+	</div>
+	</div>
+	<!-- end Form Elements -->
+	
+	
+
+	
+	  <footer class="row full-width">
       <div class="large-5 columns panel" style="background-color:#eed;">
         <h6><strong>Column 1</strong></h6>
         <p>Large-5 Grid Panel</p>
@@ -145,32 +334,48 @@
     </footer>
 
     <div id="copyright">
-      <div class="row full-width">
+      <div class="row">
         <div class="large-4 columns">
-          <p>Site content &copy; 2013 Team One</p>
+          <p>Site content &copy; 2013 Team One.</p>
         </div>
         <div class="large-8 columns">
           <ul class="inline-list right">
-            <li><a href="">Footer 1</a></li>
-            <li><a href="">Footer 2</a></li>
-            <li><a href="">Footer 3</a></li>
-            <li><a href="">Footer 4</a></li>
-            <li><a href="">Footer 5</a></li>
+            <li><a href="http://foundation.zurb.com">Home</a></li>
+            <li><a href="http://foundation.zurb.com/download.php">Download</a></li>
+            <li><a href="http://foundation.zurb.com/docs">Docs</a></li>
+            <li><a href="http://foundation.zurb.com/docs/changelog.html">Changelog</a></li>
+            <li><a href="http://foundation.zurb.com/about.php">About</a></li>
+            <li><a href="http://feeds.feedburner.com/zurb/blog">Subscribe to the ZURBlog</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>   
+
+
+  
+
+  
+
+
+	  
+  
+
+
+
+
+    <script src="/javascripts/vendor/zepto.js"></script>   
     <script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
+    <script src="javascripts/foundation/foundation.js"></script>
+    <script src="javascripts/foundation/foundation.section.js"></script>
+    <script src="javascripts/foundation/foundation.forms.js"></script>
     
 
 
     <script>
-      $(document)
-      
-        .foundation();
-      
+       $(function(){
+		 $(document).foundation();    
+	   })
 
       // For Kitchen Sink Page
       $('#start-jr').on('click', function() {

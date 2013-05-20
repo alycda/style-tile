@@ -1,0 +1,28 @@
+footer {
+  margin-top: 300px; }
+
+p:not(.button) {
+  font-family: "Lato"; }
+
+.video.large {
+  min-width: 100%;
+  height: 520px; }
+
+footer {
+  margin-top: 100px; }
+
+/**
+	May need to change to this?
+	h1.subheader{
+	font-size: 250%;
+}
+
+h2.subheader{
+ 	font-size: 200%;
+	
+}
+
+h3.subheader{
+	font-size: 170%
+}
+*/
