@@ -17,7 +17,8 @@ h1 {
 
 .button.small.secondary {
   background-color: #c8cbc7;
-  color: #5a5c63; }
+  color: #5a5c63;
+  border: none; }
 
 .button.small.secondary:hover {
   -webkit-transition: background-color 0.5s ease-in, color 0.5s ease-in;
