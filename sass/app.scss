@@ -2,9 +2,6 @@
 @import "settings";
 @import "style";
 
-footer{
-	margin-top: 300px;
-}
 
 
 p:not(.button){
@@ -14,12 +11,60 @@ p:not(.button){
 	min-width:100%;
 	height:520px;
 }
+.footer {
+  margin-top: 40px; }
+  
+  
+h1{
+	color:#000;
+	font-style: italic;
+}
 
-footer{
-	margin-top: 100px;
+.darkgrey{
+	color:$dark-gray;
+}
+
+.button.small.secondary{
+
+	background-color: $light-gray;
+    color: $dark-gray;
+}
+
+.button.small.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background-color: $dark-gray;
+	color:#fff;
 }
 
 
+.button.medium.secondary{
+	background: $dark-gray;
+	color:#fff;
+}
+
+.button.medium.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	
+	background: $light-gray;
+	color:#000;
+}
+
+
+
+.button.large.secondary{
+	background:#000;
+	color:$light-gray;
+}
+
+.button.large.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	
+	background: $dark-gray;
+	color:#fff;
+}
 /**
 	May need to change to this?
 	h1.subheader{

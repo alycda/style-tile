@@ -14,7 +14,14 @@
     
 
     <link rel="stylesheet" href="stylesheets/custom_fonts.css" />
- 
+    
+    <!-- 
+    	this needs to be up here for some weird reason otherwise checkboxes don't work
+	    You can ignore the "Foundation is not defined error", doesn't seem to cause
+	    any issues... yet.
+    -->
+    <script src="javascripts/foundation/foundation.forms.js"></script>
+     
     <script src="http://team-one.github.io/style-tile/javascripts/vendor/custom.modernizr.js"></script>
     
   </head>
@@ -114,9 +121,9 @@
           <p><a href="#" class="large button">Large Button</a></p>
         </div>
         <div class="large-6 columns">
-          <p><a href="#" class="small alert button">Small Alert Button</a></p>
-          <p><a href="#" class="success button">Medium Success Button</a></p>
-          <p><a href="#" class="large secondary button">Large Secondary Button</a></p>
+          <p><a href="#" class="small secondary button">Small Secondary</a></p>
+          <p><a href="#" class="secondary medium button">Medium Secondary</a></p>
+          <p><a href="#" class="large secondary button">Large Secondary</a></p>
         </div>
       </div>
     </div>
@@ -157,6 +164,10 @@
 	    
 	    <!-- body copy -->
 	    <p>
+	    	Conspiracy. We love it. Team One created a new trailer for 2K and 2K Marin’s launch of The Bureau: XCOM Declassified video game.   Set in 1962 during the height of the Cold War, The Bureau: XCOM Declassified trailer tells the story of the covert XCOM organization’s first encounter with the enemy. While video game
+	    </p>
+	    
+	     <p class="darkgrey">
 	    	Conspiracy. We love it. Team One created a new trailer for 2K and 2K Marin’s launch of The Bureau: XCOM Declassified video game.   Set in 1962 during the height of the Cold War, The Bureau: XCOM Declassified trailer tells the story of the covert XCOM organization’s first encounter with the enemy. While video game
 	    </p>
 	
@@ -294,18 +305,17 @@
     	<hr/>
 		<form class="custom">
          
-            <div class="large-4 columns">
-              <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
-              <label for="checkbox2"><input type="checkbox" id="checkbox2" CHECKED style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
-              <label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
-            </div>
-                    
-		
+         <div class="row">
+          <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
+		  <label for="checkbox2"><input type="checkbox" id="checkbox2" CHECKED style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
+		  <label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
+	  
+         </div>
         </form>
 		
 		
 	</div>
-	</div>
+	
 	<!-- end Form Elements -->
 	
 	
@@ -369,21 +379,22 @@
 
     <script src="http://team-one.github.io/style-tile/javascripts/vendor/zepto.js"></script>   
     <script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
-    <script src="javascripts/foundation/foundation.js"></script>
+
     <script src="javascripts/foundation/foundation.section.js"></script>
-    <script src="javascripts/foundation/foundation.forms.js"></script>
     
 
 
     <script>
-       $(function(){
-		 $(document).foundation();    
-	   })
+        $(document)
+      
+        .foundation();
+      
 
       // For Kitchen Sink Page
       $('#start-jr').on('click', function() {
         $(document).foundation('joyride','start');
       });
+  
     </script>
   </body>
 </html>
