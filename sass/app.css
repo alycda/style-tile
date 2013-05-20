@@ -46,6 +46,24 @@ h1 {
   color: #fff; }
 
 /**
+	These two classes are necessary because
+	if the checkboxes are made to be larger than 
+	18x18, theres a strange margin issue that appears.
+*/
+.checkbox-label:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.checkbox-label-content {
+  position: relative;
+  left: 5px;
+  top: 5px; }
+
+/**
 	May need to change to this?
 	h1.subheader{
 	font-size: 250%;

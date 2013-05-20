@@ -50,6 +50,7 @@
         .on('click.fndtn.forms', 'form.custom span.custom.checkbox', function (e) {
           e.preventDefault();
           e.stopPropagation();
+      
           self.toggle_checkbox($(this));
         })
         .on('click.fndtn.forms', 'form.custom span.custom.radio', function (e) {
@@ -321,11 +322,13 @@
     },
 
     toggle_checkbox : function ($element) {
+   
       var $input = $element.prev(),
           input = $input[0];
 
       if (false === $input.is(':disabled')) {
         input.checked = ((input.checked) ? false : true);
+    
         $element.toggleClass('checked');
 
         $input.trigger('change');

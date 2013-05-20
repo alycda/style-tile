@@ -19,8 +19,11 @@
     	this needs to be up here for some weird reason otherwise checkboxes don't work
 	    You can ignore the "Foundation is not defined error", doesn't seem to cause
 	    any issues... yet.
-    -->
-    <script src="javascripts/foundation/foundation.forms.js"></script>
+    -->    <script src="http://team-one.github.io/style-tile/javascripts/vendor/zepto.js"></script>   
+    
+       <script src="./javascripts/foundation/foundation.js"></script>
+  
+    <script src="./javascripts/foundation/foundation.forms.js"></script>
      
     <script src="http://team-one.github.io/style-tile/javascripts/vendor/custom.modernizr.js"></script>
     
@@ -306,9 +309,9 @@
 		<form class="custom">
          
          <div class="row">
-          <label for="checkbox1"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> Label for Checkbox</label>
-		  <label for="checkbox2"><input type="checkbox" id="checkbox2" CHECKED style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
-		  <label for="checkbox3"><input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span> Label for Checkbox</label>
+          <label for="checkbox1" class="checkbox-label"><input type="checkbox" id="checkbox1" style="display: none;"><span class="custom checkbox"></span> <span class="checkbox-label-content">Label for Checkbox</span></label>
+		  <label for="checkbox2" class="checkbox-label"><input type="checkbox" id="checkbox2" CHECKED style="display: none;"><span class="custom checkbox checked"></span>  <span class="checkbox-label-content">Label for Checkbox</span></label>
+		  <label for="checkbox3" class="checkbox-label"><input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span>  <span class="checkbox-label-content">Label for Checkbox</span></label>
 	  
          </div>
         </form>
@@ -377,8 +380,7 @@
 
 
 
-    <script src="http://team-one.github.io/style-tile/javascripts/vendor/zepto.js"></script>   
-    <script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
+<script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
 
     <script src="javascripts/foundation/foundation.section.js"></script>
     
