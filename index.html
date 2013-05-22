@@ -31,44 +31,63 @@
 
 <div id="topborder"></div>
 
-
-<header class="row" >
-    <div class="large-12 columns">
-    <nav class="top-bar">
-     <div id="logo"></div>
-      <ul class="title-area">
-        <!-- Title Area -->
-        <li class="name">
-         
-        </li>
-        <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-      </ul>
-
-      <section class="top-bar-section">
-        <!-- Right Nav Section -->
-        <ul class="right">
-       	<!--
-       	 <li class="divider"></li>
-          <li><a href="/grid.php">Features</a></li>
-          <li class="divider"></li>
-          <li><a href="/templates.php">Add-ons</a></li>
-          <li class="divider"></li>
-          <li><a href="/case-jacquelinewest.php">Case Studies</a></li>
-          <li class="divider"></li>
-          <li><a href="/docs/">Docs</a></li>
-          <li class="divider"></li>
-          <li><a href="/training.php">Training</a></li>
-          <li class="divider"></li>
-          <li class="has-form">
-            <a href="#" class="button">Getting Started</a>
-          </li>
--->  
-        </ul>
-      </section>
-    </nav>
-    </div>
+<header>
+	<div class="row">
+	 <div id="logo"></div>
+    
+	 <div class="large-12 columns">
+	 	<nav class="small-0 top-nav menu">
+	 		<ul>
+	 			<li>
+	 				<a href="#">
+		 				Work
+	 				</a>
+	 			</li>
+	 			<li class="divider"></li>
+	 			<li>
+	 				<a href="#">
+		 				About Us
+	 				</a>
+	 			</li>
+	 			<li class="divider"></li>
+	 			<li>
+	 				<a href="#">
+		 				The Team
+	 				</a>
+	 			</li>
+	 			
+	 			
+	 			<li class="divider"></li>
+	 			<li>
+	 				<a href="#">
+		 				The Feed
+	 				</a>
+	 			</li>
+	 			
+	 			<li class="divider"></li>
+	 			<li>
+	 				<a href="#">
+		 			 	Careers
+	 				</a>
+	 			</li>
+	 			
+	 			<li class="divider"></li>
+	 			<li>
+	 				<a href="#">
+		 				Contact
+	 				</a>
+	 			</li>
+	 			<li>
+	 				<div id="search-button"></div>
+	 			</li>
+	 			
+	 			</ul>
+	 	</nav>
+	 </div>
+	</div><!--end row-->  
 </header>
+
+
 
 
 
@@ -391,6 +410,25 @@
 
 	<!-- rest of the js-->
 	<script src="http://foundation.zurb.com/docs/assets/docs.js"></script>
+    <script src="javascripts/foundation/foundation.section.js"></script>
+    
+
+
+    <script>
+        $(document)
+      
+        .foundation();
+      
+
+      // For Kitchen Sink Page
+      $('#start-jr').on('click', function() {
+        $(document).foundation('joyride','start');
+      });
+  
+    </script>
+  </body>
+</html>
+tion.zurb.com/docs/assets/docs.js"></script>
     <script src="javascripts/foundation/foundation.section.js"></script>
     
 
