@@ -1,0 +1,133 @@
+@import "foundation";
+@import "custom_fonts.css";
+
+h1{
+	font-family: "ProximaNovaA-Light",sans-serif;
+	text-transform: uppercase;
+}
+
+.row{
+	max-width: 2000px;
+	margin-bottom: 40px;
+}
+
+.hex{
+	text-align: center;
+	display: inline-block;
+	font-family: "ProximaNovaA-Light",sans-serif;
+	font-size: 200%;
+	position: relative;
+	left: 50px;
+	display: inline-block;
+}
+
+.columns{
+	h1{
+		border-bottom: solid 1px #333;
+		padding-bottom: 10px;
+	}
+}
+
+  /* line 357, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_type.scss */
+  h1, h2, h3, h4, h5, h6 {
+    line-height: 1.4;
+    font-family: "ProximaNovaA-Semibold",sans-serif;
+    font-weight: normal;
+	font-style: normal;
+	color: #222222;
+	text-rendering: optimizeLegibility;
+	margin-top: 0.2em;
+	margin-bottom: 0.5em;
+	line-height: 1.2125em;
+  }
+
+ 
+/*=================
+	MARK SECTION
+==================*/
+
+#logo{
+	height:130px;
+	width:130px;
+	background: url('../img/logosprite.png');
+	position: relative;
+	background-color: #ff6a00;
+	z-index: 1;
+	background-size:100%;
+	bottom:1px;
+	-webkit-box-shadow: 0px 3px 15px #818181;
+	-moz-box-shadow:0px 3px 15px #818181;
+	box-shadow: 0px 3px 15px #818181;
+	
+	-webkit-transition: background-position 0.5s ease-in;
+	-moz-transition: background-position 0.5s ease-in;
+	
+	background-position: 0px 5px;
+}
+
+#logo:hover{
+	-webkit-transition: background-position 0.5s ease-in;
+	-moz-transition: background-position 0.5s ease-in;
+	cursor: pointer;
+	background-position: 0px -130px;
+}
+
+/*=================
+	COLORS
+==================*/
+#swatches{
+	div{
+		height:220px;
+		width:220px;
+		display: inline-block;
+		vertical-align: middle;
+		margin-bottom: 20px;
+	
+	}
+	#orange{
+		background: #ff6a00;
+	}
+	
+	#dark-gray{
+		background: #5a5c63;
+	}
+	
+	#light-gray{
+		background:#c8cbc7;
+	}
+	
+}
+
+/*=================
+	TYPE
+==================*/
+#type{
+	position: relative;
+	right:400px;
+	
+	h1{
+		width: 165%;
+	}
+}
+#proxima-nova{
+	p{
+		font-family: "ProximaNovaA-Semibold",sans-serif;
+		font-size: 140%;
+
+	}
+}
+#lato{
+	h3{
+		font-family: "Lato";
+	}
+	p{
+		font-family: "Lato",sans-serif;
+		font-size: 140%;
+
+	}
+}
+.type-divider{
+	height:4px;
+	width:20px;
+	background: #333;
+}
