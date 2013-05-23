@@ -33,10 +33,50 @@
 
 <header>
 	<div class="row">
-	 <div id="logo"></div>
-    
-	 <div class="large-12 columns">
-	 	<nav class="small-0 top-nav menu">
+	 <div id="logo" class="show-for-medium-up"></div>
+	 	
+	 
+	 <div class="large-12 columns show-for-small hide-for-medium-up" id="mobile-nav">
+		<div class="shadow"></div>
+		 <div id="logo"></div>
+		 <div id="hamburger"></div>
+	 	<nav class="top-nav menu">
+	 		<div class="nav-wrapper">
+	 		
+	 		<ul>
+	 			<li>
+	 				<a href="#">Work</a>
+	 			</li>
+	 			
+	 			<li>
+	 				<a href="#">About Us</a>
+	 			</li>
+	 			
+	 			
+	 			<li>
+	 				<a href="#">The Team</a>
+	 			</li>
+	 			
+	 			<li>
+	 				<a href="#">The Feed</a>
+	 			</li>
+	 			
+	 			<li>
+	 				<a href="#">Careers</a>
+	 			</li>
+	 			
+	 			<li>
+	 				<a href="#">Connect</a>
+	 			</li>
+	 		</ul>
+
+	 		
+	 			 	</nav>
+	 
+	 </div><!--end mobile nav-->
+	 <div class="large-12 columns show-for-medium-up" id="desktop-nav">
+	
+	 	<nav class="top-nav menu">
 	 		<ul>
 	 			<li>
 	 				<a href="#">
@@ -83,7 +123,12 @@
 	 			
 	 			</ul>
 	 	</nav>
-	 </div>
+	 </div><!--end desktop nav-->
+	 
+	 
+	 
+	 
+	 
 	</div><!--end row-->  
 </header>
 
@@ -354,22 +399,22 @@
 
 	<div class="footer">
 	
-	  <footer class="row full-width">
-      <div class="large-5 columns panel" style="background-color:#eed;">
+	  <footer>
+      <div class="small-3 large-3 columns panel" style="background-color:#eed;">
         <h6><strong>Column 1</strong></h6>
         <p>Large-5 Grid Panel</p>
         <pre>#eed</pre>
 
       </div>
 
-      <div class="large-3 columns panel" style="background-color:#eee;">
+      <div class="small-3 large-3 columns panel" style="background-color:#eee;">
         <h6><strong>Column 2</strong></h6>
         <p>Large-3 Grid Panel</p>
         <pre>#eee</pre>
 
       </div>
 
-      <div class="large-4 columns panel" style="background-color:#eef;">
+      <div class="small-3 large-3 columns panel" style="background-color:#eef;">
         <h6><strong>Column 3</strong></h6>
         <p>Large-4 Grid Panel</p>
         <pre>#eef</pre>
@@ -377,13 +422,13 @@
       </div>
     </footer>
 
-	</div>
-    <div id="copyright">
+	
+    <div id="copyright" class="show-for-medium-up">
       <div class="row">
-        <div class="large-4 columns">
+        <div class="small-5 large-4 columns">
           <p>Site content &copy; 2013 Team One.</p>
         </div>
-        <div class="large-8 columns">
+        <div class="small-5 large-8 columns">
           <ul class="inline-list right">
             <li><a href="http://foundation.zurb.com">Home</a></li>
             <li><a href="http://foundation.zurb.com/download.php">Download</a></li>
@@ -401,7 +446,7 @@
   
 
   
-
+</div><!--end footer-->
 
 	  
   
@@ -425,25 +470,30 @@
         $(document).foundation('joyride','start');
       });
   
-    </script>
-  </body>
-</html>
-tion.zurb.com/docs/assets/docs.js"></script>
-    <script src="javascripts/foundation/foundation.section.js"></script>
-    
-
-
-    <script>
-        $(document)
-      
-        .foundation();
-      
-
-      // For Kitchen Sink Page
-      $('#start-jr').on('click', function() {
-        $(document).foundation('joyride','start');
-      });
   
+	  document.getElementById("hamburger").addEventListener("click",function(){
+		  $mobilenav = $("#mobile-nav .top-nav.menu");
+		  
+	  
+		  if($mobilenav.hasClass("active")){
+			  $mobilenav.removeClass("active");
+			  
+			   $mobilenav.animate({
+			   top:"-999px",
+			   height:0
+			   },500, 'ease-out')
+			  
+		  }else{
+			   $mobilenav.animate({
+			   top:65,
+			   height:window.innerHeight + "px"
+			   },500, 'ease-out')
+			   
+			   $mobilenav.addClass("active");
+			  
+		  }
+		  
+	  })
     </script>
   </body>
 </html>

@@ -1,8 +1,6 @@
-
 /*=================
 	GENERAL AND MISC.
 ==================*/
-
 p:not(.button) {
   font-family: "Lato"; }
 
@@ -20,11 +18,9 @@ h1 {
 .darkgrey {
   color: #5a5c63; }
 
-
 /*=================
 	BUTTONS
 ==================*/
-
 .button.small.secondary {
   background-color: #c8cbc7;
   color: #5a5c63;
@@ -75,37 +71,28 @@ h1 {
   top: 5px; }
 
 /*=================
-	HEADER
+	Header
 ==================*/
-
-.menu {
-  position: relative;
-  bottom: 50px;
-  left: 80px; }
-
-.divider {
-  width: 2px;
-  height: 20px;
-  position: relative;
-  top: 2px;
-  margin-left: 30px;
-  margin-right: 30px;
-  background: #5a5c63; }
-
 header {
   border-top: solid 5px #000;
   position: relative;
   height: 65px;
   -webkit-box-shadow: 0px 3px 15px #818181;
   -moz-box-shadow: 0px 3px 15px #818181;
-  z-index: 2; }
-  header ul li {
-    list-style: none; }
-  header .top-bar {
-    background: none; }
+  margin-bottom: 30px;
+  /**
+  	These are the styles in the 
+  	mobile view for Foundation
+  	
+  	
+  */ }
   header nav {
-    position: relative; }
+    display: inline-block;
+    margin-left: 80px;
+    position: relative;
+    top: 15px; }
     header nav ul li {
+      list-style: none;
       display: inline-block; }
       header nav ul li a {
         /*change later*/
@@ -113,66 +100,84 @@ header {
         font-size: 20px;
         text-transform: uppercase;
         color: #5a5c63; }
-
-header .top-bar {
-  background: none; }
-
-#topborder {
-  border-top: solid 5px #000;
-  position: relative;
-  z-index: 2; }
-
-#logo {
-  height: 64px;
-  width: 64px;
-
-  background: url("../img/logosprite.png");
-  position: relative;
-  background-color: #ff6a00;
-
-  background: url("../img/logo.jpg");
-  position: relative;
-
-  z-index: 1;
-  bottom: 1px;
-  -webkit-box-shadow: 0px 3px 15px #818181;
-  -moz-box-shadow: 0px 3px 15px #818181;
-
-  box-shadow: 0px 3px 15px #818181;
-  -webkit-transition: background-position 0.5s ease-in;
-  -moz-transition: background-position 0.5s ease-in;
-  background-position: 0px 5px; }
-
-#logo:hover {
-  -webkit-transition: background-position 0.5s ease-in;
-  -moz-transition: background-position 0.5s ease-in;
-  cursor: pointer;
-  background-position: 0px -65px; }
-
-#search-button {
-  height: 61px;
-  width: 65px;
-  background-color: #c8cbc7;
-  display: inline-block;
-  vertical-align: top;
-  position: relative;
-  bottom: 18px;
-  left: 40px; }
-
-  box-shadow: 0px 3px 15px #818181; }
-
-/**
-	May need to change to this?
-	h1.subheader{
-	font-size: 250%;
-}
-
-h2.subheader{
- 	font-size: 200%;
-	
-}
-
-h3.subheader{
-	font-size: 170%
-}
-*/
+  header .divider {
+    width: 2px;
+    height: 20px;
+    position: relative;
+    top: 2px;
+    margin-left: 30px;
+    margin-right: 30px;
+    background: #5a5c63; }
+  header #logo {
+    height: 64px;
+    width: 64px;
+    float: left;
+    background: url("../img/logosprite.png");
+    position: absolute;
+    background-color: #ff6a00;
+    z-index: 6;
+    -webkit-box-shadow: 0px 3px 15px #818181;
+    -moz-box-shadow: 0px 3px 15px #818181;
+    box-shadow: 0px 3px 15px #818181;
+    -webkit-transition: background-position 0.5s ease-in;
+    -moz-transition: background-position 0.5s ease-in;
+    background-position: 0px 5px; }
+  header #logo:hover {
+    -webkit-transition: background-position 0.5s ease-in;
+    -moz-transition: background-position 0.5s ease-in;
+    cursor: pointer;
+    background-position: 0px -65px; }
+  header #mobile-nav {
+    padding-left: 20px;
+    padding-right: 20px; }
+    header #mobile-nav #logo {
+      top: -1.5px; }
+    header #mobile-nav .shadow {
+      height: 65px;
+      width: 100%;
+      background: #fff;
+      margin-left: -20px;
+      position: absolute;
+      z-index: 2;
+      top: -6px;
+      -webkit-box-shadow: 0px 3px 15px #818181;
+      -moz-box-shadow: 0px 3px 15px #818181;
+      border-top: solid 5px #000; }
+    header #mobile-nav #hamburger {
+      height: 45px;
+      width: 65px;
+      position: relative;
+      top: 8px;
+      z-index: 4;
+      border-left: solid 1px #c8cbc7;
+      overflow: hidden;
+      background-image: url("../img/hamburgers.png");
+      background-size: 100%;
+      float: right;
+      background-position: 10px 48px; }
+    header #mobile-nav nav {
+      margin-left: -20px;
+      position: relative;
+      top: -999px;
+      z-index: 1; }
+      header #mobile-nav nav .nav-wrapper {
+        padding-left: 10px;
+        padding-right: 10px; }
+      header #mobile-nav nav ul {
+        width: 100%;
+        display: block; }
+        header #mobile-nav nav ul li {
+          width: 100%;
+          display: block;
+          border-bottom: solid 4px #5a5c63;
+          padding-bottom: 20px;
+          padding-top: 20px; }
+          header #mobile-nav nav ul li a {
+            color: #000;
+            padding: 20px; }
+    header #mobile-nav .top-nav.menu {
+      background: #c8cbc7;
+      min-height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 1; }

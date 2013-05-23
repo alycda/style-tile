@@ -3,13 +3,11 @@
 @import "style";
 
 
-<<<<<<< HEAD
+
 /*=================
 	GENERAL AND MISC.
 ==================*/
-=======
 
->>>>>>> 6385c19cc2a54bb199a067642b35b1027859c198
 p:not(.button){
 	font-family: "Lato";
 }
@@ -30,13 +28,11 @@ h1{
 	color:$dark-gray;
 }
 
-<<<<<<< HEAD
+
 /*=================
 	BUTTONS
 ==================*/
 
-=======
->>>>>>> 6385c19cc2a54bb199a067642b35b1027859c198
 .button.small.secondary{
 
 	background-color: $light-gray;
@@ -100,52 +96,28 @@ h1{
 	top:5px;	
 }
 
-<<<<<<< HEAD
 /*=================
-	HEADER
+	Header
 ==================*/
-
-.menu{
-	position: relative;
-	bottom:50px;
-	left:80px;
-}
-
-.divider{
-	width:2px;
-	height:20px;
-	position: relative;
-	top:2px;
-	margin-left: 30px;
-	margin-right: 30px;
-	background: $dark-gray;
-}
-
-header{
 	
+header{
 	border-top:solid 5px #000;
 	position: relative;
 	height: 65px;
 	-webkit-box-shadow: $shadow;
 	-moz-box-shadow:$shadow;
-	z-index: 2;
-	
-	ul{
-		li{
-			list-style: none;
-		}
-	}
-	
-	.top-bar{
-		background: none;
-	}
-	
+	margin-bottom: 30px;
 	nav{
+		display: inline-block;
+		margin-left: 80px;
 		position: relative;
-	
+		top:15px;
 		ul{
+			
 			li{
+				list-style: none;
 				display: inline-block;
+				
 				a{
 					/*change later*/
 					font-family: "Lato",sans-serif;
@@ -156,132 +128,117 @@ header{
 			}
 		}
 	}
-}
-#topborder{
 	
-=======
-
-/*=================
-	HEADER
-==================*/
-header{
-	.top-bar{
-		background: none;
+	
+	.divider{
+		width:2px;
+		height:20px;
+		position: relative;
+		top:2px;
+		margin-left: 30px;
+		margin-right: 30px;
+		background: $dark-gray;
 	}
-}
-#topborder{
-	border-top:solid 5px #000;
-	position: relative;
-	z-index: 2;
->>>>>>> 6385c19cc2a54bb199a067642b35b1027859c198
-}
-#logo{
-	height:64px;
-	width:64px;
-<<<<<<< HEAD
-	background: url('../img/logosprite.png');
-	position: relative;
-	background-color: #ff6a00;
-=======
-	background: url('../img/logo.jpg');
-	position: relative;
->>>>>>> 6385c19cc2a54bb199a067642b35b1027859c198
-	z-index: 1;
-	bottom:1px;
-	-webkit-box-shadow: 0px 3px 15px #818181;
-	-moz-box-shadow:0px 3px 15px #818181;
-	box-shadow: 0px 3px 15px #818181;
-<<<<<<< HEAD
 	
-	-webkit-transition: background-position 0.5s ease-in;
-	-moz-transition: background-position 0.5s ease-in;
+	#logo{
+		height:64px;
+		width:64px;
+		float: left;
+		background: url('../img/logosprite.png');
+		position: absolute;
+		background-color: #ff6a00;
+		z-index: 6;
 	
-	
-	background-position: 0px 5px;
-}
-
-#logo:hover{
-	-webkit-transition: background-position 0.5s ease-in;
-	-moz-transition: background-position 0.5s ease-in;
-	cursor: pointer;
-	background-position: 0px -65px;
-}
-
-
-
-#search-button{
-	height:61px;
-	width: 65px;
-	background-color: $light-gray;
-	display: inline-block;
-	vertical-align: top;
-	position: relative;
-	bottom:18px;
-	left:40px;
-}
-=======
-}
-
-/**
-	May need to change to this?
-	h1.subheader{
-	font-size: 250%;
-}
-
-h2.subheader{
- 	font-size: 200%;
-	
-}
-
-h3.subheader{
-	font-size: 170%
-}
-*/
+		-webkit-box-shadow: 0px 3px 15px #818181;
+		-moz-box-shadow:0px 3px 15px #818181;
+		box-shadow: 0px 3px 15px #818181;
+		-webkit-transition: background-position 0.5s ease-in;
+		-moz-transition: background-position 0.5s ease-in;		
+		background-position: 0px 5px;
+	}
+	#logo:hover{
+		-webkit-transition: background-position 0.5s ease-in;
+		-moz-transition: background-position 0.5s ease-in;
+		cursor: pointer;
+		background-position: 0px -65px;
+	}
 
 
+	/**
+		These are the styles in the 
+		mobile view for Foundation
+		
+		
+	*/
+	#mobile-nav{
+		padding-left: $mobilePadding;
+		padding-right:$mobilePadding;
+		#logo{
+			top:-1.5px;
+		}
+		.shadow{
+			height:65px;
+			width:100%;
+			background: #fff;
+			margin-left: -20px;
+			position: absolute;
+			z-index: 2;
+			top:-6px;
+			-webkit-box-shadow: $shadow;
+			-moz-box-shadow:$shadow;
+			border-top:solid 5px #000;
+		}
+		#hamburger{
+			height:45px;
+			width:65px;
+			position: relative;
+			top:8px;
+			z-index: 4;
+			border-left:solid 1px $light-gray;
+			overflow: hidden;
+			//background: yellow;
+			background-image: url("../img/hamburgers.png");
+			background-size: 100%;
+			float: right;
+			background-position: 10px 48px;
+		}
+		
+		nav{
+			margin-left: -$mobilePadding;
+			position: relative;
+			top:-999px;
+			
+			z-index: 1;
+			.nav-wrapper{
+				padding-left: 10px;
+				padding-right: 10px;
+			}
+			
+			ul{
+			//border: solid 1px red;
+									width: 100%;
+						display: block;
 
-// Comment out this import if you are customizing you imports below
-//@import "foundation";
-
-// Import specific parts of Foundation by commenting the import "foundation"
-// and uncommenting what you want below. You must uncomment the following if customizing
-
-// @import "foundation/components/global"; // *always required
-// @import "foundation/components/grid";
-// @import "foundation/components/visibility";
-// @import "foundation/components/block-grid";
-// @import "foundation/components/type";
-// @import "foundation/components/buttons";
-// @import "foundation/components/forms"; // *requires components/buttons
-// @import "foundation/components/custom-forms"; // *requires components/buttons, components/forms
-// @import "foundation/components/button-groups"; // *requires components/buttons
-// @import "foundation/components/dropdown-buttons"; // *requires components/buttons
-// @import "foundation/components/split-buttons"; // *requires components/buttons
-// @import "foundation/components/flex-video";
-// @import "foundation/components/section";
-// @import "foundation/components/top-bar";  // *requires components/grid
-// @import "foundation/components/orbit";
-// @import "foundation/components/reveal";
-// @import "foundation/components/joyride";
-// @import "foundation/components/clearing";
-// @import "foundation/components/alert-boxes";
-// @import "foundation/components/breadcrumbs";
-// @import "foundation/components/keystrokes";
-// @import "foundation/components/labels";
-// @import "foundation/components/inline-lists";
-// @import "foundation/components/pagination";
-// @import "foundation/components/panels";
-// @import "foundation/components/pricing-tables";
-// @import "foundation/components/progress-bars";
-// @import "foundation/components/side-nav";
-// @import "foundation/components/sub-nav";
-// @import "foundation/components/switch";
-// @import "foundation/components/magellan";
-// @import "foundation/components/tables";
-// @import "foundation/components/thumbs";
-// @import "foundation/components/tooltips";
-// @import "foundation/components/dropdown";
->>>>>>> 6385c19cc2a54bb199a067642b35b1027859c198
-
-
-
+				li{
+					width: 100%;
+					display: block;
+					border-bottom: solid 4px $dark-gray;
+					padding-bottom: $mobileNavPadding;
+					padding-top: $mobileNavPadding;
+					a{
+						color:#000;
+						padding: 20px;
+						
+					}
+				}
+			}
+		}	
+		.top-nav.menu{
+			background: $light-gray;
+			min-height: 100%;
+			width:100%;
+			position: absolute;
+			z-index: 1;
+		}
+	}
+}//end header
