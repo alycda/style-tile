@@ -155,29 +155,61 @@ header {
       background-size: 100%;
       float: right;
       background-position: 10px 48px; }
+    header #mobile-nav #hamburger:hover {
+      cursor: pointer; }
     header #mobile-nav nav {
       margin-left: -20px;
       position: relative;
       top: -999px;
       z-index: 1; }
-      header #mobile-nav nav .nav-wrapper {
-        padding-left: 10px;
-        padding-right: 10px; }
-      header #mobile-nav nav ul {
+      header #mobile-nav nav ul:not(.sub-category) {
         width: 100%;
         display: block; }
-        header #mobile-nav nav ul li {
+        header #mobile-nav nav ul:not(.sub-category) li {
           width: 100%;
           display: block;
           border-bottom: solid 4px #5a5c63;
           padding-bottom: 20px;
           padding-top: 20px; }
-          header #mobile-nav nav ul li a {
+          header #mobile-nav nav ul:not(.sub-category) li a {
             color: #000;
             padding: 20px; }
+      header #mobile-nav nav .sub-nav {
+        background: #333; }
     header #mobile-nav .top-nav.menu {
       background: #c8cbc7;
       min-height: 100%;
       width: 100%;
       position: absolute;
+      z-index: 1;
+      margin-top: -5px; }
+    header #mobile-nav .link .link-wrap {
+      padding-top: 20px;
+      padding-left: 10px;
+      padding-right: 10px;
+      background: #c8cbc7;
+      position: relative;
+      z-index: 6;
+      width: 300px;
+      height: 60px;
+      width: 100%;
+      display: block; }
+      header #mobile-nav .link .link-wrap a {
+        width: 100%;
+        display: inline-block;
+        border-bottom: solid 5px #5a5c63; }
+    header #mobile-nav .link a {
+      padding-bottom: 20px;
+      padding-left: 20px; }
+    header #mobile-nav .link .sub-nav {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 60px;
+      margin-bottom: -5px;
+      border-top: solid 1px #5a5c63;
+      border-bottom: solid 1px #5a5c63;
+      position: relative;
       z-index: 1; }
+      header #mobile-nav .link .sub-nav a {
+        color: #fff;
+        text-transform: uppercase; }

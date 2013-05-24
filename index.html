@@ -31,6 +31,9 @@
 
 <div id="topborder"></div>
 
+
+
+
 <header>
 	<div class="row">
 	 <div id="logo" class="show-for-medium-up"></div>
@@ -40,40 +43,60 @@
 		<div class="shadow"></div>
 		 <div id="logo"></div>
 		 <div id="hamburger"></div>
+	 	
+	 	
+	 	
+	 	
+	 	
 	 	<nav class="top-nav menu">
 	 		<div class="nav-wrapper">
+	 			
+	 			 <div class="link">
+	 			 	<div class="link-wrap">
+	 			 		<a href="#">Work</a>
+	 			 	</div>
+	 			 		<div class="sub-navigation" >
+	 			 		<div class="sub-nav">
+	 			 		<a href="#">Portfolio</a>
+	 			 	</div>
+	 			 	
+	 			 	<div class="sub-nav">
+	 			 		<a href="#">Clients</a>
+	 			 	</div>
+	 			 	
+	 			 	<div class="sub-nav">
+	 			 		<a href="#">Research</a>
+	 			 	</div>
+	 			 		
+	 			 		
+	 			 		</div>
+	 			 	
+	 			 	
+	 			 </div>		
 	 		
-	 		<ul>
-	 			<li>
-	 				<a href="#">Work</a>
-	 			</li>
-	 			
-	 			<li>
-	 				<a href="#">About Us</a>
-	 			</li>
-	 			
-	 			
-	 			<li>
-	 				<a href="#">The Team</a>
-	 			</li>
-	 			
-	 			<li>
-	 				<a href="#">The Feed</a>
-	 			</li>
-	 			
-	 			<li>
-	 				<a href="#">Careers</a>
-	 			</li>
-	 			
-	 			<li>
-	 				<a href="#">Connect</a>
-	 			</li>
-	 		</ul>
-
+	 			 <div class="link">
+	 			 	<div class="link-wrap">
+	 			 		<a href="#">Work</a>
+	 			 	</div>
+	 			 	<div class="sub-nav">
+	 			 		<a href="#">Portfolio</a>
+	 			 	</div>
+	 			 	
+	 			 	<div class="sub-nav">
+	 			 		<a href="#">Clients</a>
+	 			 	</div>
+	 			 	
+	 			 	<div class="sub-nav">
+	 			 		<a href="#">Research</a>
+	 			 	</div>
+	 			 </div>		
 	 		
-	 			 	</nav>
-	 
-	 </div><!--end mobile nav-->
+	 		
+	 		
+	 		</div><!--end nav wrapper-->
+	 		
+	 	</nav>-
+		 </div><!--end mobile nav-->
 	 <div class="large-12 columns show-for-medium-up" id="desktop-nav">
 	
 	 	<nav class="top-nav menu">
@@ -139,7 +162,7 @@
 
 
 
-<div class="row">
+<div class="row" id="content">
     <div class="large-12 columns">
       <h2>Team One Site Website Redesign</h2>
       <p></p>
@@ -482,6 +505,8 @@
 			   top:"-999px",
 			   height:0
 			   },500, 'ease-out')
+			   
+			 //  document.getElementsByTagName("content")[0].style.display = "block";
 			  
 		  }else{
 			   $mobilenav.animate({
@@ -490,10 +515,16 @@
 			   },500, 'ease-out')
 			   
 			   $mobilenav.addClass("active");
+			   
+			     
+			//   document.getElementsByTagName("content")[0].style.display = "none";			  
 			  
 		  }
 		  
 	  })
     </script>
+  </body>
+</html>
+script>
   </body>
 </html>

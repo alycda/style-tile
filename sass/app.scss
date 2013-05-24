@@ -203,6 +203,9 @@ header{
 			background-position: 10px 48px;
 		}
 		
+		#hamburger:hover{
+			cursor: pointer;		
+		}
 		nav{
 			margin-left: -$mobilePadding;
 			position: relative;
@@ -210,11 +213,10 @@ header{
 			
 			z-index: 1;
 			.nav-wrapper{
-				padding-left: 10px;
-				padding-right: 10px;
+				
 			}
 			
-			ul{
+			ul:not(.sub-category){
 			//border: solid 1px red;
 									width: 100%;
 						display: block;
@@ -232,6 +234,12 @@ header{
 					}
 				}
 			}
+			
+			
+			.sub-nav{
+				background: #333;
+				
+			}
 		}	
 		.top-nav.menu{
 			background: $light-gray;
@@ -239,6 +247,50 @@ header{
 			width:100%;
 			position: absolute;
 			z-index: 1;
+			margin-top: -5px;
+		}
+		
+		.link{
+			.link-wrap{
+				padding-top: $mobilePadding;
+				padding-left: 10px;
+				padding-right: 10px;
+				background: $light-gray;
+				position: relative;
+				z-index: 6;
+				width: 300px;
+				height:60px;
+				
+				width: 100%;
+				display: block;
+				
+				a{
+					width:100%;
+					display: inline-block;
+					border-bottom: solid 5px $dark-gray;
+				}
+			}
+			a{
+				padding-bottom: $mobilePadding;
+				padding-left: $mobilePadding;
+				
+			}
+			
+			.sub-nav{
+				padding-top: 20px;
+				padding-bottom: 20px;
+				padding-left: 60px;
+				margin-bottom: -5px;
+			
+				border-top:solid 1px $dark-gray;
+				border-bottom: solid 1px $dark-gray;
+				position: relative;
+				z-index: 1;
+				a{
+					color:#fff;
+					text-transform: uppercase;
+				}
+			}
 		}
 	}
 }//end header
