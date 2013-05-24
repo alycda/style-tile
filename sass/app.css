@@ -178,7 +178,7 @@ header {
         background: #333; }
     header #mobile-nav .top-nav.menu {
       background: #c8cbc7;
-      min-height: 100%;
+      overflow: hidden;
       width: 100%;
       position: absolute;
       z-index: 1;
@@ -191,25 +191,29 @@ header {
       position: relative;
       z-index: 6;
       width: 300px;
-      height: 60px;
       width: 100%;
       display: block; }
       header #mobile-nav .link .link-wrap a {
         width: 100%;
         display: inline-block;
+        color: #5a5c63;
+        text-transform: uppercase;
         border-bottom: solid 5px #5a5c63; }
     header #mobile-nav .link a {
       padding-bottom: 20px;
       padding-left: 20px; }
+    header #mobile-nav .link .sub-nav:hover {
+      cursor: pointer; }
     header #mobile-nav .link .sub-nav {
-      padding-top: 20px;
-      padding-bottom: 20px;
+      height: 65px;
       padding-left: 60px;
       margin-bottom: -5px;
-      border-top: solid 1px #5a5c63;
-      border-bottom: solid 1px #5a5c63;
+      border-top: solid 3px #5a5c63;
+      border-bottom: solid 3px #5a5c63;
       position: relative;
       z-index: 1; }
       header #mobile-nav .link .sub-nav a {
         color: #fff;
-        text-transform: uppercase; }
+        text-transform: uppercase;
+        position: relative;
+        top: 30%; }

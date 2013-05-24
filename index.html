@@ -30,7 +30,14 @@
   <body class="antialiased">
 
 <div id="topborder"></div>
-
+ 	
+	 	<style>
+	 			
+		.sub-navigation{
+			height:0px;
+			overflow: hidden;
+		}
+	 	</style>
 
 
 
@@ -44,8 +51,7 @@
 		 <div id="logo"></div>
 		 <div id="hamburger"></div>
 	 	
-	 	
-	 	
+	
 	 	
 	 	
 	 	<nav class="top-nav menu">
@@ -55,44 +61,126 @@
 	 			 	<div class="link-wrap">
 	 			 		<a href="#">Work</a>
 	 			 	</div>
-	 			 		<div class="sub-navigation" >
+	 			 	
+	 			 	
+	 			 	<div class="sub-navigation" >
 	 			 		<div class="sub-nav">
-	 			 		<a href="#">Portfolio</a>
-	 			 	</div>
-	 			 	
-	 			 	<div class="sub-nav">
-	 			 		<a href="#">Clients</a>
-	 			 	</div>
-	 			 	
-	 			 	<div class="sub-nav">
-	 			 		<a href="#">Research</a>
-	 			 	</div>
-	 			 		
-	 			 		
+	 			 			<a href="#">Portfolio</a>
 	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Clients</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Research</a>
+	 			 		</div> 			 		
+	 			 	</div>
 	 			 	
 	 			 	
 	 			 </div>		
 	 		
 	 			 <div class="link">
 	 			 	<div class="link-wrap">
-	 			 		<a href="#">Work</a>
+	 			 		<a href="#">About Us</a>
 	 			 	</div>
-	 			 	<div class="sub-nav">
-	 			 		<a href="#">Portfolio</a>
-	 			 	</div>
-	 			 	
-	 			 	<div class="sub-nav">
-	 			 		<a href="#">Clients</a>
-	 			 	</div>
-	 			 	
-	 			 	<div class="sub-nav">
-	 			 		<a href="#">Research</a>
+	 			 	 	<div class="sub-navigation" >
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Portfolio</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Clients</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Research</a>
+	 			 		</div> 			 		
 	 			 	</div>
 	 			 </div>		
 	 		
 	 		
 	 		
+	 			 <div class="link">
+	 			 	<div class="link-wrap">
+	 			 		<a href="#">The Team</a>
+	 			 	</div>
+	 			 	 	<div class="sub-navigation" >
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Portfolio</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Clients</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Research</a>
+	 			 		</div> 			 		
+	 			 	</div>
+	 			 </div>	
+	 		
+	 		
+	 		
+	 			 <div class="link">
+	 			 	<div class="link-wrap">
+	 			 		<a href="#">The Feed</a>
+	 			 	</div>
+	 			 	 	<div class="sub-navigation" >
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Portfolio</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Clients</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Research</a>
+	 			 		</div> 			 		
+	 			 	</div>
+	 			 </div>	
+	 			 
+	 			 
+	 			 	 <div class="link">
+	 			 	<div class="link-wrap">
+	 			 		<a href="#">Careers</a>
+	 			 	</div>
+	 			 	 	<div class="sub-navigation" >
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Portfolio</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Clients</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Research</a>
+	 			 		</div> 			 		
+	 			 	</div>
+	 			 </div>	
+	 		
+	 		
+	 		
+	 			 <div class="link">
+	 			 	<div class="link-wrap">
+	 			 		<a href="#">Connect</a>
+	 			 	</div>
+	 			 	 	<div class="sub-navigation" >
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Portfolio</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Clients</a>
+	 			 		</div>
+	 			 		
+	 			 		<div class="sub-nav">
+	 			 			<a href="#">Research</a>
+	 			 		</div> 			 		
+	 			 	</div>
+	 			 </div>	
 	 		</div><!--end nav wrapper-->
 	 		
 	 	</nav>-
@@ -521,10 +609,35 @@
 			  
 		  }
 		  
-	  })
+	  });
+	  
+	  $(".link-wrap").bind("click",function(e){
+	  	 var children = e.target.parentNode.parentNode.children;
+	  	 
+		console.log(children);
+		  if($(children[1]).hasClass("active")){
+			  $(children[1]).removeClass("active");
+			  
+			   $(children[1]).animate({
+				   height:0
+			   })
+		 
+			   
+			 //  document.getElementsByTagName("content")[0].style.display = "block";
+			  
+		  }else{
+			   $(children[1]).animate({
+				    height:62 * 3 + "px"
+				})
+		 
+			   
+			    $(children[1]).addClass("active");
+			   
+			     
+			//   document.getElementsByTagName("content")[0].style.display = "none";			  
+			  
+		  }
+	  });
     </script>
-  </body>
-</html>
-script>
   </body>
 </html>
