@@ -5,8 +5,8 @@
   <head>
     <link href='http://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'/>   
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Foundation Docs: Kitchen Sink</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" maximum-scale="1.0" />
+    <title>T1</title>
  
     <link rel="stylesheet" href="stylesheets/normalize.css" />
 	<link rel="stylesheet" href="stylesheets/app.css" />
@@ -37,24 +37,30 @@
 			height:0px;
 			overflow: hidden;
 		}
+		
+		
 	 	</style>
 
 
-
-<header>
+<div id="mobile-header">
+<header id="mobile" class="show-for-small hide-for-medium-up">
 	<div class="row">
-	 <div id="logo" class="show-for-medium-up"></div>
-	 	
-	 
-	 <div class="large-12 columns show-for-small hide-for-medium-up" id="mobile-nav">
-		<div class="shadow"></div>
 		 <div id="logo"></div>
-		 <div id="hamburger"></div>
+		  <div id="hamburger">
+			  <div id="posts">
+			  
+			  <div id="post1" class="post"></div>
+			  <div id="post2" class="post"></div>
+			  <div id="post3" class="post"></div>
+			  </div>
+		  </div>
 	 	
 	
-	 	
-	 	
-	 	<nav class="top-nav menu">
+		
+	</div><!--end row-->
+</header><!--end mobile header-->
+<div id="mobile-menu">
+		<nav class="top-nav menu">
 	 		<div class="nav-wrapper">
 	 			
 	 			 <div class="link">
@@ -183,11 +189,26 @@
 	 			 </div>	
 	 		</div><!--end nav wrapper-->
 	 		
-	 	</nav>-
-		 </div><!--end mobile nav-->
-	 <div class="large-12 columns show-for-medium-up" id="desktop-nav">
-	
-	 	<nav class="top-nav menu">
+	 	</nav>
+</div><!--end mobile-menu-->
+</div><!--end mobile header-->
+
+<header id="desktop" class="show-for-medium-up hide-for-small">
+	<div class="row">
+	 <div id="searchbox">
+		<div id="magnifing-glass">
+		
+			<div class="outline">
+			 <div id="circle"></div>
+		</div>
+		
+		<div class="post"></div>
+		</div>
+	 </div>
+		 <div id="logo" class="show-for-medium-up"></div>
+		 	<nav class="top-nav menu">
+	 	
+
 	 		<ul>
 	 			<li>
 	 				<a href="#">
@@ -228,21 +249,13 @@
 		 				Contact
 	 				</a>
 	 			</li>
-	 			<li>
-	 				<div id="search-button"></div>
-	 			</li>
+	 	
 	 			
 	 			</ul>
 	 	</nav>
-	 </div><!--end desktop nav-->
-	 
-	 
-	 
-	 
-	 
-	</div><!--end row-->  
-</header>
-
+		
+	</div><!--end row-->
+</header><!--end desktop header-->
 
 
 
@@ -511,7 +524,7 @@
 	<div class="footer">
 	
 	  <footer>
-      <div class="small-3 large-3 columns panel" style="background-color:#eed;">
+      <div class="small-5 large-5 columns panel" style="background-color:#eed;">
         <h6><strong>Column 1</strong></h6>
         <p>Large-5 Grid Panel</p>
         <pre>#eed</pre>
@@ -525,7 +538,7 @@
 
       </div>
 
-      <div class="small-3 large-3 columns panel" style="background-color:#eef;">
+      <div class="small-4 large-4 columns panel" style="background-color:#eef;">
         <h6><strong>Column 3</strong></h6>
         <p>Large-4 Grid Panel</p>
         <pre>#eef</pre>
@@ -580,15 +593,16 @@
       $('#start-jr').on('click', function() {
         $(document).foundation('joyride','start');
       });
-  
+	  
+
   
 	  document.getElementById("hamburger").addEventListener("click",function(){
-		  $mobilenav = $("#mobile-nav .top-nav.menu");
+		  $mobilenav = $("#mobile-menu");
 		  
 	  
 		  if($mobilenav.hasClass("active")){
 			  $mobilenav.removeClass("active");
-			  
+			  $(".post").removeClass("orange");
 			   $mobilenav.animate({
 			   top:"-999px",
 			   height:0
@@ -598,11 +612,12 @@
 			  
 		  }else{
 			   $mobilenav.animate({
-			   top:65,
+			   top:-35,
 			   height:window.innerHeight + "px"
 			   },500, 'ease-out')
 			   
 			   $mobilenav.addClass("active");
+			   $(".post").addClass("orange");
 			   
 			     
 			//   document.getElementsByTagName("content")[0].style.display = "none";			  
@@ -614,7 +629,7 @@
 	  $(".link-wrap").bind("click",function(e){
 	  	 var children = e.target.parentNode.parentNode.children;
 	  	 
-		console.log(children);
+
 		  if($(children[1]).hasClass("active")){
 			  $(children[1]).removeClass("active");
 			  
