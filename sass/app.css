@@ -141,16 +141,16 @@ header#desktop {
     float: right; }
   header#desktop #magnifing-glass {
     position: relative;
-    left: 30%;
-    top: 30%; }
+    left: 35%;
+    top: 32%; }
   header#desktop #circle {
     height: 10px;
     width: 10px;
     border-radius: 40px;
     background: #c8cbc7;
     position: relative;
-    top: 2px;
-    left: 2px; }
+    top: 2.5px;
+    left: 2.5px; }
   header#desktop .outline {
     height: 15px;
     width: 15px;
@@ -290,3 +290,69 @@ header#mobile {
       background: #ff6a00; }
   header#mobile #hamburger:hover {
     cursor: pointer; }
+
+#mobile-search input {
+  height: 60px;
+  background: #000;
+  border-bottom: solid 5px #5a5c63;
+  margin-top: -15px; }
+
+::-webkit-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  left: 20px; }
+
+::-moz-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  left: 20px; }
+
+:-moz-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  left: 20px; }
+
+::-ms-input-placeholder {
+  color: #fff;
+  text-transform: uppercase;
+  position: relative;
+  left: 20px; }
+
+.mobile.searchbutton {
+  height: 60px;
+  width: 65px;
+  background: #5a5c63;
+  float: right;
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  border-bottom: solid 5px #ff6a00; }
+  .mobile.searchbutton .magnifying-glass {
+    position: relative;
+    left: 20%;
+    top: 20%; }
+    .mobile.searchbutton .magnifying-glass .outline {
+      height: 25px;
+      width: 25px;
+      border-radius: 40px;
+      background: #fff; }
+      .mobile.searchbutton .magnifying-glass .outline .inner-circle {
+        height: 18px;
+        width: 18px;
+        border-radius: 20px;
+        background: #5a5c63;
+        position: relative;
+        left: 4px;
+        top: 3.5px; }
+    .mobile.searchbutton .magnifying-glass .post {
+      -webkit-transform: rotateZ(45deg);
+      height: 6px;
+      width: 15px;
+      position: relative;
+      left: 18px;
+      top: -3px;
+      border-radius: 40px;
+      background: #fff; }
