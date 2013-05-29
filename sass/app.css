@@ -1,27 +1,25 @@
-/*=================
-	GENERAL AND MISC.
-==================*/
-p:not(.button) {
-  font-family: "Lato"; }
+/**==================
+	PULL OUT QUOTES
+=====================*/
+.quote-mark {
+  font-size: 30px; }
 
-.video.large {
-  min-width: 100%;
-  height: 520px; }
+.quote-mark.large {
+  font-size: 50px; }
 
-.footer {
-  margin-top: 40px; }
-
-h1 {
-  color: #000;
-  font-style: italic; }
-
-.darkgrey {
-  color: #5a5c63; }
-
-#content {
-  margin-top: 100px;
+.left.quote-mark:after {
+  content: "\201C";
+  margin-right: 20px;
   position: relative;
-  z-index: 1; }
+  left: -20px; }
+
+.right.quote-mark:before {
+  content: "\201D";
+  position: relative;
+  bottom: 40px; }
+
+.quote {
+  position: relative; }
 
 /*=================
 	BUTTONS
@@ -75,10 +73,39 @@ h1 {
   left: 5px;
   top: 5px; }
 
+/*=================
+	GENERAL AND MISC.
+==================*/
+p:not(.button) {
+  font-family: "Lato"; }
+
+.video.large {
+  min-width: 100%;
+  height: 520px; }
+
+.footer {
+  margin-top: 40px; }
+
+h1 {
+  color: #000;
+  font-style: italic; }
+
+.darkgrey {
+  color: #5a5c63; }
+
+#content {
+  margin-top: 100px;
+  position: relative;
+  z-index: 1; }
+
+.sub-navigation {
+  height: 0px;
+  overflow: hidden; }
+
 /*==================
 	LOGO
 ==================*/
-#logo {
+.logo {
   height: 64px;
   width: 64px;
   float: left;
@@ -93,7 +120,7 @@ h1 {
   -moz-transition: background-position 0.5s ease-in;
   background-position: 0px 5px; }
 
-#logo:hover {
+.logo:hover {
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
   cursor: pointer;
