@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$light-gray".
-        on line 39 of sass/ui.scss
+        on line 32 of sass/ui.scss
 
-34: 	BUTTONS
-35: ==================*/
+27: 	BUTTONS
+28: ==================*/
+29: 
+30: .button.small.secondary{
+31: 
+32: 	background-color: $light-gray;
+33:     color: $dark-gray;
+34:     border:none;
+35: }
 36: 
-37: .button.small.secondary{
-38: 
-39: 	background-color: $light-gray;
-40:     color: $dark-gray;
-41:     border:none;
-42: }
-43: 
-44: .button.small.secondary:hover{
+37: .button.small.secondary:hover{
 
 Backtrace:
-sass/ui.scss:39
+sass/ui.scss:32
 /Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/variable.rb:49:in `_perform'
 /Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/node.rb:40:in `perform'
 /Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -61,4 +61,4 @@ sass/ui.scss:39
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light-gray\".\A         on line 39 of sass/ui.scss\A \A 34: 	BUTTONS\A 35: ==================*/\A 36: \A 37: .button.small.secondary{\A 38: \A 39: 	background-color: $light-gray;\A 40:     color: $dark-gray;\A 41:     border:none;\A 42: }\A 43: \A 44: .button.small.secondary:hover{"; }
+  content: "Syntax error: Undefined variable: \"$light-gray\".\A         on line 32 of sass/ui.scss\A \A 27: 	BUTTONS\A 28: ==================*/\A 29: \A 30: .button.small.secondary{\A 31: \A 32: 	background-color: $light-gray;\A 33:     color: $dark-gray;\A 34:     border:none;\A 35: }\A 36: \A 37: .button.small.secondary:hover{"; }
