@@ -1,0 +1,2 @@
+//randomize item colors
+var elements=document.getElementsByClassName("item");for(var i=0;i<elements.length;i++){el=elements[i];var r=Math.floor(Math.random()*255),g=Math.floor(Math.random()*255),b=Math.floor(Math.random()*255);el.children[0].style.background="rgba("+r+","+g+","+b+",1.0)"}var f=new Filterer("leadership",".leader");f.selectBox("filter");f.checkBox("filter2");

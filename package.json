@@ -1,0 +1,12 @@
+{
+	"name":"StatusBoard",
+	"version":"0.0.1",
+	"dependencies":{
+		"jsdom":"*",
+		"uglify-js":"*",
+		"flatiron":"*",
+		"union":"*",
+		"connect":"*"
+	}
+	
+}
