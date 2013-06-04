@@ -89,7 +89,7 @@ h1{
   float: left;
   background: url('../img/logosprite.png');
   position: absolute;
-  margin-left: -10px;
+  margin-left: -25px;
   background-color: #ff6a00;
   z-index: 6;
   -webkit-box-shadow: 0px 3px 15px #818181;
@@ -97,18 +97,26 @@ h1{
   box-shadow: 0px 3px 15px #818181;
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;    
-  background-position: 0px 5px;
+  background-position: 0px 0px;
+
 }
   
 .logo:hover{
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
   cursor: pointer;
-  background-position: 0px -65px;
-}/*=================
+  background-position: 0px -70px;
+}
+@media screen and(max-width:800px){
+	.logo{
+		margin-left: 0px;
+	}
+  
+}
+/*=================
   Header
 ==================*/
-header{
+header:not(#subnav){
 	
   .row{
     padding-left: 15px;
@@ -142,11 +150,12 @@ header#desktop{
   -webkit-box-shadow: $shadow;
   -moz-box-shadow:$shadow;
   margin-bottom: 30px;
+ 
   
   nav{
-    margin-left: 100px;
     position: relative;
-    bottom:4px;
+    bottom:5px;
+    margin-left: 90px;
     ul{
       li{
         float: left;
@@ -162,16 +171,43 @@ header#desktop{
   
   
 #searchbox{
-    height:35px;
-    width:35px;
+	
     background: $light-gray;
+    background-image: url("../img/icon-search.png");
     float: right;
     margin-top: 10px;
+    background-size: 95%;
     
 }
 
+@media screen and (min-width:960px){
+	#searchbox{
+		height:35px;
+		width:35px;
+	}
+	
+	
+}
 
-#magnifing-glass{
+@media screen and (min-width:961px){
+	header#desktop{
+		nav{
+			margin-left: 80px;
+		}
+	}
+}
+
+@media screen and (max-width:950px){
+	#searchbox{
+		height:60px;
+		width:60px;
+		margin-top: 0;
+		background-size: 100%;
+	}	
+
+}
+
+/*#magnifing-glass{
     position: relative;
     left:28%;
     top:22%;
@@ -203,7 +239,7 @@ header#desktop{
     bottom:2px;
     border-radius: 40px;
     background: #fff;
-}
+}*/
 
 @media screen and (max-width:768px){
   #searchbox{
@@ -227,6 +263,8 @@ header#desktop{
     top:2px;
     background: $dark-gray;
   }
+  
+  
 }//end header desktop
 
 /*==========================================
@@ -239,7 +277,7 @@ header#desktop{
   }
 }
 
-@media screen and (min-width:769px) and (max-width:1000px){  
+@media screen and (min-width:768px) and (max-width:1000px){  
 	.divider{
 		margin-left: 35px;
 		margin-right: 35px;
@@ -247,7 +285,7 @@ header#desktop{
 }//end query
 
 
-@media screen and (min-width:769px) and (max-width:960px){  
+@media screen and (min-width:768px) and (max-width:960px){  
 	.divider{
 		margin-left: 28px;
 		margin-right: 28px;
@@ -255,7 +293,7 @@ header#desktop{
 }//end query
 
 
-@media screen and (min-width:769px) and (max-width:920px){  
+@media screen and (min-width:768px) and (max-width:920px){  
 	.divider{
 		margin-left: 25px;
 		margin-right: 25px;
@@ -263,7 +301,7 @@ header#desktop{
 }//end query
 
 
-@media screen and (min-width:769px) and (max-width:880px){  
+@media screen and (min-width:768px) and (max-width:880px){  
 	.divider{
 		margin-left: 20px;
 		margin-right: 20px;
@@ -271,12 +309,24 @@ header#desktop{
 }//end query
 
 
-@media screen and (min-width:769px) and (max-width:840px){  
+@media screen and (min-width:768px) and (max-width:840px){  
 	.divider{
 		margin-left: 18px;
 		margin-right: 18px;
 	}
 }//end query
+/*========================================
+  SUBNAV
+========================================*/
+#subnav{
+	width:100%;
+	background: #333;
+	height:125px;
+	margin-bottom: -50px;	
+	display: none;
+}
+
+
 /*========================================
   MOBILE HEADER
 ========================================*/

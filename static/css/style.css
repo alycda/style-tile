@@ -5522,7 +5522,7 @@ h1 {
   float: left;
   background: url("../img/logosprite.png");
   position: absolute;
-  margin-left: -10px;
+  margin-left: -25px;
   background-color: #ff6a00;
   z-index: 6;
   -webkit-box-shadow: 0px 3px 15px #818181;
@@ -5530,31 +5530,34 @@ h1 {
   box-shadow: 0px 3px 15px #818181;
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
-  background-position: 0px 5px; }
+  background-position: 0px 0px; }
 
 .logo:hover {
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
   cursor: pointer;
-  background-position: 0px -65px; }
+  background-position: 0px -70px; }
 
- /*=================
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-left: 0px; } }
+/*=================
   Header
 ==================*/
-header {
+header:not(#subnav) {
   position: fixed;
   top: 0;
   z-index: 9;
   min-width: 100%;
   background: #fff; }
-  header .row {
+  header:not(#subnav) .row {
     padding-left: 15px;
     padding-right: 15px; }
-  header ul {
+  header:not(#subnav) ul {
     list-style: none; }
-    header ul li {
+    header:not(#subnav) ul li {
       list-style: none; }
-  header a {
+  header:not(#subnav) a {
     font-family: "ProximaNovaA-Semibold","ProximaNovaA-Bold","ProximaNovaA-Regular",sans-serif; }
 
 header#desktop {
@@ -5562,11 +5565,44 @@ header#desktop {
   height: 65px;
   -webkit-box-shadow: 0px 3px 15px #818181;
   -moz-box-shadow: 0px 3px 15px #818181;
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  /*#magnifing-glass{
+      position: relative;
+      left:28%;
+      top:22%;
+  }
+  
+  #circle{
+      height:10px;
+      width: 10px;
+      border-radius: 40px;
+      background: $light-gray;
+      position: relative;
+      top:2.5px;
+      left:2.5px;
+  }
+  
+  .outline{
+      height:15px;
+      width:15px;
+      border-radius: 40px;
+      background:#fff;
+  }
+  
+  .post{
+      -webkit-transform: rotateZ(45deg);
+      height:4px;
+      width:10px;
+      position: relative;
+      left:10px;
+      bottom:2px;
+      border-radius: 40px;
+      background: #fff;
+  }*/ }
   header#desktop nav {
-    margin-left: 100px;
     position: relative;
-    bottom: 4px; }
+    bottom: 5px;
+    margin-left: 90px; }
     header#desktop nav ul li {
       float: left; }
       header#desktop nav ul li a {
@@ -5574,37 +5610,24 @@ header#desktop {
         text-transform: uppercase;
         color: #5a5c63; }
   header#desktop #searchbox {
-    height: 35px;
-    width: 35px;
     background: #c8cbc7;
+    background-image: url("../img/icon-search.png");
     float: right;
-    margin-top: 10px; }
-  header#desktop #magnifing-glass {
-    position: relative;
-    left: 28%;
-    top: 22%; }
-  header#desktop #circle {
-    height: 10px;
-    width: 10px;
-    border-radius: 40px;
-    background: #c8cbc7;
-    position: relative;
-    top: 2.5px;
-    left: 2.5px; }
-  header#desktop .outline {
-    height: 15px;
-    width: 15px;
-    border-radius: 40px;
-    background: #fff; }
-  header#desktop .post {
-    -webkit-transform: rotateZ(45deg);
-    height: 4px;
-    width: 10px;
-    position: relative;
-    left: 10px;
-    bottom: 2px;
-    border-radius: 40px;
-    background: #fff; }
+    margin-top: 10px;
+    background-size: 95%; }
+  @media screen and (min-width: 960px) {
+    header#desktop #searchbox {
+      height: 35px;
+      width: 35px; } }
+  @media screen and (min-width: 961px) {
+    header#desktop header#desktop nav {
+      margin-left: 80px; } }
+  @media screen and (max-width: 950px) {
+    header#desktop #searchbox {
+      height: 60px;
+      width: 60px;
+      margin-top: 0;
+      background-size: 100%; } }
   @media screen and (max-width: 768px) {
     header#desktop #searchbox {
       height: 35px;
@@ -5628,26 +5651,36 @@ header#desktop {
   .divider {
     margin-left: 42px;
     margin-right: 42px; } }
-@media screen and (min-width: 769px) and (max-width: 1000px) {
+@media screen and (min-width: 768px) and (max-width: 1000px) {
   .divider {
     margin-left: 35px;
     margin-right: 35px; } }
-@media screen and (min-width: 769px) and (max-width: 960px) {
+@media screen and (min-width: 768px) and (max-width: 960px) {
   .divider {
     margin-left: 28px;
     margin-right: 28px; } }
-@media screen and (min-width: 769px) and (max-width: 920px) {
+@media screen and (min-width: 768px) and (max-width: 920px) {
   .divider {
     margin-left: 25px;
     margin-right: 25px; } }
-@media screen and (min-width: 769px) and (max-width: 880px) {
+@media screen and (min-width: 768px) and (max-width: 880px) {
   .divider {
     margin-left: 20px;
     margin-right: 20px; } }
-@media screen and (min-width: 769px) and (max-width: 840px) {
+@media screen and (min-width: 768px) and (max-width: 840px) {
   .divider {
     margin-left: 18px;
     margin-right: 18px; } }
+/*========================================
+  SUBNAV
+========================================*/
+#subnav {
+  width: 100%;
+  background: #333;
+  height: 125px;
+  margin-bottom: -50px;
+  display: none; }
+
 /*========================================
   MOBILE HEADER
 ========================================*/
