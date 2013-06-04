@@ -450,6 +450,8 @@ header#mobile{
     margin-top: -15px;
     color:#fff;
     padding-left: 20px;
+    font-family: "ProximaNovaA-Semibold","Lato", sans-serif;
+    text-transform: uppercase;
    
     
   }//end mobile-search
@@ -463,7 +465,9 @@ header#mobile{
     top:5px;
     right: 10px;
     border-bottom: solid 5px $orange;
-    
+    background-image: url("../img/icon-search.png");
+    background-size:82%;
+    background-position:6px 0px;
   	 .magnifying-glass{
       position: relative;
 	  margin-left: 15px;
