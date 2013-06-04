@@ -332,6 +332,63 @@
 		$(".orbit-caption").fadeIn("slow");	
 		})
 	
+  document.getElementById("hamburger").addEventListener("click",function(){
+		  $mobilenav = $("#mobile-menu");
+		  
+	  
+		  if($mobilenav.hasClass("active")){
+			  $mobilenav.removeClass("active");
+			  $(".post").removeClass("orange");
+			   $mobilenav.animate({
+			   top:"-999px",
+			   height:0
+			   },500)
+			   
+			 //  document.getElementsByTagName("content")[0].style.display = "block";
+			  
+		  }else{
+			   $mobilenav.animate({
+			   top:-35,
+			   height:window.innerHeight + "px"
+			   },500)
+			   
+			   $mobilenav.addClass("active");
+			   $(".post").addClass("orange");
+			   
+			     
+			//   document.getElementsByTagName("content")[0].style.display = "none";			  
+			  
+		  }
+		  
+	  });
+	  
+	  $(".link-wrap").bind("click",function(e){
+	  	 var children = e.target.parentNode.parentNode.children;
+	  	 
+
+		  if($(children[1]).hasClass("active")){
+			  $(children[1]).removeClass("active");
+			  
+			   $(children[1]).animate({
+				   height:0
+			   })
+		 
+			   
+			 //  document.getElementsByTagName("content")[0].style.display = "block";
+			  
+		  }else{
+			   $(children[1]).animate({
+				    height:62 * 3 + "px"
+				})
+		 
+			   
+			    $(children[1]).addClass("active");
+			   
+			     
+			//   document.getElementsByTagName("content")[0].style.display = "none";			  
+			  
+		  }
+	  });
 
 		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
