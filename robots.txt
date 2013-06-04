@@ -1,4 +1,4 @@
+component-list.html
 index.html
 isotope.html
-style-tile.html
 vimeo.html
