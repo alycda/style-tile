@@ -1,0 +1,91 @@
+/**==================
+	PULL OUT QUOTES
+=====================*/
+.quote-mark{
+	font-size:30px;
+}
+
+.quote-mark.large{
+	font-size: 50px;
+}
+.left.quote-mark:after{
+	content:"\201C";
+	margin-right: 20px;
+	position: relative;
+	left:-20px;
+}
+
+.right.quote-mark:before{
+	content:"\201D";
+	position: relative;
+	bottom: 40px;
+}
+
+
+		
+/*=================
+	BUTTONS
+==================*/
+
+.button.small.secondary{
+
+	background-color: $light-gray;
+    color: $dark-gray;
+    border:none;
+}
+
+.button.small.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background-color: $dark-gray;
+	color:#fff;
+}
+
+
+.button.medium.secondary{
+	background: $dark-gray;
+	color:#fff;
+}
+
+.button.medium.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background: $light-gray;
+	color:#000;
+}
+
+
+
+.button.large.secondary{
+	background:#000;
+	color:$light-gray;
+}
+
+.button.large.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	
+	background: $dark-gray;
+	color:#fff;
+}
+
+
+/**
+	These two classes are necessary because
+	if the checkboxes are made to be larger than 
+	18x18, theres a strange margin issue that appears.
+*/
+.checkbox-label:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.checkbox-label-content{
+	position: relative;
+	left:5px;
+	top:5px;	
+}
