@@ -19,6 +19,8 @@
 	but remember to add "?api=1" to the end of the src url as well as give the 
 	iframe a id, as that gets passed back to your callback functions in order 
 	to differentiate one video from another.
+	
+	by Joseph Chow
 */
 
 
@@ -123,7 +125,34 @@ Video.prototype = {
 		}
 	
 	},
+	
+	
+	getVideo:function(_params,_anchor){
+		var params = _params !== undefined || _params.id !== undefined ? _params : false;
 		
+		if(params === false){
+			alert("No video id is available ");
+			return;
+		}
+		
+		var ele = document.createElement("iframe");
+		
+		//baseurl 
+		var base = "http://player.vimeo.com/video";
+		var id = params.id;
+		var options = "?api=1";
+		var additionalOptions = {};
+		for(var i in params){
+			if(params[i] === false){
+				additionalOptions[i] = "&" + i + "=" + 0;
+			}
+		}
+		
+		//build query
+		var url = base + "/" + id + "/" +options;
+		
+		
+	}		
 };
 
 /**
