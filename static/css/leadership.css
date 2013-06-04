@@ -1,0 +1,95 @@
+/*====================
+	LEADERSHIP
+=======================*/
+#leadership {
+  /*general leadership styling*/
+  /*more specifics*/ }
+  #leadership ul {
+    list-style: none; }
+    #leadership ul li {
+      float: left;
+      margin-right: 2px;
+      margin-bottom: 2px;
+      list-style: none; }
+  #leadership #profile-images {
+    top: 100px; }
+  #leadership .show {
+    min-width: 100%;
+    height: 500px;
+    background: #333;
+    margin-bottom: 500px; }
+  #leadership .leader {
+    height: 100px;
+    width: 100px;
+    background: #333;
+    background-size: 100%;
+    top: 100px;
+    margin-right: 4px;
+    margin-bottom: 4px; }
+    #leadership .leader .content {
+      display: none; }
+      #leadership .leader .content h2 {
+        display: inline-block; }
+      #leadership .leader .content p {
+        display: inline-block; }
+  #leadership .profile_pic {
+    height: 100%;
+    width: 100%;
+    background-size: 100%; }
+  #leadership .leader:hover {
+    cursor: pointer; }
+  #leadership .large {
+    height: 600px;
+    width: 1024px;
+    padding-bottom: 100px; }
+  #leadership .leader.rounded {
+    border-radius: 80px; }
+  #leadership #alastair {
+    background-image: url("../img/leaders/alastair_green.jpg"); }
+  #leadership #cait {
+    background-image: url("../img/leaders/cait_drury.jpg"); }
+  #leadership #chris {
+    background-image: url("../img/leaders/chris_graves.jpg"); }
+  #leadership #craig {
+    background-image: url("../img/leaders/craig_rowley.jpg"); }
+  #leadership #elizabeth {
+    background-image: url("../img/leaders/elizabeth_brownsen.jpg"); }
+  #leadership #julie {
+    background-image: url("../img/leaders/julie_michael.jpg"); }
+  #leadership #kurt {
+    background-image: url("../img/leaders/kurt_ritter.jpg"); }
+  #leadership #mark {
+    background-image: url("../img/leaders/mark_miller.jpg"); }
+  #leadership #michael {
+    background-image: url("../img/leaders/michael_webb.jpg"); }
+  #leadership #paul_m {
+    background-image: url("../img/leaders/paul_mareski.jpg"); }
+  #leadership #paul_s {
+    background-image: url("../img/leaders/paul_silverman.jpg"); }
+
+/**
+	Used in the isotope demonstration. 
+	Not really needed in prod.
+*/
+#leadership .leader {
+  height: 50px;
+  width: 50px; }
+
+.item {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  float: left; }
+
+#leadership .leader.big {
+  width: 170px;
+  height: 110px; }
+
+#leadership .leader.creative {
+  background: red; }
+
+#leadership .leader.account {
+  background: green; }
+
+#leadership .leader.manager {
+  background: blue; }
