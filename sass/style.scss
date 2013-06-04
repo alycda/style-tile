@@ -1,0 +1,37 @@
+$body-bg: #fff;
+$body-font-color: #222;
+$body-font-family: "Lato","ClarendonBT-Light", "Georgia", serif;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+// Colors
+
+$primary-color: #ff6a00;
+$secondary-color: #c8cbc7;
+$alert-color: #c60f13;
+$success-color: #5da423;
+
+//T1 Colors
+$dark-gray:#5a5c63;
+$light-gray:#c8cbc7;
+$orange:#ff6a00;
+
+$mobilePadding:20px;
+$mobileNavPadding:20px;
+
+//drop shadow
+$shadow:0px 3px 15px #818181;
+
+
+// Typography Variables
+
+// Heading font styles
+
+$header-font-family: "ProximaNovaA-Semibold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-weight: normal;
+$header-font-style: normal;
+$header-font-color: #222;
+$header-line-height: 1.4;
+$header-top-margin: .2em;
+$header-bottom-margin: .5em;
+$header-text-rendering: optimizeLegibility;
