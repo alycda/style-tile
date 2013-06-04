@@ -1,0 +1,150 @@
+/*====================
+	LEADERSHIP
+=======================*/
+#leadership{
+	
+	ul{
+		list-style: none;
+		li{
+			float: left;
+			margin-right: 2px;
+			margin-bottom: 2px;
+			list-style: none;
+		}
+	}
+	
+	#profile-images{
+		top:100px;
+	}
+	.show{
+		min-width:100%;
+		height:500px;
+		background: #333;
+		margin-bottom: 500px;
+	}
+	/*general leadership styling*/
+	.leader{
+		height:100px;
+		width:100px;
+		background: #333;
+		background-size: 100%;
+		top:100px;
+		margin-right: 4px;
+		margin-bottom: 4px;
+		
+		.content{		
+			display: none;
+			
+			h2{
+				display: inline-block;
+			}
+			p{
+				display: inline-block;
+			}
+		}
+	}
+	
+	.profile_pic{
+		height:100%;
+		width:100%;
+		background-size: 100%;
+	}
+	
+	.leader:hover{
+		cursor: pointer;
+	}
+	
+	.large{
+//		-webkit-transition: height 0.5s ease-in;
+//		-webkit-transition: width 0.5s ease-in;	
+		height:600px;
+		width:1024px;
+		padding-bottom: 100px;
+	}
+	
+	//in case we want rounded
+	.leader.rounded{
+		border-radius: 80px;
+	}
+	/*more specifics*/
+	#alastair{
+		background-image: url("../img/leaders/alastair_green.jpg");	
+	}
+	
+	#cait{
+		background-image: url("../img/leaders/cait_drury.jpg");	
+	}
+	
+	#chris{
+		background-image: url("../img/leaders/chris_graves.jpg");	
+	}
+	
+	#craig{
+		background-image: url("../img/leaders/craig_rowley.jpg");	
+	}
+	
+	#elizabeth{
+		background-image: url("../img/leaders/elizabeth_brownsen.jpg");	
+	}
+	
+	#julie{
+		background-image: url("../img/leaders/julie_michael.jpg");
+			
+	}
+	
+	#kurt{
+		background-image: url("../img/leaders/kurt_ritter.jpg");	
+	}
+	
+	#mark{
+		background-image: url("../img/leaders/mark_miller.jpg");	
+	}
+	
+	#michael{
+		background-image: url("../img/leaders/michael_webb.jpg");
+			
+	}
+	
+	#paul_m{
+		background-image: url("../img/leaders/paul_mareski.jpg");	
+	}
+	#paul_s{
+		background-image: url("../img/leaders/paul_silverman.jpg");	
+	}
+};//end leadership
+// Global Foundation Settingss
+
+
+/**
+	Used in the isotope demonstration. 
+	Not really needed in prod.
+*/
+	#leadership .leader{
+		height:50px;
+		width:50px;
+	}
+	.item {
+		width: 50px;
+		height: 50px;
+		margin: 5px;
+		float: left;
+
+	}
+
+	#leadership .leader.big {
+	  width: 170px;
+	  height: 110px;
+	}
+	
+	#leadership .leader.creative{
+		background: red;
+	}
+	
+	#leadership .leader.account{
+		background: green;
+	}
+	
+	#leadership .leader.manager{
+		background: blue;
+	}
+	
