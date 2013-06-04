@@ -152,9 +152,12 @@ header#desktop {
     header#desktop nav ul li {
       float: left; }
       header#desktop nav ul li a {
-        font-size: 16px;
+        font-size: 1em;
         text-transform: uppercase;
         color: #5a5c63; }
+  @media screen and (max-width: 850px) {
+    header#desktop nav ul li a {
+      font-size: 0.85em; } }
   header#desktop #searchbox {
     background: #c8cbc7;
     background-image: url("../img/icon-search.png");
@@ -191,16 +194,30 @@ header#desktop {
     background: #5a5c63; }
 
 /*==========================================
-  DESKTOP HEADER MEDIA QUERY FIXES
+  DESKTOP HEADER MEDIA QUERY FIXES.
+  Needed to allow the nav to scale nicely.
+  
+  Notes: More testing needed to be done on 
+  actual devices to get a better sense of 
+  what font sizes work best.
 ===========================================*/
 @media screen and (min-width: 769px) {
   .divider {
     margin-left: 42px;
     margin-right: 42px; } }
-@media screen and (min-width: 768px) and (max-width: 1000px) {
+@media screen and (max-width: 850px) {
+  header#desktop nav ul li a {
+    font-size: 0.80em; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .divider {
     margin-left: 35px;
-    margin-right: 35px; } }
+    margin-right: 35px; }
+
+  .logo {
+    margin-left: 0; }
+
+  header#desktop nav {
+    margin-left: 100px; } }
 @media screen and (min-width: 768px) and (max-width: 960px) {
   .divider {
     margin-left: 28px;
