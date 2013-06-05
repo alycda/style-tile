@@ -272,6 +272,8 @@
 
 
 
+
+		<div id="SITE">
 		
 	<style>
 	
@@ -313,7 +315,7 @@
 
 		
 		
-			
+		</div>
 			
 			<script type="text/javascript" src="./static/js/jquery.js"></script>
 			<script type="text/javascript" src="./static/js/Isotope.js"></script>
@@ -338,23 +340,29 @@
 	
   document.getElementById("hamburger").addEventListener("click",function(){
 		  $mobilenav = $("#mobile-menu");
-		  
+		  $site = $("#SITE");
 	  
 		  if($mobilenav.hasClass("active")){
-			  $mobilenav.removeClass("active");
+		  				  $mobilenav.removeClass("active");
 			  $(".post").removeClass("orange");
 			   $mobilenav.animate({
 			   top:"-999px",
 			   height:0
 			   },500)
-			   
+			    $("body").css("overflow","scroll");
 			 //  document.getElementsByTagName("content")[0].style.display = "block";
 			  
 		  }else{
+		
 			   $mobilenav.animate({
-			   top:-35,
-			   height:window.innerHeight + "px"
-			   },500)
+			  	 top:$(window).scrollTop()-35,
+			  	 height:window.innerHeight + 30 + "px"
+			   },500,function(){
+				     // $mobilenav.css("padding-top","110px");
+			   
+					 
+					 $("body").css("overflow","hidden");
+			   })
 			   
 			   $mobilenav.addClass("active");
 			   $(".post").addClass("orange");
@@ -372,7 +380,7 @@
 
 		  if($(children[1]).hasClass("active")){
 			  $(children[1]).removeClass("active");
-			  
+			 
 			   $(children[1]).animate({
 				   height:0
 			   })
@@ -385,7 +393,7 @@
 				    height:62 * 3 + "px"
 				})
 		 
-			   
+			  
 			    $(children[1]).addClass("active");
 			   
 			     
@@ -393,7 +401,8 @@
 			  
 		  }
 	  });
-
+	  
+	  
 		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
