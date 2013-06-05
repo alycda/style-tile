@@ -160,10 +160,17 @@ header#desktop {
       font-size: 0.85em; } }
   header#desktop #searchbox {
     background: #c8cbc7;
-    background-image: url("../img/icon-search.png");
     float: right;
     margin-top: 10px;
-    background-size: 95%; }
+    background-size: 80%; }
+    header#desktop #searchbox .icon {
+      height: 25px;
+      width: 25px;
+      background-image: url("../img/icon-search.png");
+      background-size: 100%;
+      position: relative;
+      left: 5px;
+      top: 5px; }
   @media screen and (min-width: 960px) {
     header#desktop #searchbox {
       height: 35px;
