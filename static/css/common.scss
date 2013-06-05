@@ -5,6 +5,7 @@
 */
 .row.page{
 	margin-top: 100px;
+	
 }
 
 
@@ -125,7 +126,7 @@ header:not(#subnav){
   }
   position: fixed;
   top:0;
-  z-index: 9;
+  z-index: 999;
   min-width: 100%;
   background: #fff;
   ul{
@@ -301,7 +302,7 @@ header#desktop{
 			ul{
 				li{
 					a{
-						font-size: 0.80em;
+						font-size: 0.85em;
 					}
 				}
 			}
@@ -378,9 +379,14 @@ header#desktop{
   width:100%;
   background: $light-gray;
   position: absolute;
-  z-index: 2;
+  z-index: 20;
   top:-999px;
+  padding-top: 10px;
+  overflow: scroll;
+  padding-bottom: 200px;
+
 }
+
 
 .link{
   .link-wrap{
@@ -439,6 +445,8 @@ header#mobile{
   -webkit-box-shadow: $shadow;
   -moz-box-shadow:$shadow;
   margin-bottom: 30px;
+
+  z-index: 999; 
   #hamburger{
       height:45px;
       width:65px;
@@ -477,8 +485,13 @@ header#mobile{
     }
     
     
+    
+    
   }
-  
+  .row{
+	   position: relative;
+  z-index: 999;
+  }
   #hamburger:hover{
       cursor: pointer;    
   }
