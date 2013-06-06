@@ -59,7 +59,7 @@ h3{
 	
 }
 
-#posts{
+#leader-posts{
 	margin-top: 30px;
 	hr{
 		margin-bottom: 30px;
@@ -83,12 +83,18 @@ h3{
 	position: relative;
 	left:30px;
 }
+.content,.leader-content{
+	display: none;
+}
 /*===========================
 	For the selected view 
 	on the leadership page
 ============================*/
 #content-box{ 
-	height:500px;
+	//border:solid 1px red;
+	height:0px;
+	overflow: hidden;
+	//height:300px;
 	width:100%;
 	//background: #ffa600;
 //	padding: 20px;
@@ -99,50 +105,7 @@ h3{
 			border-radius: 100px;
 		}
 	
-	
-	.content{
-	
-		display: inline-block;
-		vertical-align: top;
-		
-		h1{
-			line-height: 20px;
-			margin-top: 20px;
-		}
-		
-		h3{
-			font-style: italic;
-		}
 	}
-	
-	.content.text{
-		position: relative;
-		left:40px;
-		width:53%;
-	}
-	
-	.social{
-		
-		.socialmedia{
-			height: 40px;
-			width:40px;
-			background: #333;
-			display: inline-block;
-		}
-		
-		
-	}
-	
-	.content.view{
-		border:solid 1px red;
-		
-		.viewprofile{
-			position: absolute;
-			right: 0;	
-			top:172px;
-		}
-	}
-}
 
 /*====================
 	LEADERSHIP

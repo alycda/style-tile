@@ -6059,9 +6059,9 @@ h3 {
 .bio-section {
   margin-top: 40px; }
 
-#posts {
+#leader-posts {
   margin-top: 30px; }
-  #posts hr {
+  #leader-posts hr {
     margin-bottom: 30px; }
 
 .social-media li {
@@ -6077,41 +6077,22 @@ h3 {
   position: relative;
   left: 30px; }
 
+.content, .leader-content {
+  display: none; }
+
 /*===========================
 	For the selected view 
 	on the leadership page
 ============================*/
 #content-box {
-  height: 500px;
+  height: 0px;
+  overflow: hidden;
   width: 100%;
   position: relative; }
   #content-box .large.thumb {
     height: 200px;
     width: 200px;
     border-radius: 100px; }
-  #content-box .content {
-    display: inline-block;
-    vertical-align: top; }
-    #content-box .content h1 {
-      line-height: 20px;
-      margin-top: 20px; }
-    #content-box .content h3 {
-      font-style: italic; }
-  #content-box .content.text {
-    position: relative;
-    left: 40px;
-    width: 53%; }
-  #content-box .social .socialmedia {
-    height: 40px;
-    width: 40px;
-    background: #333;
-    display: inline-block; }
-  #content-box .content.view {
-    border: solid 1px red; }
-    #content-box .content.view .viewprofile {
-      position: absolute;
-      right: 0;
-      top: 172px; }
 
 /*====================
 	LEADERSHIP
