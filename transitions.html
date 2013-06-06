@@ -277,21 +277,67 @@
 		<div id="SITE">
 		
 
-      <div class="row page">
-        <h2 class="subheader">Components</h2>
-        
-        <div class="component">
-        	<p><a href="vimeo.html">Vimeo Integration</a></p>
-        </div>
-        
-         <div class="component">
-        	<p><a href="isotope.html">Isotope Integration</a></p>
-        </div>
-        
-        
-      
-      </div>
+<style>
 	
+
+</style>
+
+<div class="row page">
+
+	<!-- 
+		Note:
+		Transitions should only go halfway for 
+		people, full height for work
+	-->	
+	<h1 class="subheader">Transition types</h1>
+	<p>These illustrate some of the possible types of transitions that could be done on a page such as
+		the work page.
+		The SASS file where the css can be found is inside "workpage.scss"
+	</p>
+	
+	<hr/>
+	
+	
+	<h2 class="subheader">CSS Based transitions</h2>
+	<h3 class="subheader">Fade In transition</h3>
+	<div class="work-item">
+		<div class="thumb">
+			<img src="./static/img/work/work.jpg" alt=""/>
+		</div>
+		<div class="overlay fadein"></div>
+	</div>
+
+	
+	
+	<h3 class="subheader">Left to right transition</h3>
+	<div class="work-item">
+		<div class="thumb">
+			<img src="./static/img/work/work.jpg" alt=""/>
+		</div>
+		<div class="overlay ltr"></div>
+	</div>
+	
+	
+	<h3 class="subheader">Top to bottom transition</h3>
+	<div class="work-item">
+		<div class="thumb">
+			<img src="./static/img/work/work.jpg" alt=""/>
+		</div>
+		<div class="overlay ttb"></div>
+	</div>
+	<hr/>
+	
+	
+	<h2 class="subheader">Canvas Based transitions</h2>
+	<div class="work-item canvas" data-src="https://si0.twimg.com/profile_images/2997417557/891fedea24cd505d592f8c2116be9812.jpeg">
+	</div>
+	
+	<div id="work-items">
+	
+	</div>
+
+</div>
+
 
 		
 		

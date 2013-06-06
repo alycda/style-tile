@@ -1,3 +1,6 @@
+/**
+	Various SASS vars that can be used
+*/
 /**==================
 	PULL OUT QUOTES
 =====================*/
@@ -5,21 +8,27 @@
   font-size: 30px; }
 
 .quote-mark.large {
-  font-size: 50px; }
+  font-size: 70px;
+  line-height: 20px; }
 
 .left.quote-mark:after {
   content: "\201C";
   margin-right: 20px;
   position: relative;
-  left: -20px; }
+  left: -40px; }
 
 .right.quote-mark:before {
   content: "\201D";
   position: relative;
-  bottom: 40px; }
+  left: 40px; }
 
-.subheader.quote {
-  font-family: "ClarendonBT-Light",serif; }
+.quote {
+  font-family: "ClarendonBT-Light",serif;
+  font-size: 30px; }
+
+.quote-box {
+  margin-top: 60px;
+  margin-bottom: 60px; }
 
 /*
 	Adjusting default button 
@@ -40,6 +49,10 @@
   padding-right: 2.5em;
   padding-bottom: 0.8em;
   padding-left: 2.5em; }
+
+.button.small.transparent, .button.medium.transparent, .button.large.transparent {
+  background: #fff;
+  color: #ffa600; }
 
 /*=================
 	BUTTONS
@@ -92,6 +105,15 @@
   position: relative;
   left: 5px;
   top: 5px; }
+
+.close-button {
+  height: 40px;
+  width: 40px;
+  background: url("../img/close.png");
+  background-size: 100%;
+  position: absolute;
+  top: 0;
+  right: 30px; }
 
 /*=======================
 	SLIDERS

@@ -1,9 +1,15 @@
+/**
+	Various SASS vars that can be used
+*/
 /*
 	Since we have a fixed header, this helps push the page down so 
 	content can be seen.
 */
 .row.page {
   margin-top: 100px; }
+
+.italic {
+  font-style: italic; }
 
 /**
 	Basic styles for toggle buttons
@@ -183,7 +189,12 @@ header#desktop {
       height: 60px;
       width: 60px;
       margin-top: 0;
-      background-size: 100%; } }
+      background-size: 100%; }
+      header#desktop #searchbox .icon {
+        height: 40px;
+        width: 40px;
+        left: 9px;
+        top: 7px; } }
   @media screen and (max-width: 768px) {
     header#desktop #searchbox {
       height: 35px;

@@ -16,6 +16,21 @@
         <priority>1.0</priority>
     </url>
     <url>
+        <loc>leadership-full.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>leadership.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>transitions.html</loc>
+        <changefreq>daily</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
         <loc>vimeo.html</loc>
         <changefreq>daily</changefreq>
         <priority>1.0</priority>

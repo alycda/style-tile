@@ -1,3 +1,6 @@
+/**
+	Various SASS vars that can be used
+*/
 $body-bg: #fff;
 $body-font-color: #222;
 $body-font-family: "Lato","ClarendonBT-Light", "Georgia", serif;
@@ -43,3 +46,8 @@ $header-text-rendering: optimizeLegibility;
 //find somehting bolder perhaps?
 $quoteFontLight:"ClarendonBT-Light",serif;
 $quoteFontMedium:"ClarendonBT-SemiBold",serif;
+
+//convert px to ems
+@function convertToPercent($pixel){
+	@return ($pixel/16) * "100%";
+}

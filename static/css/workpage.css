@@ -1,0 +1,60 @@
+/**
+	Various SASS vars that can be used
+*/
+/*========================
+	General item styles
+==========================*/
+.work-item {
+  height: 200px;
+  width: 200px;
+  position: relative; }
+
+.overlay {
+  height: 200px;
+  width: 200px;
+  background: #ffa600;
+  position: absolute;
+  top: 0; }
+
+/*========================
+	FadeIn transition
+==========================*/
+.work-item .overlay.fadein {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  opacity: 0; }
+
+.work-item:hover .overlay.fadein {
+  -webkit-transition: opacity 0.5s ease-in;
+  -moz-transition: opacity 0.5s ease-in;
+  opacity: 1;
+  cursor: pointer; }
+
+/*========================================
+	left-to-right animation transition,
+	abbreviated ltr
+========================================*/
+.work-item .overlay.ltr {
+  -webkit-transition: width 0.5s ease-in;
+  -moz-transition: width 0.5s ease-in;
+  width: 0; }
+
+.work-item:hover .overlay.ltr {
+  -webkit-transition: width 0.5s ease-in;
+  -moz-transition: width 0.5s ease-in;
+  width: 200px;
+  cursor: pointer; }
+
+/*========================================
+	top-to-bottom animation transition
+	abbreviated ttb
+========================================*/
+.work-item .overlay.ttb {
+  -webkit-transition: height 0.5s ease-in;
+  -moz-transition: height 0.5s ease-in;
+  height: 0; }
+
+.work-item:hover .overlay.ttb {
+  -webkit-transition: height 0.5s ease-in;
+  -moz-transition: height 0.5s ease-in;
+  height: 200px; }

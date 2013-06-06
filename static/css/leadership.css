@@ -1,95 +1,201 @@
+/*===========================
+	For the full view for each person
+============================*/
+img {
+  max-width: 100%; }
+
+.button.large.transparent {
+  background: #fff; }
+
+h3 {
+  font-style: italic; }
+
+.social {
+  float: right;
+  position: relative;
+  top: 40px; }
+
+.social div {
+  height: 40px;
+  width: 40px;
+  background: #333;
+  display: inline-block; }
+
+.spacer {
+  width: 30px; }
+
+#bio {
+  margin-left: 40px; }
+
+.post-set ul {
+  list-style: none;
+  margin-left: -20px; }
+  .post-set ul li {
+    list-style: none; }
+
+#person {
+  margin-top: 20px; }
+
+#bio {
+  padding-bottom: 200px;
+  margin-top: 40px; }
+
+.bio-section {
+  margin-top: 40px; }
+
+#posts {
+  margin-top: 30px; }
+  #posts hr {
+    margin-bottom: 30px; }
+
+.social-media li {
+  background-image: url("../img/socialmedia.png");
+  height: 40px;
+  width: 40px;
+  float: left;
+  list-style: none;
+  margin-right: 10px; }
+
+.view-more {
+  margin-left: 60px;
+  position: relative;
+  left: 30px; }
+
+/*===========================
+	For the selected view 
+	on the leadership page
+============================*/
+#content-box {
+  height: 500px;
+  width: 100%;
+  position: relative; }
+  #content-box .large.thumb {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px; }
+  #content-box .content {
+    display: inline-block;
+    vertical-align: top; }
+    #content-box .content h1 {
+      line-height: 20px;
+      margin-top: 20px; }
+    #content-box .content h3 {
+      font-style: italic; }
+  #content-box .content.text {
+    position: relative;
+    left: 40px;
+    width: 53%; }
+  #content-box .social .socialmedia {
+    height: 40px;
+    width: 40px;
+    background: #333;
+    display: inline-block; }
+  #content-box .content.view {
+    border: solid 1px red; }
+    #content-box .content.view .viewprofile {
+      position: absolute;
+      right: 0;
+      top: 172px; }
+
 /*====================
 	LEADERSHIP
 =======================*/
 #leadership {
-  /*general leadership styling*/
-  /*more specifics*/ }
-  #leadership ul {
-    list-style: none; }
-    #leadership ul li {
-      float: left;
-      margin-right: 2px;
-      margin-bottom: 2px;
-      list-style: none; }
-  #leadership #profile-images {
-    top: 100px; }
-  #leadership .show {
-    min-width: 100%;
-    height: 500px;
-    background: #333;
-    margin-bottom: 500px; }
-  #leadership .leader {
-    height: 100px;
-    width: 100px;
-    background: #333;
-    background-size: 100%;
-    top: 100px;
-    margin-right: 4px;
-    margin-bottom: 4px; }
-    #leadership .leader .content {
-      display: none; }
-      #leadership .leader .content h2 {
-        display: inline-block; }
-      #leadership .leader .content p {
-        display: inline-block; }
-  #leadership .profile_pic {
-    height: 100%;
-    width: 100%;
-    background-size: 100%; }
-  #leadership .leader:hover {
-    cursor: pointer; }
-  #leadership .large {
-    height: 600px;
-    width: 1024px;
-    padding-bottom: 100px; }
-  #leadership .leader.rounded {
-    border-radius: 80px; }
-  #leadership #alastair {
-    background-image: url("../img/leaders/alastair_green.jpg"); }
-  #leadership #cait {
-    background-image: url("../img/leaders/cait_drury.jpg"); }
-  #leadership #chris {
-    background-image: url("../img/leaders/chris_graves.jpg"); }
-  #leadership #craig {
-    background-image: url("../img/leaders/craig_rowley.jpg"); }
-  #leadership #elizabeth {
-    background-image: url("../img/leaders/elizabeth_brownsen.jpg"); }
-  #leadership #julie {
-    background-image: url("../img/leaders/julie_michael.jpg"); }
-  #leadership #kurt {
-    background-image: url("../img/leaders/kurt_ritter.jpg"); }
-  #leadership #mark {
-    background-image: url("../img/leaders/mark_miller.jpg"); }
-  #leadership #michael {
-    background-image: url("../img/leaders/michael_webb.jpg"); }
-  #leadership #paul_m {
-    background-image: url("../img/leaders/paul_mareski.jpg"); }
-  #leadership #paul_s {
-    background-image: url("../img/leaders/paul_silverman.jpg"); }
+  max-width: 700px;
+  margin: 0 auto; }
+
+.leader {
+  height: 140px;
+  width: 140px;
+  border-radius: 80px;
+  background: #333;
+  display: inline-block;
+  background-size: 100%;
+  margin-right: 10px;
+  margin-top: 40px; }
+
+.leader:hover {
+  cursor: pointer; }
+
+.leader-row {
+  height: 200px;
+  max-width: 700px; }
+
+@media screen and (max-width: 768px) {
+  .leader-row {
+    margin-bottom: 100px; } }
+.leader-content {
+  display: none; }
+
+.row-2 .wrap {
+  max-width: 540px;
+  margin: 0 auto; }
+
+/*more specifics*/
+#alastair_green {
+  background-image: url("../img/leaders/alastair_green.jpg"); }
+
+#cait_drury {
+  background-image: url("../img/leaders/cait_drury.jpg"); }
+
+#chris_graves {
+  background-image: url("../img/leaders/chris_graves.jpg"); }
+
+#craig_rowley {
+  background-image: url("../img/leaders/craig_rowley.jpg"); }
+
+#elizabeth_brownsen {
+  background-image: url("../img/leaders/elizabeth_brownsen.jpg"); }
+
+#julie_michael {
+  background-image: url("../img/leaders/julie_michael.jpg"); }
+
+#kurt_ritter {
+  background-image: url("../img/leaders/kurt_ritter.jpg"); }
+
+#mark_miller {
+  background-image: url("../img/leaders/mark_miller.jpg"); }
+
+#michael_webb {
+  background-image: url("../img/leaders/michael_webb.jpg"); }
+
+#paul_mareski {
+  background-image: url("../img/leaders/paul_mareski.jpg"); }
+
+#paul_silverman {
+  background-image: url("../img/leaders/paul_silverman.jpg"); }
 
 /**
 	Used in the isotope demonstration. 
 	Not really needed in prod.
-*/
-#leadership .leader {
-  height: 50px;
-  width: 50px; }
 
-.item {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-  float: left; }
+	#leadership .leader{
+		height:50px;
+		width:50px;
+	}
+	.item {
+		width: 50px;
+		height: 50px;
+		margin: 5px;
+		float: left;
 
-#leadership .leader.big {
-  width: 170px;
-  height: 110px; }
+	}
 
-#leadership .leader.creative {
-  background: red; }
-
-#leadership .leader.account {
-  background: green; }
-
-#leadership .leader.manager {
-  background: blue; }
+	#leadership .leader.big {
+	  width: 170px;
+	  height: 110px;
+	}
+	
+	#leadership .leader.creative{
+		background: red;
+	}
+	
+	#leadership .leader.account{
+		background: green;
+	}
+	
+	#leadership .leader.manager{
+		background: blue;
+	}
+	
+	*/
