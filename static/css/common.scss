@@ -8,7 +8,9 @@
 	
 }
 
-
+.italic{
+	font-style: italic;
+}
 
 /**
 	Basic styles for toggle buttons
@@ -226,6 +228,13 @@ header#desktop{
 		width:60px;
 		margin-top: 0;
 		background-size: 100%;
+		
+		.icon{
+			height:40px;
+			width:40px;
+			left:9px;
+			top:7px;
+		}
 	}	
 
 }

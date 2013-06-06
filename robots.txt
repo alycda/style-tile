@@ -1,4 +1,7 @@
 component-list.html
 index.html
 isotope.html
+leadership-full.html
+leadership.html
+transitions.html
 vimeo.html

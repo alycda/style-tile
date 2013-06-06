@@ -3,6 +3,7 @@
 ================================*/
 $(function(){
   
+  if(window.location.href.search("leadership") === -1){
   
   var $container = $('#leadership');
   
@@ -41,6 +42,7 @@ $(function(){
 	   	    $container.isotope( {filter:".leader"})
 	   	       $container.isotope( 'reLayout' )
   })
+  }
     
 
 });
@@ -85,4 +87,12 @@ var v = new Video({
 	}
 });
 
+/*==========================================================================================*/
+/*================================
+	For leadership page
+================================*/
+var leaders = $(".leader");
+var leaderlen = leaders.length;
+var contentbox = document.getElementById("single-leader-content");
+var box_height = 500;
 
