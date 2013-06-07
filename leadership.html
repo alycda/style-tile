@@ -634,7 +634,9 @@ While I’ve been in this business a few years, what keeps me current and consta
 		
 		
 		</div>
-			
+			 <script type="text/javascript"
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBGn83knYX_pTSrdBU0tTcjfJjkH0NQh2E&sensor=false">
+    </script>
 			<script type="text/javascript" src="./static/js/jquery.js"></script>
 			<script type="text/javascript" src="./static/js/Isotope.js"></script>
 			<script type="text/javascript" src="./static/js/Vimeo.js"></script>
@@ -642,6 +644,7 @@ While I’ve been in this business a few years, what keeps me current and consta
 			<script type="text/javascript" src="./static/js/foundation.min.js"></script>
 			<script type="text/javascript" src="./static/js/Transitions.js"></script>
 			<script type="text/javascript" src="./static/js/test.js"></script>
+			<script type="text/javascript" src="./static/js/Mappy.js"></script>
 			<script src="./static/js/main.js"></script>
 		
 		
@@ -738,7 +741,23 @@ While I’ve been in this business a few years, what keeps me current and consta
 	  });
 	  
 	  
-		</script>
+	  
+	 if(window.location.href.search("contact")){
+		  var m = new Mappy({
+		  mapAnchor:"map"
+	  })
+	  
+	  m.addEvent("load",function(){
+	  
+	  	var options = {
+		  	center:new google.maps.LatLng(33.918589, -118.393719),
+		  	zoom:15,
+		  	mapTypeId:google.maps.MapTypeId.ROADMAP
+	  	}
+		  m.map = new google.maps.Map(document.getElementById(m.params.mapAnchor), options);	
+	  })
+
+	 }		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
