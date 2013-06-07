@@ -93,9 +93,180 @@ var v = new Video({
 ================================*/
 var leaders = $(".leader");
 var leaderlen = leaders.length;
-
-
-
+var pageMode = "grid";
+		  
+$(".segmented-button").bind("click",function(e){
+	var parent = e.target.parentNode;
+	var children = parent.children;
+	
+	  var list = buildList();
+    $("#leader-list-view").append(list);
+	
+	//take care of the "toggle" effect"
+	for(var i = 0;i<children.length;++i){
+		if($(children[i]).hasClass("selected")){
+			$(children[i]).removeClass("selected");
+			$(e.target).addClass("selected");
+		}else{
+			$(e.target).addClass("selected");
+		}
+	}
+	
+	var newMode = e.target.getAttribute("data-type");
+	
+	if(newMode === "list"){
+		goToList();
+	}else if(newMode == "grid"){
+		goToGrid();
+	}
+	
+	
+	function goToGrid(){
+		$("#leader-list-view").fadeOut("slow");
+		$("#leader-grid-view").fadeIn("slow");
+	
+	
+	}
+	
+	
+	function goToList(){
+		$("#leader-grid-view").fadeOut("slow");
+		$("#leader-list-view").fadeIn("slow");	
+	}
+	
+	
+	function buildList(){
+	
+		
+		var ul = document.createElement("ul");
+		
+		
+			
+	
+		
+		for(var i = 0;i<leaderlen;++i){
+				var leader = leaders[i]
+				//take the template we have, copy it, and build out a list using those elements
+				var box = $("#content-box");
+				var copy = box.clone()[0];
+				copy.id = "";
+				copy.className = "leaderbox";
+				
+				/*
+				    Need to swap out ID's for class names.
+				    Since everything is the same format, we 
+				    can just grab specific indices without 
+				    too much trouble
+				*/
+				
+				//all the children within a "mini-profile"
+				var children = copy.children[1].children[1].children;
+				
+				
+				var title = children[0];
+				title.id = "";
+				title.className = "mini-profile-title"
+				
+				
+				var subtitle = children[2];
+				subtitle.id = "";
+				subtitle.className = "mini-profile-subtitle";
+				
+				
+				var content = children[3];
+				content.id = "";
+				content.className = "mini-profile-content";
+		
+				    
+				//set the content 
+				title.innerHTML = leader.getAttribute("data-name");
+				subtitle.innerHTML = leader.getAttribute("data-title");
+				content.innerHTML = leader.children[0].innerHTML;
+				
+				//set profile image
+				var largeProfile = copy.children[1].children[0].children[0];
+				largeProfile.id = leader.id;
+				
+				
+				//remove close button
+				var close = children[1];
+				close.style.display = "none";
+				//largeProfile.style.borderRadius = "100px";
+				//largeProfile.style.borderRadius = "100px";
+				
+					
+				var li = document.createElement("li");
+				li.appendChild(copy);
+				
+				ul.appendChild(li);
+		}
+		
+		return ul;
+	}
+	
+	
+	
+	/*var title = document.getElementById("mini-profile-title");
+			var subtitle = document.getElementById("mini-profile-subtitle");
+			var content = document.getElementById("mini-profile-content");
+		
+			//set content
+			title.innerHTML = leader.getAttribute("data-name");
+			subtitle.innerHTML = leader.getAttribute("data-title");
+			content.innerHTML = leader.children[0].innerHTML;
+			
+			//set profile image
+			var largeProfile = document.getElementsByClassName("large thumb")[0];
+			largeProfile.id = leader.id;
+			
+			var box = document.createElement("div");
+	
+		<div class="row">
+			<div class="large-3 columns">
+				<div class="large thumb"></div>
+			
+			</div><!--end image nad title-->
+			
+			<div class="large-9 columns">
+				<h1 id="mini-profile-title"></h1>
+					<div class="close-button"></div>
+				<h3 id="mini-profile-subtitle" class="subheader">Subheader</h3>
+		
+				<p id="mini-profile-content">
+					blha blhabl liahoihfoisehfoseifhsoiefhoisf
+				</p>
+				
+				<div class="row">
+					<div class="large-3 columns">
+						<ul class="social-media">
+							<li class="twitter">
+								
+									
+							</li>
+							
+							<li class="facebook">
+								<a href="#">
+								
+									
+									
+								</a>
+							</li>
+							
+							<li class="instagram">
+		
+							</li>
+						</ul>
+					</div>
+					
+					<div class="large-4 columns view-more">
+						<div class="button">View Full Profile</div>
+					</div>
+					
+				</div><!--end social media and view more button-->
+			</div><!--end image nad title-->
+	</div>
+*/
+});
 
 for(var i = 0;i<leaderlen;++i){
 	leaders[i].addEventListener("click",function(e){
@@ -196,3 +367,7 @@ $(".close-button").bind("click",function(){
 		$(this).removeClass("active");
 	});
 })
+
+
+
+
