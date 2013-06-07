@@ -1,4 +1,5 @@
 component-list.html
+contact.html
 index.html
 isotope.html
 leadership-full.html
