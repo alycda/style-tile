@@ -153,6 +153,7 @@ header#desktop{
   height: 65px;
   -webkit-box-shadow: $shadow;
   -moz-box-shadow:$shadow;
+  box-shadow: $shadow;
   margin-bottom: 30px;
  
   
@@ -462,6 +463,7 @@ header#mobile{
   height: 65px;
   -webkit-box-shadow: $shadow;
   -moz-box-shadow:$shadow;
+   box-shadow: $shadow;
   margin-bottom: 30px;
 
   z-index: 999; 

@@ -68,6 +68,11 @@ h3 {
 	For the selected view 
 	on the leadership page
 ============================*/
+#leader-list-view {
+  display: none; }
+  #leader-list-view ul li {
+    list-style: none; }
+
 #content-box {
   height: 0px;
   overflow: hidden;
@@ -78,12 +83,19 @@ h3 {
     width: 200px;
     border-radius: 100px; }
 
+.leaderbox .large.thumb {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px; }
+
 /*====================
 	LEADERSHIP
 =======================*/
 #leadership {
-  max-width: 700px;
-  margin: 0 auto; }
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  left: 30px; }
 
 .leader {
   height: 140px;
@@ -92,25 +104,45 @@ h3 {
   background: #333;
   display: inline-block;
   background-size: 100%;
-  margin-right: 10px;
-  margin-top: 40px; }
+  position: relative;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
 
 .leader:hover {
   cursor: pointer; }
 
-.leader-row {
-  height: 200px;
-  max-width: 700px; }
-
-@media screen and (max-width: 768px) {
-  .leader-row {
-    margin-bottom: 100px; } }
 .leader-content {
   display: none; }
 
 .row-2 .wrap {
-  max-width: 540px;
+  max-width: 720px;
   margin: 0 auto; }
+
+.style-selection {
+  float: right; }
+
+.segmented-button {
+  height: 56px;
+  width: 54px;
+  display: inline-block;
+  background-size: 240%;
+  background-image: url("../img/grid.png"); }
+
+.segmented-button.selected:not(.list) {
+  background-position: -4px -70px; }
+
+.segmented-button.selected:not(.grid) {
+  background-position: 60px -70px; }
+
+.segmented-button.grid {
+  background-position: -4px -5px; }
+
+.segmented-button.list {
+  background-position: 58px -7px; }
+
+.segmented-button.grid.seleced {
+  background-position: -4px -40px; }
 
 /*more specifics*/
 #alastair_green {
