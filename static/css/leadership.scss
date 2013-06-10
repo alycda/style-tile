@@ -2,6 +2,35 @@
 	For the full view for each person
 ============================*/
 
+.social-media{
+	height:100px;
+	width:300px;
+	margin-left: 0px;
+	li{
+		background: url("../img/socialmedia.png");
+		height:40px;
+		width:40px;
+		background-size: 400%;
+		background-position: -8px -8px;
+		float: left;
+		list-style: none;
+		margin-right: 10px;
+	}
+	
+	li.twitter{
+		background-position: 48px -8px;
+	}
+	
+	li.facebook{
+		background-position: -60px -8px;
+	}
+}
+
+#social-media-full-page{
+	position:relative;
+	top:15px;
+	left:30px;
+}
 img{
 	max-width: 100%;
 }
@@ -70,11 +99,7 @@ h3{
 	li{
 		//background: #333;
 		background-image: url("../img/socialmedia.png");
-		height:40px;
-		width:40px;
-		float: left;
-		list-style: none;
-		margin-right: 10px;
+		
 	}
 }
 
@@ -183,42 +208,41 @@ h3{
 	
 }
 .segmented-button{
-	height:56px;
-	width:54px;
-	//background: $light-gray;
-	display: inline-block;
-		background-size:240%;
+	height:45px;
+	width:45px;
+	background: $light-gray;
+	float: left;
+	//background: red;
 	background-image: url("../img/grid.png");
-
+	background-size: 170%;
+	
+	
 }
 
 .segmented-button.selected:not(.list){
-	//background: #ffa600;
-	//background-image: url("../img/grid.png");
-	background-position: -4px -70px;
+	background-color: #ffa600;
 }
 
 
 .segmented-button.selected:not(.grid){
-	//background: #ffa600;
-	//background-image: url("../img/grid.png");
-	background-position: 60px -70px;
+	background-color: #ffa600;
 }
 
 
 .segmented-button.grid{
+	background-position: 4px 3px;
 
-	background-position: -4px -5px;
 }
 
 .segmented-button.list{
-
-	background-position: 58px -7px;
+	background-position: 42px 3px;
 }
 
 .segmented-button.grid.seleced{
-	background-position: -4px -40px;
-}
+	height:58px;
+	width:58px;
+	background-color: #ffa600;
+	}
 
 /*more specifics*/
 #alastair_green{

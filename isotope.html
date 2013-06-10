@@ -496,17 +496,10 @@
 	 if(window.location.href.search("contact")){
 		  var m = new Mappy({
 		  mapAnchor:"map"
+	 
 	  })
 	  
-	  m.addEvent("load",function(){
-	  
-	  	var options = {
-		  	center:new google.maps.LatLng(33.918589, -118.393719),
-		  	zoom:15,
-		  	mapTypeId:google.maps.MapTypeId.ROADMAP
-	  	}
-		  m.map = new google.maps.Map(document.getElementById(m.params.mapAnchor), options);	
-	  })
+	 m.addMarker("1960 E. Grand Ave, El Segundo, CA");
 
 	 }		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

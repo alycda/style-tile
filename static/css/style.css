@@ -5915,6 +5915,12 @@ header#mobile {
   background: #fff;
   color: #ffa600; }
 
+.button.transparant {
+  background: none;
+  border: solid 1px #ffa600;
+  color: #ffa600;
+  font-style: italic; }
+
 /*=================
 	BUTTONS
 ==================*/
@@ -6019,6 +6025,29 @@ header#mobile {
 /*===========================
 	For the full view for each person
 ============================*/
+.social-media {
+  height: 100px;
+  width: 300px;
+  margin-left: 0px; }
+  .social-media li {
+    background: url("../img/socialmedia.png");
+    height: 40px;
+    width: 40px;
+    background-size: 400%;
+    background-position: -8px -8px;
+    float: left;
+    list-style: none;
+    margin-right: 10px; }
+  .social-media li.twitter {
+    background-position: 48px -8px; }
+  .social-media li.facebook {
+    background-position: -60px -8px; }
+
+#social-media-full-page {
+  position: relative;
+  top: 15px;
+  left: 30px; }
+
 img {
   max-width: 100%; }
 
@@ -6067,12 +6096,7 @@ h3 {
     margin-bottom: 30px; }
 
 .social-media li {
-  background-image: url("../img/socialmedia.png");
-  height: 40px;
-  width: 40px;
-  float: left;
-  list-style: none;
-  margin-right: 10px; }
+  background-image: url("../img/socialmedia.png"); }
 
 .view-more {
   margin-left: 60px;
@@ -6141,26 +6165,29 @@ h3 {
   float: right; }
 
 .segmented-button {
-  height: 56px;
-  width: 54px;
-  display: inline-block;
-  background-size: 240%;
-  background-image: url("../img/grid.png"); }
+  height: 45px;
+  width: 45px;
+  background: #c8cbc7;
+  float: left;
+  background-image: url("../img/grid.png");
+  background-size: 170%; }
 
 .segmented-button.selected:not(.list) {
-  background-position: -4px -70px; }
+  background-color: #ffa600; }
 
 .segmented-button.selected:not(.grid) {
-  background-position: 60px -70px; }
+  background-color: #ffa600; }
 
 .segmented-button.grid {
-  background-position: -4px -5px; }
+  background-position: 4px 3px; }
 
 .segmented-button.list {
-  background-position: 58px -7px; }
+  background-position: 42px 3px; }
 
 .segmented-button.grid.seleced {
-  background-position: -4px -40px; }
+  height: 58px;
+  width: 58px;
+  background-color: #ffa600; }
 
 /*more specifics*/
 #alastair_green {
@@ -6342,3 +6369,114 @@ iframe {
   -webkit-transition: height 0.5s ease-in;
   -moz-transition: height 0.5s ease-in;
   height: 200px; }
+
+/**
+	Various SASS vars that can be used
+*/
+.mail-icon {
+  height: 20px;
+  width: 20px;
+  background: #ffa600; }
+
+.orange {
+  color: #ffa600; }
+
+/*============================
+	Contact Information
+============================*/
+#contact-information {
+  border-bottom: solid 1px #c8cbc7;
+  border-right: solid 1px #c8cbc7;
+  padding-bottom: 20px; }
+
+.info-box div {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 20px; }
+
+.info-box {
+  border: solid 1px #5a5c63;
+  padding: 20px;
+  margin-bottom: 10px; }
+
+.button {
+  padding: 20px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border: #5a5c63; }
+
+/*============================
+	Social Media Information
+============================*/
+#social-media-information {
+  border-right: solid 1px #c8cbc7;
+  padding-top: 20px;
+  height: 140px; }
+  #social-media-information h2 {
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: bolder; }
+  #social-media-information .social-media {
+    margin-left: -4px;
+    height: 80px; }
+
+/*============================
+	Maps
+============================*/
+#maps {
+  position: relative; }
+
+hr {
+  background: #c8cbc7;
+  color: #c8cbc7; }
+
+#map {
+  height: 300px;
+  max-width: 700px;
+  padding: 20px; }
+
+/*============================
+	Offices
+============================*/
+#offices {
+  margin-left: 18px; }
+  #offices .phone {
+    color: #ffa600; }
+  #offices p {
+    font-size: 100%; }
+  #offices h2 {
+    font-size: 120%;
+    text-transform: uppercase; }
+
+@media screen and (max-width: 900px) {
+  .info-box {
+    width: 100%; }
+
+  #contact-information {
+    border: none; }
+
+  h2 {
+    padding-bottom: 30px;
+    border-bottom: solid 1px #ffa600;
+    max-width: 100px; }
+
+  .office {
+    margin-top: 20px; }
+    .office h4 {
+      font-size: 150%; }
+
+  .button {
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    left: 0; } }
+@media screen and (min-width: 1024px) {
+  .info-box {
+    max-width: 290px; }
+
+  .office {
+    display: inline-block;
+    margin-right: 28px; }
+
+  .button {
+    left: 32%; } }

@@ -373,11 +373,7 @@
 							</li>
 							
 							<li class="facebook">
-								<a href="#">
 								
-									
-									
-								</a>
 							</li>
 							
 							<li class="instagram">
@@ -387,7 +383,7 @@
 					</div>
 					
 					<div class="large-4 columns view-more">
-						<div class="button">View Full Profile</div>
+						<div class="button small">View Full Profile</div>
 					</div>
 					
 				</div><!--end social media and view more button-->
@@ -396,10 +392,11 @@
 
 </div>	
 
-<div class="listview">
-	
-
-</div><!--end listview-->
+<!--
+	list view gets built on the fly using the template 
+	found in "mini-profile.html"
+-->
+<div class="listview"></div><!--end listview-->
 <style>
 	.caption{
 		position: absolute;
@@ -438,7 +435,7 @@
 	-->
 	
 	
-	<div id="leader-grid-view" class="show-for-medium-up">
+	<div id="leader-grid-view">
 		
 	<div class="row-1 leader-row">
 		
@@ -745,17 +742,10 @@ While I’ve been in this business a few years, what keeps me current and consta
 	 if(window.location.href.search("contact")){
 		  var m = new Mappy({
 		  mapAnchor:"map"
+	 
 	  })
 	  
-	  m.addEvent("load",function(){
-	  
-	  	var options = {
-		  	center:new google.maps.LatLng(33.918589, -118.393719),
-		  	zoom:15,
-		  	mapTypeId:google.maps.MapTypeId.ROADMAP
-	  	}
-		  m.map = new google.maps.Map(document.getElementById(m.params.mapAnchor), options);	
-	  })
+	 m.addMarker("1960 E. Grand Ave, El Segundo, CA");
 
 	 }		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
