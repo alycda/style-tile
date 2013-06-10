@@ -1,51 +1,51 @@
 /*================================
 	For the Isotope Page
 ================================*/
-$(function(){
+
   
   if(window.location.href.search("leadership") === -1){
   
-  var $container = $('#leadership');
-  
-  $container.isotope({
-    itemSelector: '.leader',
-    masonry: {
-      columnWidth: 60
-    },
-   })
-  
-  $('.leader').click(function(){
-    var $this = $(this),
-        tileStyle = $this.hasClass('big') ? { width: 50, height: 50} : { width: 170, height: 110};
-    $this.toggleClass('big');
-    
-    $this.find('.leader-content').stop().animate( tileStyle );
-	 
-    $container.isotope( 'reLayout' )
-    
-
-	    //$container.isotope( {filter:".creative"})
- 
-  });
-  
-  $("#controls select").on("change",function(e){
-  	var val = e.target.options[e.target.selectedIndex].getAttribute("value");
-  	 
-  	if(val === ""){
-	  	 $container.isotope( {filter:".leader"})
-  	}else{
-	  	 $container.isotope( {filter:"." + val});
-  	}
-  });
-  $("header").on("click",function(){
- 
-	   	    $container.isotope( {filter:".leader"})
-	   	       $container.isotope( 'reLayout' )
-  })
+  	var $container = $('#leadership');
+  	
+  	$container.isotope({
+  	  itemSelector: '.leader',
+  	  masonry: {
+  	    columnWidth: 60
+  	  },
+  	 })
+  	
+  	$('.leader').click(function(){
+  	  var $this = $(this),
+  	      tileStyle = $this.hasClass('big') ? { width: 50, height: 50} : { width: 170, height: 110};
+  	  $this.toggleClass('big');
+  	  
+  	  $this.find('.leader-content').stop().animate( tileStyle );
+  		 
+  	  $container.isotope( 'reLayout' )
+  	  
+  	
+  		    //$container.isotope( {filter:".creative"})
+  	
+  	});
+  	
+  	$("#controls select").on("change",function(e){
+  		var val = e.target.options[e.target.selectedIndex].getAttribute("value");
+  		 
+  		if(val === ""){
+  		  	 $container.isotope( {filter:".leader"})
+  		}else{
+  		  	 $container.isotope( {filter:"." + val});
+  		}
+  	});
+  	$("header").on("click",function(){
+  	
+  		   	    $container.isotope( {filter:".leader"})
+  		   	       $container.isotope( 'reLayout' )
+  	})
   }
     
 
-});
+
 /*==========================================================================================*/
 /*================================
 	For any video pages
@@ -94,12 +94,15 @@ var v = new Video({
 var leaders = $(".leader");
 var leaderlen = leaders.length;
 var pageMode = "grid";
-		  
+			  
 $(".segmented-button").bind("click",function(e){
 	var parent = e.target.parentNode;
 	var children = parent.children;
 	
-	  var list = buildList();
+  var list = buildList();
+   
+   //temporary measure
+    $("#leader-list-view").html("");
     $("#leader-list-view").append(list);
 	
 	//take care of the "toggle" effect"
@@ -122,16 +125,20 @@ $(".segmented-button").bind("click",function(e){
 	
 	
 	function goToGrid(){
-		$("#leader-list-view").fadeOut("slow");
-		$("#leader-grid-view").fadeIn("slow");
+		$("#leader-list-view").fadeOut("slow",function(){
+			$("#leader-grid-view").fadeIn("slow");
+		});
+		
 	
 	
 	}
 	
 	
 	function goToList(){
-		$("#leader-grid-view").fadeOut("slow");
-		$("#leader-list-view").fadeIn("slow");	
+		$("#leader-grid-view").fadeOut("slow",function(){
+			$("#leader-list-view").fadeIn("slow");		
+		});
+		
 	}
 	
 	

@@ -277,48 +277,110 @@
 		<div id="SITE">
 		
 <style>
-	.mail-icon{
-		height:20px;
-		width:20px;
-		background: #ffa600;
-	}
 	
-	#email-box div{
-		display: inline-block;
-		vertical-align: middle;
-	}
-	
-	#map{
-		height:300px;
-		width:700px;
-	}
 	
 </style>
     
     <div class="row page">
-    	<div class="row">
+    	
+    	<div id="map-and-contact">
+    	
+    		
     		<div id="contact details" class="large-4 columns">
-    			<h2>Team One</h2>
-				<p class="subheader italic">A division of Satchi and Satchi</p>
-    		
-				<p>1960 E. Grand Ave<br/>
-				El Segundo, CA 90245</p>
-    		
-				<div id="email-box">
-					<div class="mail-icon"></div>
-					<div>info@teamone-usa.com</div>
-				</div>
+    			<div id="contact-information">
+    				<h2>Team One</h2>
+					<p class="subheader italic">A division of Satchi and Satchi</p>
+    				
+					<p>1960 E. Grand Ave<br/>
+					El Segundo, CA 90245</p>
+    				
+					<div class="info-box show-for-small">
+						<div class="mail-icon "></div>
+						<div class="orange">(310)615-xxxx</div>
+					</div>
+					
+					<div class="info-box">
+						<div class="mail-icon"></div>
+						<div class="orange">info@teamone-usa.com</div>
+					</div>
+				
+    			</div><!--end contact information-->
+				
+				<div id="social-media-information" class="show-for-medium-up">
+					<h2 class="subheader">Social </h2>
+					<ul class="social-media">
+						<li class="twitter">						    	
+						</li>
+						
+						<li class="facebook">					    
+						</li>
+						
+						<li class="instagram">					
+						</li>
+					</ul>
+				</div><!--end social-media-information-->
+				
     		</div>
     		
     		
-    		<div class="large-8 columns" id="map">
-    			<h2>tesT</h2>
+    		<div class="large-8 columns" id="maps" >
+    			<div id="map"></div>
+    			
+    			<div class="button transparant">
+    				Get Directions    			</div>
     		</div>
-    	</div>
-    
-    <hr/>
+			<hr/>
+
+    	</div><!--end map and contact-->
+   
+    	    	
     </div>
  
+ 
+ <div class="row">
+ <div id="offices">
+    		<h2 class="subheader">Offices</h2>
+    	
+    		<div class="office" id="la">
+    			<h4>Los Angeles, CA</h4>
+    			<p class="phone">(xxx)xxx-xxxx</p>
+    			<p>1960 E Grand Ave <br/>
+    			El Segundo,CA,90245</p>
+    		</div><!--end office-->
+    		
+    		
+    		<div class="office" id="ny">
+    			<h4>New York, NY</h4>
+    			<p class="phone">(xxx)xxx-xxxx</p>
+    			<p>1960 E Grand Ave <br/>
+    			El Segundo,CA,90245</p>
+    		</div><!--end office-->
+    		
+    		
+    		<div class="office" id="washington">
+    			<h4>Washington, DC</h4>
+    			<p class="phone">(xxx)xxx-xxxx</p>
+    			<p>1960 E Grand Ave <br/>
+    			El Segundo,CA,90245</p>
+    		</div><!--end office-->
+    		
+    		
+    		<div class="office" id="atlanta">
+    			<h4>Atlanta, GA</h4>
+    			<p class="phone">(xxx)xxx-xxxx</p>
+    			<p>1960 E Grand Ave <br/>
+    			El Segundo,CA,90245</p>
+    		</div><!--end office-->
+    		
+    		<div class="office" id="chicago">
+    			<h4>Chicago, IL</h4>
+    			<p class="phone">(xxx)xxx-xxxx</p>
+    			<p>1960 E Grand Ave <br/>
+    			El Segundo,CA,90245</p>
+    		</div><!--end office-->
+    		
+    	</div><!--end offices-->
+ </div>
 	
 
 		
@@ -435,17 +497,10 @@
 	 if(window.location.href.search("contact")){
 		  var m = new Mappy({
 		  mapAnchor:"map"
+	 
 	  })
 	  
-	  m.addEvent("load",function(){
-	  
-	  	var options = {
-		  	center:new google.maps.LatLng(33.918589, -118.393719),
-		  	zoom:15,
-		  	mapTypeId:google.maps.MapTypeId.ROADMAP
-	  	}
-		  m.map = new google.maps.Map(document.getElementById(m.params.mapAnchor), options);	
-	  })
+	 m.addMarker("1960 E. Grand Ave, El Segundo, CA");
 
 	 }		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
