@@ -6102,6 +6102,8 @@ h3 {
   margin-left: 60px;
   position: relative;
   left: 30px; }
+  .view-more .button {
+    margin-left: -40px; }
 
 .content, .leader-content {
   display: none; }

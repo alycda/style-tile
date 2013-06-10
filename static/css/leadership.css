@@ -1,21 +1,21 @@
 /*
 Syntax error: Undefined variable: "$light-gray".
-        on line 213 of static/css/leadership.scss
+        on line 217 of static/css/leadership.scss
 
-208: 	
-209: }
-210: .segmented-button{
-211: 	height:45px;
-212: 	width:45px;
-213: 	background: $light-gray;
-214: 	float: left;
-215: 	//background: red;
-216: 	background-image: url("../img/grid.png");
-217: 	background-size: 170%;
-218: 	
+212: 	
+213: }
+214: .segmented-button{
+215: 	height:45px;
+216: 	width:45px;
+217: 	background: $light-gray;
+218: 	float: left;
+219: 	//background: red;
+220: 	background-image: url("../img/grid.png");
+221: 	background-size: 170%;
+222: 	
 
 Backtrace:
-static/css/leadership.scss:213
+static/css/leadership.scss:217
 /Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/variable.rb:49:in `_perform'
 /Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/node.rb:40:in `perform'
 /Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
@@ -61,4 +61,4 @@ static/css/leadership.scss:213
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light-gray\".\A         on line 213 of static/css/leadership.scss\A \A 208: 	\A 209: }\A 210: .segmented-button{\A 211: 	height:45px;\A 212: 	width:45px;\A 213: 	background: $light-gray;\A 214: 	float: left;\A 215: 	//background: red;\A 216: 	background-image: url(\"../img/grid.png\");\A 217: 	background-size: 170%;\A 218: 	"; }
+  content: "Syntax error: Undefined variable: \"$light-gray\".\A         on line 217 of static/css/leadership.scss\A \A 212: 	\A 213: }\A 214: .segmented-button{\A 215: 	height:45px;\A 216: 	width:45px;\A 217: 	background: $light-gray;\A 218: 	float: left;\A 219: 	//background: red;\A 220: 	background-image: url(\"../img/grid.png\");\A 221: 	background-size: 170%;\A 222: 	"; }
