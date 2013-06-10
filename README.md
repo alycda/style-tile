@@ -9,6 +9,7 @@ Current semi-flushed out pages
 =============
 1. leadership.html - basic grid view of everyone
 2. leadership-full.html - full profile of a person
+3. contact.html - the contact page
 
 Misc / Component / Functionality demonstration
 =============
