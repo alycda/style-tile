@@ -93,7 +93,7 @@ hr {
     .office h4 {
       font-size: 150%; }
 
-  .button {
+  #maps .button {
     width: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -106,5 +106,5 @@ hr {
     display: inline-block;
     margin-right: 28px; }
 
-  .button {
+  #maps .button {
     left: 32%; } }

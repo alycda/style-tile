@@ -124,11 +124,13 @@ hr{
 		}
 	}
 	
-	.button{
-		width:100%;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		left: 0;
+	#maps{
+		.button{
+			width:100%;
+			margin-top: 20px;
+			margin-bottom: 20px;
+			left: 0;
+		}
 	}
 }
 
@@ -140,8 +142,9 @@ hr{
 		display: inline-block;
 		margin-right: 28px;
 	}
-	
-	.button{
+	#maps{
+		.button{
 			left: 32%;
+		}
 	}
 }
