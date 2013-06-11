@@ -1,6 +1,11 @@
 /**
 	Various SASS vars that can be used
 */
+.center-align-text {
+  width: 220px;
+  text-align: center;
+  margin: 0 auto; }
+
 /*
 	Since we have a fixed header, this helps push the page down so 
 	content can be seen.
@@ -157,11 +162,14 @@ header#desktop {
     bottom: 5px;
     margin-left: 90px; }
     header#desktop nav ul li {
-      float: left; }
+      float: left;
+      /* Transition needed? */ }
       header#desktop nav ul li a {
         font-size: 1em;
         text-transform: uppercase;
         color: #5a5c63; }
+      header#desktop nav ul li a:hover {
+        color: #ffa600; }
   @media screen and (max-width: 850px) {
     header#desktop nav ul li a {
       font-size: 0.85em; } }

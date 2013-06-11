@@ -51,3 +51,9 @@ $quoteFontMedium:"ClarendonBT-SemiBold",serif;
 @function convertToPercent($pixel){
 	@return ($pixel/16) * "100%";
 }
+
+.center-align-text{
+	width:220px;
+	text-align:center;
+	margin: 0 auto;
+}

@@ -10,6 +10,10 @@
 .orange{
 	color:$orange;
 }
+
+div{
+	font-family: "Lato",sans-serif;
+}
 /*============================
 	Contact Information
 ============================*/
@@ -21,18 +25,17 @@
 }
 
 
-.info-box div{
-    display: inline-block;
-    vertical-align: middle;
-    margin-right: 20px;
-    
-}
 
 
 .info-box{
     border: solid 1px $dark-gray;
     padding: 20px;
     margin-bottom: 10px;
+    
+    div{
+	    display: inline-block;
+	    vertical-align: middle;
+    }
 }
 
 
@@ -40,7 +43,11 @@
 	padding: 20px;
 	padding-left: 50px;
 	padding-right: 50px;
-	border: $dark-gray;
+	margin-top: 25px;
+}
+
+.transparant{
+	border:solid 1px #d1d1d1;
 }
 /*============================
 	Social Media Information
@@ -88,24 +95,34 @@ hr{
 ============================*/
 #offices{
 	margin-left: 18px;
-
-	.phone{
-		color:$orange;
-	}
-	
-	p{
-		font-size:100%;
-	}
-	h2{
-		font-size: 120%;
-		text-transform: uppercase;
+	.office{
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 10px;
 	}
 }
 
 
+
+@media screen and (max-width:768px){
+	.office{
+		width: 95%;
+	}
+	
+};
 @media screen and (max-width:900px){
 	.info-box{
-		width: 100%;
+		width: 98%;
+		div{
+			//display: inline-block;
+			font-size: 14px;
+		}
+	}
+	
+	.office{
+		.info-box{
+			width: 100%;
+		}
 	}
 	
 	#contact-information{
@@ -113,17 +130,12 @@ hr{
 	}
 	h2{
 		padding-bottom: 30px;
-			border-bottom: solid 1px $orange;
-			max-width: 100px;
-	}
-	.office{
-		margin-top: 20px;
-		h4{
-			font-size: 150%;
-			
-		}
+		border-bottom: solid 1px $orange;
+		max-width: 100px;
 	}
 	
+	
+		
 	#maps{
 		.button{
 			width:100%;
@@ -132,19 +144,30 @@ hr{
 			left: 0;
 		}
 	}
+	
+	
 }
 
 @media screen and (min-width:1024px){
 	.info-box{
 		max-width: 290px;
 	}
+	
 	.office{
-		display: inline-block;
-		margin-right: 28px;
+		max-width:200px;
 	}
+	
 	#maps{
 		.button{
 			left: 32%;
 		}
 	}
+	
+	.info-box div{
+   		display: inline-block;
+   		vertical-align: middle;
+   		margin-right: 20px;
+   		text-align: center;
+    
+   	}
 }

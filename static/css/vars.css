@@ -1,3 +1,7 @@
 /**
 	Various SASS vars that can be used
 */
+.center-align-text {
+  width: 220px;
+  text-align: center;
+  margin: 0 auto; }
