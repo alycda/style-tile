@@ -9,7 +9,7 @@ $body-font-style: normal;
 
 // Colors
 
-$primary-color: #ff6a00;
+$primary-color: #ffa600;
 $secondary-color: #c8cbc7;
 $alert-color: #c60f13;
 $success-color: #5da423;
@@ -17,6 +17,8 @@ $success-color: #5da423;
 //T1 Colors
 $dark-gray:#5a5c63;
 $light-gray:#c8cbc7;
+
+$darkOrange:#ff6a00;
 $orange:#ffa600;
 
 $mobilePadding:20px;
@@ -53,7 +55,7 @@ $quoteFontMedium:"ClarendonBT-SemiBold",serif;
 }
 
 .center-align-text{
-	width:220px;
+	max-width:520px;
 	text-align:center;
 	margin: 0 auto;
 }

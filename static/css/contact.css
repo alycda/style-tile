@@ -2,7 +2,7 @@
 	Various SASS vars that can be used
 */
 .center-align-text {
-  width: 220px;
+  max-width: 520px;
   text-align: center;
   margin: 0 auto; }
 
@@ -57,6 +57,10 @@ div {
     margin-left: -4px;
     height: 80px; }
 
+#offices h2 {
+  font-size: 150%;
+  text-transform: uppercase; }
+
 /*============================
 	Maps
 ============================*/
@@ -84,7 +88,9 @@ hr {
 
 @media screen and (max-width: 768px) {
   .office {
-    width: 95%; } }
+    width: 95%; }
+    .office h4 {
+      font-size: 160%; } }
 @media screen and (max-width: 900px) {
   .info-box {
     width: 98%; }
