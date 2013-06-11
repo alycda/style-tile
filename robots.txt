@@ -4,5 +4,6 @@ index.html
 isotope.html
 leadership-full.html
 leadership.html
+test.html
 transitions.html
 vimeo.html

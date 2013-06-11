@@ -169,6 +169,10 @@ header#desktop{
           text-transform: uppercase;
           color:$dark-gray;
         }
+        /* Transition needed? */
+        a:hover{
+	        color:$orange;
+        }
       }
     }
   }

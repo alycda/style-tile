@@ -1,6 +1,11 @@
 /**
 	Various SASS vars that can be used
 */
+.center-align-text {
+  width: 220px;
+  text-align: center;
+  margin: 0 auto; }
+
 .mail-icon {
   height: 20px;
   width: 20px;
@@ -8,6 +13,9 @@
 
 .orange {
   color: #ffa600; }
+
+div {
+  font-family: "Lato",sans-serif; }
 
 /*============================
 	Contact Information
@@ -17,21 +25,22 @@
   border-right: solid 1px #c8cbc7;
   padding-bottom: 20px; }
 
-.info-box div {
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 20px; }
-
 .info-box {
   border: solid 1px #5a5c63;
   padding: 20px;
   margin-bottom: 10px; }
+  .info-box div {
+    display: inline-block;
+    vertical-align: middle; }
 
 .button {
   padding: 20px;
   padding-left: 50px;
   padding-right: 50px;
-  border: #5a5c63; }
+  margin-top: 25px; }
+
+.transparant {
+  border: solid 1px #d1d1d1; }
 
 /*============================
 	Social Media Information
@@ -68,16 +77,21 @@ hr {
 ============================*/
 #offices {
   margin-left: 18px; }
-  #offices .phone {
-    color: #ffa600; }
-  #offices p {
-    font-size: 100%; }
-  #offices h2 {
-    font-size: 120%;
-    text-transform: uppercase; }
+  #offices .office {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px; }
 
+@media screen and (max-width: 768px) {
+  .office {
+    width: 95%; } }
 @media screen and (max-width: 900px) {
   .info-box {
+    width: 98%; }
+    .info-box div {
+      font-size: 14px; }
+
+  .office .info-box {
     width: 100%; }
 
   #contact-information {
@@ -87,11 +101,6 @@ hr {
     padding-bottom: 30px;
     border-bottom: solid 1px #ffa600;
     max-width: 100px; }
-
-  .office {
-    margin-top: 20px; }
-    .office h4 {
-      font-size: 150%; }
 
   #maps .button {
     width: 100%;
@@ -103,8 +112,13 @@ hr {
     max-width: 290px; }
 
   .office {
-    display: inline-block;
-    margin-right: 28px; }
+    max-width: 200px; }
 
   #maps .button {
-    left: 32%; } }
+    left: 32%; }
+
+  .info-box div {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 20px;
+    text-align: center; } }
