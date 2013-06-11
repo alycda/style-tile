@@ -2,7 +2,7 @@
 	Various SASS vars that can be used
 */
 .center-align-text {
-  width: 220px;
+  max-width: 520px;
   text-align: center;
   margin: 0 auto; }
 
@@ -74,26 +74,27 @@ h1 {
   LOGO
 ==================*/
 .logo {
-  height: 64px;
-  width: 64px;
+  height: 60px;
+  width: 60px;
   float: left;
-  background: url("../img/logosprite.png");
+  background: url("../img/logo2.png");
   position: absolute;
   margin-left: -25px;
-  background-color: #ff6a00;
+  background-color: #ffa600;
   z-index: 6;
   -webkit-box-shadow: 0px 3px 15px #818181;
   -moz-box-shadow: 0px 3px 15px #818181;
   box-shadow: 0px 3px 15px #818181;
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
-  background-position: 0px 0px; }
+  background-position: 2px 2px;
+  background-size: 95%; }
 
 .logo:hover {
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
   cursor: pointer;
-  background-position: 0px -70px; }
+  background-position: 2px -60px; }
 
 @media screen and (max-width: 800px) {
   .logo {
@@ -169,7 +170,7 @@ header#desktop {
         text-transform: uppercase;
         color: #5a5c63; }
       header#desktop nav ul li a:hover {
-        color: #ffa600; }
+        color: #ff6a00; }
   @media screen and (max-width: 850px) {
     header#desktop nav ul li a {
       font-size: 0.85em; } }
