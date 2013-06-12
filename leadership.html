@@ -741,11 +741,14 @@ While I’ve been in this business a few years, what keeps me current and consta
 	  
 	 if(window.location.href.search("contact")){
 		  var m = new Mappy({
-		  mapAnchor:"map"
+		  	mapAnchor:"map"
 	 
-	  })
+		  },function(map){
+			 
+			   m.addMarker(map,"1960 E. Grand Ave, El Segundo, CA");
+		  })
 	  
-	 m.addMarker("1960 E. Grand Ave, El Segundo, CA");
+		  
 
 	 }		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

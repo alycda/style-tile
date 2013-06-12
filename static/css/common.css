@@ -2,9 +2,17 @@
 	Various SASS vars that can be used
 */
 .center-align-text {
-  max-width: 520px;
-  text-align: center;
-  margin: 0 auto; }
+  position: absolute;
+  text-align: center; }
+
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
 
 /*
 	Since we have a fixed header, this helps push the page down so 
