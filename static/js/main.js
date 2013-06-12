@@ -404,7 +404,10 @@ for(var i = 0;i<navlength;++i){
 }
 */
 
-//subnav will only show if the link clicked on has the data-attribute of subnav
+/*
+	Subnav should only show if the parent of the link that
+	was clicked on has a second child
+*/
 
 $("header#desktop nav ul li a").on("click",function(e){
 	var link = e.target;
@@ -426,11 +429,20 @@ $("header#desktop nav ul li a").on("click",function(e){
 			//current subnav being shown
 			var currentsub = subnav[0].getElementsByTagName("ul")[0].innerHTML;
 			
-			
+					
+			/*
+				If the current set of sublinks matches the set associated 
+				with the link that was clicked on, 
+				just hide the sub nav
+			*/
 			if(linksub == currentsub){
 				subnav.animate({
 					marginTop:-80
+				},function(){
+					subnav[0].innerHTML = "";
 				})
+				subnav.removeClass("active");
+			//otherwise animate close and then re-open with new info	
 			}else{
 				subnav.animate({
 				marginTop:-80
@@ -443,18 +455,6 @@ $("header#desktop nav ul li a").on("click",function(e){
 					marginTop:0
 				})
 			}
-			
-			/*subnav.animate({
-				marginTop:-80
-			},function(){
-				var box = setContent(link);		
-				subnav.append(box);
-			})
-			
-			subnav.animate({
-				marginTop:0
-			})*/
-			
 			
 		}else{
 			var box = setContent(link);
