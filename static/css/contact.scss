@@ -8,7 +8,7 @@
 
 }
 .orange{
-	color:$orange;
+	color:$darkOrange;
 }
 
 div{
@@ -22,6 +22,13 @@ div{
     border-bottom: solid 1px $light-gray;
     border-right: solid 1px $light-gray;
     padding-bottom: 20px;
+    
+    h2{
+	  margin-bottom: 5px;  
+    }
+    p{
+	    margin-top: 5px;
+    }
 }
 
 
@@ -38,17 +45,17 @@ div{
     }
 }
 
-
-.button{
+.transparant-button{
+	margin: 0 auto;
+	text-align: center;
 	padding: 20px;
-	padding-left: 50px;
-	padding-right: 50px;
-	margin-top: 25px;
+	color:$darkOrange;
+	border:solid 1px $dark-gray;
+	margin-top: 20px;
+	font-family:"Lato";
 }
 
-.transparant{
-	border:solid 1px #d1d1d1;
-}
+
 /*============================
 	Social Media Information
 ============================*/
@@ -117,6 +124,25 @@ hr{
 		}
 	}
 	
+	.info-box{
+		div.orange{
+			text-align: center;
+	
+		}
+	}
+	
+	#contact-information{
+	    div.orange{
+	    	font-size: 16px;
+	    }
+	}
+	
+	#maps{
+		.transparant-button{
+			width:100%;
+		}
+	}
+	
 };
 @media screen and (max-width:900px){
 	.info-box{
@@ -143,16 +169,7 @@ hr{
 	}
 	
 	
-	
-		
-	#maps{
-		.button{
-			width:100%;
-			margin-top: 20px;
-			margin-bottom: 20px;
-			left: 0;
-		}
-	}
+
 	
 	
 }
@@ -167,15 +184,15 @@ hr{
 	}
 	
 	#maps{
-		.button{
-			left: 32%;
+		.transparant-button{
+			max-width: 300px;
 		}
 	}
+
 	
 	.info-box div{
    		display: inline-block;
-   		vertical-align: middle;
-   		
+   		vertical-align: middle;   		
    		text-align: center;
     
    	}

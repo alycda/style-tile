@@ -389,13 +389,45 @@ header#desktop{
 ========================================*/
 #subnav{
 	width:100%;
-	background: #333;
+	background: $light-gray;
 	height:125px;
 	margin-bottom: -50px;	
-	display: none;
+	position:relative;
+	z-index:1;
+	margin-top: -65px;
+	//	display: none;
 }
 
+.desktop-sub-nav{
+	display: none;
+}
+.desktop-sub-navigation{
+	position: relative;
+	top:70px;
+	ul{
+		list-style: none;
+		li{
+			list-style: none;
+			float: left;
+			
+			a{
+				text-transform: uppercase;
+				color:$dark-gray;
+			}
+			
+			a.selected{
+				color:$darkOrange;
+			}
+		}
+	}
+}
 
+.line-divider{
+	text-align: center;
+	height:20px;
+	color:$dark-gray;
+	width:100px;
+}
 /*========================================
   MOBILE HEADER
 ========================================*/

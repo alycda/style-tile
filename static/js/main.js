@@ -376,5 +376,112 @@ $(".close-button").bind("click",function(){
 })
 
 
+/*==========================================================================================*/
+/*================================
+	controls subnav
+================================*/
+/*
+var nav = document.getElementById("desktop").getElementsByTagName("nav")[0].children[0].children;
+var navlength = nav.length;
 
+for(var i = 0;i<navlength;++i){
+	var li = nav[i];
+	var a = li.getElementsByTagName("a")[0];
+	
+	if(a !== undefined){
+		
+		if(window.location.search(a.innerHTML) !== -1){
+			var sublinks = a.parentNode.children[1];
+			
+			//if we have sublinks, amke sure to show them
+			if(sublinks !== undefined){
+				$(sublinks).css("display","block");
+			}
+			
+		}
+	}
 
+}
+*/
+
+//subnav will only show if the link clicked on has the data-attribute of subnav
+
+$("header#desktop nav ul li a").on("click",function(e){
+	var link = e.target;
+	
+	var subnav = $("#subnav");
+	var parent = link.parentNode.children;
+
+	if(parent.length > 1){
+		var link = $(link);
+		
+		if(subnav.hasClass("active")){
+			//do a check to see if the link we click on is the same link. If it is,
+			//hide the subnav, otherwise animate close, append new content, then re-show
+			var sub = parent[1];
+			
+			//the subnav associated with the currently clicked on link
+			var linksub = sub.getElementsByTagName("ul")[0].innerHTML;
+			
+			//current subnav being shown
+			var currentsub = subnav[0].getElementsByTagName("ul")[0].innerHTML;
+			
+			
+			if(linksub == currentsub){
+				subnav.animate({
+					marginTop:-80
+				})
+			}else{
+				subnav.animate({
+				marginTop:-80
+			},function(){
+				var box = setContent(link);		
+				subnav.append(box);
+			})
+			
+				subnav.animate({
+					marginTop:0
+				})
+			}
+			
+			/*subnav.animate({
+				marginTop:-80
+			},function(){
+				var box = setContent(link);		
+				subnav.append(box);
+			})
+			
+			subnav.animate({
+				marginTop:0
+			})*/
+			
+			
+		}else{
+			var box = setContent(link);
+			
+			subnav.append(box);
+			
+			subnav.animate({
+				marginTop:0
+			})
+			
+			subnav.addClass("active");
+			
+		}
+	}
+	
+	function setContent(link){
+		//grab the links that need to be shown
+			var sublinks = link[0].parentNode.children[1];
+			subnav[0].innerHTML = "";
+			var box = document.createElement("div");
+			box.innerHTML = sublinks.innerHTML;
+			
+			box.style.width = 960 + "px";
+			box.style.margin = "0 auto";
+			box.className = "desktop-sub-navigation";
+			
+			return box;
+	}
+	
+});
