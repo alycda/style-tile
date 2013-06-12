@@ -275,10 +275,35 @@ header#desktop {
 ========================================*/
 #subnav {
   width: 100%;
-  background: #333;
+  background: #c8cbc7;
   height: 125px;
   margin-bottom: -50px;
+  position: relative;
+  z-index: 1;
+  margin-top: -65px; }
+
+.desktop-sub-nav {
   display: none; }
+
+.desktop-sub-navigation {
+  position: relative;
+  top: 70px; }
+  .desktop-sub-navigation ul {
+    list-style: none; }
+    .desktop-sub-navigation ul li {
+      list-style: none;
+      float: left; }
+      .desktop-sub-navigation ul li a {
+        text-transform: uppercase;
+        color: #5a5c63; }
+      .desktop-sub-navigation ul li a.selected {
+        color: #ff6a00; }
+
+.line-divider {
+  text-align: center;
+  height: 20px;
+  color: #5a5c63;
+  width: 100px; }
 
 /*========================================
   MOBILE HEADER
