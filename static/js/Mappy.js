@@ -1,4 +1,4 @@
-var Mappy = function(_params,_options){
+var Mappy = function(_params,_callback,_options){
 	this.options = _options !== undefined ? _options : {}
 	this.params = _params !== undefined ? _params :{
 		mapAnchor:"map"
@@ -19,8 +19,8 @@ var Mappy = function(_params,_options){
 		  	zoom:15,
 		  	mapTypeId:google.maps.MapTypeId.ROADMAP
 	  	}
-		  this.map = new google.maps.Map(document.getElementById(parent.params.mapAnchor), options);	
-		  
+		var map = new google.maps.Map(document.getElementById(parent.params.mapAnchor), options);	
+		 _callback(map);
 	})
 }
 
@@ -38,16 +38,17 @@ Mappy.prototype = {
 	/**
 		NOTE: THESE CAN ONLY BE CALLED AFTER THE LOAD EVENT
 	*/
-	addMarker:function(_address){
-		var address = _address;
+	addMarker:function(_map,_address){
 		var parent = this;
-			console.log(this.map);	
+			
 		
 		this.getAddress(_address,function(results){
+			var latlng = new google.maps.LatLng(results[0].geometry.location.jb,results[0].geometry.location.kb);
+			_map.setCenter(latlng);
 			
 			var marker = new google.maps.Marker({
-				map:parent.map,
-				position:results[0].geometry.location
+				map:_map,
+				position:latlng
 			});
 			
 		})

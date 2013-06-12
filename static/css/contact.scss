@@ -120,10 +120,15 @@ hr{
 };
 @media screen and (max-width:900px){
 	.info-box{
-		width: 98%;
+	
 		div{
-			//display: inline-block;
-			font-size: 14px;
+			display: inline-block;
+			font-size: 100%;
+		}
+		
+		div.orange{
+			text-align: center;
+		
 		}
 	}
 	
@@ -170,7 +175,7 @@ hr{
 	.info-box div{
    		display: inline-block;
    		vertical-align: middle;
-   		margin-right: 20px;
+   		
    		text-align: center;
     
    	}
