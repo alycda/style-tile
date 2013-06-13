@@ -4,16 +4,36 @@
 $itemWidth:200px;
 $itemHeight:200px;
 
-
+$gutter:2px;
+$bottomGutter:2px;
 /*========================
 	General item styles
 ==========================*/
-
+.work-in-a-box{
+	width:$itemWidth;
+	height:$itemHeight;
+	background: #ffa600;
+	
+}
+.large{
+	height:500px;
+	width:100%;
+	background: #ffa600;
+}
+.work-in-a-box-selected{
+	width:100%;
+	height:500px;
+	background: #ffa600;
+}
 .work-item{
 	height:$itemHeight;
 	width:$itemWidth;	
 	position: relative;	
+	background: #333;
+	margin-right: $gutter;
+	margin-bottom: $bottomGutter;
 }
+
 	
 .overlay{
     height:$itemHeight;
@@ -22,6 +42,7 @@ $itemHeight:200px;
     position: absolute;
     top:0;
 }
+
 
 
 

@@ -6398,10 +6398,28 @@ iframe {
 /*========================
 	General item styles
 ==========================*/
+.work-in-a-box {
+  width: 200px;
+  height: 200px;
+  background: #ffa600; }
+
+.large {
+  height: 500px;
+  width: 100%;
+  background: #ffa600; }
+
+.work-in-a-box-selected {
+  width: 100%;
+  height: 500px;
+  background: #ffa600; }
+
 .work-item {
   height: 200px;
   width: 200px;
-  position: relative; }
+  position: relative;
+  background: #333;
+  margin-right: 2px;
+  margin-bottom: 2px; }
 
 .overlay {
   height: 200px;
