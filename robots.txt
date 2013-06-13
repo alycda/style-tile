@@ -7,3 +7,4 @@ leadership.html
 test.html
 transitions.html
 vimeo.html
+work.html

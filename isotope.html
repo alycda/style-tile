@@ -203,7 +203,7 @@
 
 <header id="desktop" class="show-for-medium-up hide-for-small">
 	<div class="row">
-	  <div class="logo"></div>
+	  <div class="logo" onclick="goHome();"></div>
 	  <div id="searchbox">
 	     <div class="icon"></div>
 	     <div id="magnifing-glass">
@@ -248,7 +248,7 @@
 	 				
 	 				<div class="desktop-sub-nav" style="display:none">
 	 					<ul>
-	 						<li><a href="#">Leadership</a></li>
+	 						<li><a href="/style-tile/leadership.html">Leadership</a></li>
 	 						<li class="line-divider">||</li>
 	 						<li><a href="#"> People</a></li>
 	 							<li class="line-divider">||</li>
@@ -289,7 +289,11 @@
 </header>
 
 
-
+<script>
+	function goHome(){
+		window.location = "/style-tile"
+	}
+</script>
 
 
 
