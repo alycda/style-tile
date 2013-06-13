@@ -6,6 +6,14 @@ $itemHeight:200px;
 
 $gutter:2px;
 $bottomGutter:2px;
+
+.work-in-a-box.mini-work{
+	-webkit-transition: width 0.5s ease-in, height 0.5s ease-in;
+	-moz-transition: width 0.5s ease-in, height 0.5s ease-in;
+	width:1024px;
+	height:500px;
+}
+
 /*========================
 	General item styles
 ==========================*/
@@ -13,6 +21,9 @@ $bottomGutter:2px;
 	width:$itemWidth;
 	height:$itemHeight;
 	background: #ffa600;
+	margin-right: $gutter;
+	margin-bottom: $bottomGutter;
+
 	
 }
 .large-item{
