@@ -6192,13 +6192,11 @@ h3 {
   position: relative; }
   #content-box .large.thumb {
     height: 200px;
-    width: 200px;
-    border-radius: 100px; }
+    width: 200px; }
 
 .leaderbox .large.thumb {
   height: 200px;
-  width: 200px;
-  border-radius: 100px; }
+  width: 200px; }
 
 /*====================
 	LEADERSHIP
@@ -6212,7 +6210,6 @@ h3 {
 .leader {
   height: 140px;
   width: 140px;
-  border-radius: 80px;
   background: #333;
   display: inline-block;
   background-size: 100%;
@@ -6395,13 +6392,21 @@ iframe {
 .debug {
   border: solid 1px red; }
 
+.work-in-a-box.mini-work {
+  -webkit-transition: width 0.5s ease-in, height 0.5s ease-in;
+  -moz-transition: width 0.5s ease-in, height 0.5s ease-in;
+  width: 1024px;
+  height: 500px; }
+
 /*========================
 	General item styles
 ==========================*/
 .work-in-a-box {
   width: 200px;
   height: 200px;
-  background: #ffa600; }
+  background: #ffa600;
+  margin-right: 2px;
+  margin-bottom: 2px; }
 
 .large-item {
   height: 500px;
