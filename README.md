@@ -16,3 +16,4 @@ Misc / Component / Functionality demonstration
 1. isotope.html - shows sorting via isotope
 2. vimeo.html - shows vimeo integration
 3. index.html - kitchen sink
+4. canvas.html - prototype page for creating filters using Canvas 2d context
