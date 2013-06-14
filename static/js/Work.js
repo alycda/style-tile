@@ -43,11 +43,32 @@ $(".work-in-a-box").each(function(i,obj){
 			div.className = "work-in-a-box mini-work data";
 			
 			//get content
+			/**
+				Within each work item, set just ONE div and inside of that
+				put all the content/markup you want
+			*/
 			var content = obj.parentNode.children[0].children[1];
 			
 			//add a arrow indicating which item was clicked "open"
 			var arrow = content.getElementsByClassName("arrow")[0];
-			arrow.style.marginLeft = e.x - works.offset().left + "px";
+			
+			
+			/**
+				Chrome has acess to a "x" property, 
+				but may not exist in all browsers. 
+				
+				First set to clientX if "x" doesn't exist
+			*/
+			var offset = e.x !== undefined ? e.x : e.clientX;
+			
+			//if clientX doesn't exist, then use pageX
+			if(offset == undefined){
+				ofset = e.pageX;
+			}
+			
+			arrow.style.marginLeft = offset - works.offset().left + "px";
+			
+			
 			div.innerHTML = content.innerHTML;
 			
 			
