@@ -437,7 +437,7 @@ $("header#desktop nav ul li a").on("click",function(e){
 			*/
 			if(linksub == currentsub){
 				subnav.animate({
-					marginTop:-80
+					marginTop:-120
 				},function(){
 					subnav[0].innerHTML = "";
 				})
@@ -445,7 +445,7 @@ $("header#desktop nav ul li a").on("click",function(e){
 			//otherwise animate close and then re-open with new info	
 			}else{
 				subnav.animate({
-				marginTop:-80
+				marginTop:-120
 			},function(){
 				var box = setContent(link);		
 				subnav.append(box);
