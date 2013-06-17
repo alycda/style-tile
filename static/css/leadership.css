@@ -1,64 +1,318 @@
-/*
-Syntax error: Undefined variable: "$light-gray".
-        on line 217 of static/css/leadership.scss
-
-212: 	
-213: }
-214: .segmented-button{
-215: 	height:45px;
-216: 	width:45px;
-217: 	background: $light-gray;
-218: 	float: left;
-219: 	//background: red;
-220: 	background-image: url("../img/grid.png");
-221: 	background-size: 170%;
-222: 	
-
-Backtrace:
-static/css/leadership.scss:217
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/variable.rb:49:in `_perform'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/script/node.rb:40:in `perform'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:298:in `visit_prop'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:320:in `visit_rule'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `block in visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `map'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:53:in `visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:109:in `block in visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:121:in `with_environment'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:108:in `visit_children'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `block in visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:128:in `visit_root'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/base.rb:37:in `visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:100:in `visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/visitors/perform.rb:7:in `visit'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/tree/root_node.rb:20:in `render'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:341:in `update_stylesheet'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:203:in `block in update_stylesheets'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `each'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:201:in `update_stylesheets'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/sass-3.2.7/lib/sass/plugin/compiler.rb:299:in `block in watch'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.2/lib/listen/multi_listener.rb:108:in `call'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.2/lib/listen/multi_listener.rb:108:in `on_change'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.2/lib/listen/multi_listener.rb:117:in `block in initialize_adapter'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.2/lib/listen/adapter.rb:198:in `call'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.2/lib/listen/adapter.rb:198:in `report_changes'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.2/lib/listen/adapter.rb:210:in `poll_changed_dirs'
-/Users/kindofsleepy/.rvm/gems/ruby-1.9.3-p286/gems/listen-0.7.2/lib/listen/adapters/darwin.rb:38:in `block in start'
+/*===========================
+	For the full view for each person
+============================*/
+/**
+	Various SASS vars that can be used
 */
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Syntax error: Undefined variable: \"$light-gray\".\A         on line 217 of static/css/leadership.scss\A \A 212: 	\A 213: }\A 214: .segmented-button{\A 215: 	height:45px;\A 216: 	width:45px;\A 217: 	background: $light-gray;\A 218: 	float: left;\A 219: 	//background: red;\A 220: 	background-image: url(\"../img/grid.png\");\A 221: 	background-size: 170%;\A 222: 	"; }
+.center-align-text {
+  position: absolute;
+  text-align: center; }
+
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
+
+.social-media {
+  height: 100px;
+  max-width: 300px;
+  margin-left: 0px; }
+  .social-media li {
+    background: url("../img/socialmedia.png");
+    height: 40px;
+    width: 40px;
+    background-size: 400%;
+    background-position: -8px -8px;
+    float: left;
+    list-style: none;
+    margin-right: 10px; }
+  .social-media li.twitter {
+    background-position: 48px -8px; }
+  .social-media li.facebook {
+    background-position: -60px -8px; }
+
+#title {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  margin-left: 0 auto; }
+  #title div {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px; }
+  #title h1 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    padding-right: 60px;
+    position: relative;
+    right: 22px;
+    font-family: "Lato",sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    max-width: 600px; }
+  #title h3 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: -40px;
+    position: relative;
+    right: 22px;
+    max-width: 600px; }
+
+/**============================================
+	Need to add some media query fixes for the 
+	person's name and title
+===============================================*/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  #title h1, #title h3 {
+    padding: 5px; }
+  #title h1 {
+    font-size: 125%;
+    max-width: 200px; }
+  #title h3 {
+    max-width: 200px;
+    margin-top: -10px; }
+  #title div {
+    position: absolute;
+    left: 60px; } }
+@media screen and (min-width: 768px) {
+  #title h1 {
+    font-size: 312.5%;
+    max-width: 400px; }
+  #title h3 {
+    max-width: 400px;
+    margin-top: -10px; }
+  #title div {
+    margin-left: 80px; } }
+@media screen and (min-width: 1024px) {
+  #title h1 {
+    font-size: 312.5%;
+    max-width: 400px; }
+  #title h3 {
+    max-width: 400px;
+    margin-top: -10px; }
+  #title div {
+    max-width: 960px; } }
+@media screen and (min-width: 1084px) {
+  #title h1 {
+    font-size: 562.5%; }
+  #title h1 {
+    max-width: 700px; }
+  #title h3 {
+    max-width: 700px;
+    margin-top: -10px; } }
+#social-media-full-page {
+  position: relative;
+  top: 15px;
+  left: 30px; }
+
+img {
+  max-width: 100%; }
+
+.button.large.transparent {
+  background: #fff; }
+
+h3 {
+  font-style: italic; }
+
+.social {
+  float: right;
+  position: relative;
+  top: 40px; }
+
+.social div {
+  height: 40px;
+  width: 40px;
+  background: #333;
+  display: inline-block; }
+
+.spacer {
+  width: 30px; }
+
+.post-set ul {
+  list-style: none;
+  margin-left: -20px; }
+  .post-set ul li {
+    list-style: none; }
+
+#person {
+  margin-top: 20px; }
+
+#bio {
+  padding-bottom: 200px;
+  margin-top: 40px;
+  margin-left: 40px; }
+
+.bio-section {
+  margin-top: 40px; }
+
+#leader-posts {
+  margin-top: 30px; }
+  #leader-posts hr {
+    margin-bottom: 30px; }
+
+.social-media li {
+  background-image: url("../img/socialmedia.png"); }
+
+.view-more {
+  margin-left: 60px;
+  position: relative;
+  left: 30px; }
+  .view-more .button {
+    margin-left: -40px; }
+
+.content, .leader-content {
+  display: none; }
+
+/*===========================
+	For the selected view 
+	on the leadership page
+============================*/
+#leader-list-view {
+  display: none; }
+  #leader-list-view ul li {
+    list-style: none; }
+
+#content-box {
+  height: 0px;
+  overflow: hidden;
+  width: 100%;
+  position: relative; }
+  #content-box .large.thumb {
+    height: 200px;
+    width: 200px; }
+
+.leaderbox .large.thumb {
+  height: 200px;
+  width: 200px; }
+
+/*====================
+	LEADERSHIP
+=======================*/
+#leadership {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  left: 30px; }
+
+.leader {
+  height: 140px;
+  width: 140px;
+  background: #333;
+  display: inline-block;
+  background-size: 100%;
+  position: relative;
+  margin-right: 80px;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+
+.leader:hover {
+  cursor: pointer; }
+
+.leader-content {
+  display: none; }
+
+.row-2 .wrap {
+  max-width: 720px;
+  margin: 0 auto; }
+
+.style-selection {
+  float: right; }
+
+.segmented-button {
+  height: 45px;
+  width: 45px;
+  background: #c8cbc7;
+  float: left;
+  background-image: url("../img/grid.png");
+  background-size: 170%; }
+
+.segmented-button.selected:not(.list) {
+  background-color: #ffa600; }
+
+.segmented-button.selected:not(.grid) {
+  background-color: #ffa600; }
+
+.segmented-button.grid {
+  background-position: 4px 3px; }
+
+.segmented-button.list {
+  background-position: 42px 3px; }
+
+.segmented-button.grid.seleced {
+  height: 58px;
+  width: 58px;
+  background-color: #ffa600; }
+
+/*more specifics*/
+#alastair_green {
+  background-image: url("../img/leaders/alastair_green.jpg"); }
+
+#cait_drury {
+  background-image: url("../img/leaders/cait_drury.jpg"); }
+
+#chris_graves {
+  background-image: url("../img/leaders/chris_graves.jpg"); }
+
+#craig_rowley {
+  background-image: url("../img/leaders/craig_rowley.jpg"); }
+
+#elizabeth_brownsen {
+  background-image: url("../img/leaders/elizabeth_brownsen.jpg"); }
+
+#julie_michael {
+  background-image: url("../img/leaders/julie_michael.jpg"); }
+
+#kurt_ritter {
+  background-image: url("../img/leaders/kurt_ritter.jpg"); }
+
+#mark_miller {
+  background-image: url("../img/leaders/mark_miller.jpg"); }
+
+#michael_webb {
+  background-image: url("../img/leaders/michael_webb.jpg"); }
+
+#paul_mareski {
+  background-image: url("../img/leaders/paul_mareski.jpg"); }
+
+#paul_silverman {
+  background-image: url("../img/leaders/paul_silverman.jpg"); }
+
+/**
+	Used in the isotope demonstration. 
+	Not really needed in prod.
+
+	#leadership .leader{
+		height:50px;
+		width:50px;
+	}
+	.item {
+		width: 50px;
+		height: 50px;
+		margin: 5px;
+		float: left;
+
+	}
+
+	#leadership .leader.big {
+	  width: 170px;
+	  height: 110px;
+	}
+	
+	#leadership .leader.creative{
+		background: red;
+	}
+	
+	#leadership .leader.account{
+		background: green;
+	}
+	
+	#leadership .leader.manager{
+		background: blue;
+	}
+	
+	*/

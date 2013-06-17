@@ -53,7 +53,7 @@ $quoteFontMedium:"ClarendonBT-SemiBold",serif;
 
 //convert px to ems
 @function convertToPercent($pixel){
-	@return ($pixel/16) * "100%";
+	@return ($pixel/16) * 100%;
 }
 
 .center-align-text{
