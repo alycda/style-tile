@@ -5558,21 +5558,21 @@ h1 {
   background: url("../img/logo.png");
   position: absolute;
   margin-left: -25px;
-  background-color: #ffa600;
+  background-color: #ff6a00;
   z-index: 6;
   -webkit-box-shadow: 0px 3px 15px #818181;
   -moz-box-shadow: 0px 3px 15px #818181;
   box-shadow: 0px 3px 15px #818181;
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
-  background-position: 2px 0px;
-  background-size: 95%; }
+  background-position: 5px 4px;
+  background-size: 85%; }
 
 .logo:hover {
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
   cursor: pointer;
-  background-position: 2px -60px; }
+  background-position: 5px -50px; }
 
 @media screen and (max-width: 800px) {
   .logo {
@@ -5585,7 +5585,7 @@ header:not(#subnav) {
   top: 0;
   z-index: 999;
   min-width: 100%;
-  background: #fff; }
+  background: rgba(255, 255, 255, 0.8); }
   header:not(#subnav) .row {
     padding-left: 15px;
     padding-right: 15px; }
@@ -5785,7 +5785,7 @@ header#desktop {
   position: absolute;
   z-index: 20;
   top: -999px;
-  padding-top: 10px;
+  padding-top: 60px;
   overflow: scroll;
   padding-bottom: 200px; }
 
@@ -5957,7 +5957,8 @@ header#mobile {
 
 .quote-box {
   margin-top: 60px;
-  margin-bottom: 60px; }
+  margin-bottom: 60px;
+  max-width: 100%; }
 
 /*
 	Adjusting default button 
@@ -6093,9 +6094,25 @@ header#mobile {
 /*===========================
 	For the full view for each person
 ============================*/
+/**
+	Various SASS vars that can be used
+*/
+.center-align-text {
+  position: absolute;
+  text-align: center; }
+
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
+
 .social-media {
   height: 100px;
-  width: 300px;
+  max-width: 300px;
   margin-left: 0px; }
   .social-media li {
     background: url("../img/socialmedia.png");
@@ -6111,6 +6128,76 @@ header#mobile {
   .social-media li.facebook {
     background-position: -60px -8px; }
 
+#title {
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  margin-left: 0 auto; }
+  #title div {
+    max-width: 1024px;
+    margin: 0 auto;
+    position: relative;
+    top: 100px; }
+  #title h1 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    padding-right: 60px;
+    position: relative;
+    right: 22px;
+    font-family: "Lato",sans-serif;
+    text-transform: uppercase;
+    font-weight: 300;
+    max-width: 600px; }
+  #title h3 {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-top: -40px;
+    position: relative;
+    right: 22px;
+    max-width: 600px; }
+
+/**============================================
+	Need to add some media query fixes for the 
+	person's name and title
+===============================================*/
+@media screen and (min-width: 300px) and (max-width: 768px) {
+  #title h1, #title h3 {
+    padding: 5px; }
+  #title h1 {
+    font-size: 125%;
+    max-width: 200px; }
+  #title h3 {
+    max-width: 200px;
+    margin-top: -10px; }
+  #title div {
+    position: absolute;
+    left: 60px; } }
+@media screen and (min-width: 768px) {
+  #title h1 {
+    font-size: 312.5%;
+    max-width: 400px; }
+  #title h3 {
+    max-width: 400px;
+    margin-top: -10px; }
+  #title div {
+    margin-left: 80px; } }
+@media screen and (min-width: 1024px) {
+  #title h1 {
+    font-size: 312.5%;
+    max-width: 400px; }
+  #title h3 {
+    max-width: 400px;
+    margin-top: -10px; }
+  #title div {
+    max-width: 960px; } }
+@media screen and (min-width: 1084px) {
+  #title h1 {
+    font-size: 562.5%; }
+  #title h1 {
+    max-width: 700px; }
+  #title h3 {
+    max-width: 700px;
+    margin-top: -10px; } }
 #social-media-full-page {
   position: relative;
   top: 15px;
@@ -6139,9 +6226,6 @@ h3 {
 .spacer {
   width: 30px; }
 
-#bio {
-  margin-left: 40px; }
-
 .post-set ul {
   list-style: none;
   margin-left: -20px; }
@@ -6153,7 +6237,8 @@ h3 {
 
 #bio {
   padding-bottom: 200px;
-  margin-top: 40px; }
+  margin-top: 40px;
+  margin-left: 40px; }
 
 .bio-section {
   margin-top: 40px; }
@@ -6398,6 +6483,17 @@ iframe {
   width: 1024px;
   height: 500px; }
 
+.mini-work.data {
+  padding: 20px; }
+
+.arrow {
+  height: 20px;
+  width: 20px;
+  background: #ffa600;
+  -webkit-transform: rotateZ(45deg);
+  position: relative;
+  bottom: 10px; }
+
 /*========================
 	General item styles
 ==========================*/
@@ -6407,6 +6503,8 @@ iframe {
   background: #ffa600;
   margin-right: 2px;
   margin-bottom: 2px; }
+  .work-in-a-box div div:not(.arrow) {
+    display: none; }
 
 .large-item {
   height: 500px;

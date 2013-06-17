@@ -88,21 +88,21 @@ h1 {
   background: url("../img/logo.png");
   position: absolute;
   margin-left: -25px;
-  background-color: #ffa600;
+  background-color: #ff6a00;
   z-index: 6;
   -webkit-box-shadow: 0px 3px 15px #818181;
   -moz-box-shadow: 0px 3px 15px #818181;
   box-shadow: 0px 3px 15px #818181;
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
-  background-position: 2px 0px;
-  background-size: 95%; }
+  background-position: 5px 4px;
+  background-size: 85%; }
 
 .logo:hover {
   -webkit-transition: background-position 0.5s ease-in;
   -moz-transition: background-position 0.5s ease-in;
   cursor: pointer;
-  background-position: 2px -60px; }
+  background-position: 5px -50px; }
 
 @media screen and (max-width: 800px) {
   .logo {
@@ -115,7 +115,7 @@ header:not(#subnav) {
   top: 0;
   z-index: 999;
   min-width: 100%;
-  background: #fff; }
+  background: rgba(255, 255, 255, 0.8); }
   header:not(#subnav) .row {
     padding-left: 15px;
     padding-right: 15px; }
@@ -315,7 +315,7 @@ header#desktop {
   position: absolute;
   z-index: 20;
   top: -999px;
-  padding-top: 10px;
+  padding-top: 60px;
   overflow: scroll;
   padding-bottom: 200px; }
 

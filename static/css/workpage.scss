@@ -13,7 +13,18 @@ $bottomGutter:2px;
 	width:1024px;
 	height:500px;
 }
+.mini-work.data{
+	padding: 20px;
+}
 
+	.arrow{
+		height:20px;
+		width:20px;
+		background: #ffa600;
+		-webkit-transform: rotateZ(45deg);
+		position: relative;
+		bottom: 10px;
+	}
 /*========================
 	General item styles
 ==========================*/
@@ -24,7 +35,11 @@ $bottomGutter:2px;
 	margin-right: $gutter;
 	margin-bottom: $bottomGutter;
 
-	
+	div{
+		div:not(.arrow){
+			display: none;
+		}
+	}
 }
 .large-item{
 	height:500px;

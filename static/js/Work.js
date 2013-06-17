@@ -47,29 +47,36 @@ $(".work-in-a-box").each(function(i,obj){
 				Within each work item, set just ONE div and inside of that
 				put all the content/markup you want
 			*/
-			var content = obj.parentNode.children[0].children[1];
-			
+		
+			var content = obj.children[0].children[0];
+	
+			console.log(content);
 			//add a arrow indicating which item was clicked "open"
-			var arrow = content.getElementsByClassName("arrow")[0];
-			
-			
-			/**
-				Chrome has acess to a "x" property, 
-				but may not exist in all browsers. 
+			if(content !== undefined){
+				var arrow = content.getElementsByClassName("arrow")[0];
+				console.log(arrow);
+				/**
+				    Chrome has acess to a "x" property, 
+				    but may not exist in all browsers. 
+				    First set to clientX if "x" doesn't exist
+				*/
+				var offset = e.x !== undefined ? e.x : e.clientX;
 				
-				First set to clientX if "x" doesn't exist
-			*/
-			var offset = e.x !== undefined ? e.x : e.clientX;
+				//if clientX doesn't exist, then use pageX
+				if(offset == undefined){
+				    ofset = e.pageX;
+				}
+				
+				arrow.style.marginLeft = offset - works.offset().left + "px";
+				arrow.style.marginTop = -20 + "px"
+				div.innerHTML = content.innerHTML;
 			
-			//if clientX doesn't exist, then use pageX
-			if(offset == undefined){
-				ofset = e.pageX;
+			
+			
 			}
 			
-			arrow.style.marginLeft = offset - works.offset().left + "px";
 			
-			
-			div.innerHTML = content.innerHTML;
+		
 			
 			
 			
