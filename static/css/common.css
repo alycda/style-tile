@@ -277,10 +277,10 @@ header#desktop {
   width: 100%;
   background: #c8cbc7;
   height: 125px;
-  margin-bottom: -50px;
+  margin-bottom: 100px;
   position: relative;
   z-index: 1;
-  margin-top: -65px; }
+  margin-top: -120px; }
 
 .desktop-sub-nav {
   display: none; }
