@@ -427,13 +427,15 @@
     
 		<script>
 		    $(document).foundation();
-			$(document).foundation("orbit");
+			$(document).foundation("orbit",{
+				bullets:false
+			});
 			
-		
+		$(".orbit-slides-container").css("min-height","100%");
 		$(".orbit-slides-container li").hover(function(){
 			$(".orbit-caption").fadeOut("slow");		
 		},function(){
-		$(".orbit-caption").fadeIn("slow");	
+			$(".orbit-caption").fadeIn("slow");	
 		})
 	
   document.getElementById("hamburger").addEventListener("click",function(){

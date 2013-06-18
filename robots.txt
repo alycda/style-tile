@@ -1,6 +1,7 @@
 canvas.html
 component-list.html
 contact.html
+featured.html
 index.html
 isotope.html
 leadership-full.html

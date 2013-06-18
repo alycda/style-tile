@@ -299,67 +299,52 @@
 
 		<div id="SITE">
 		
+	<style>
+		
+		#slider-nav{
+			width:100%;
+			background: #ffa600;
+			padding: 20px;
+			height:200px;
+			padding-bottom: 10px;
+			position: fixed;
+			bottom:-155px;
+			
+		}
+		.slide-thumb{
+			max-width: 10%;
+			list-style: none;
+			display: inline-block;
+			
+		}
+		#slider-nav h2{
+			line-height: 0px;
+			font-size: 100%;
+		}
+		.orbit-bullets{
+			right:100px;
+	
+			z-index: 999;
+			position: fixed;
+		}
+	</style>
+	
+<ul class="slider" data-orbit>
+	<li>
+				<img src="./static/img/testimages/1.jpg"/>
 
-<style>
+	</li>
 	
+		<li>
+				<img src="./static/img/testimages/2.jpg"/>
 
-</style>
+	</li>
+</ul>
 
-<div class="row page">
-
-	<!-- 
-		Note:
-		Transitions should only go halfway for 
-		people, full height for work
-	-->	
-	<h1 class="subheader">Transition types</h1>
-	<p>These illustrate some of the possible types of transitions that could be done on a page such as
-		the work page.
-		The SASS file where the css can be found is inside "workpage.scss"
-	</p>
-	
-	<hr/>
-	
-	
-	<h2 class="subheader">CSS Based transitions</h2>
-	<h3 class="subheader">Fade In transition</h3>
-	<div class="work-item">
-		<div class="thumb">
-			<img src="./static/img/work/work.jpg" alt=""/>
-		</div>
-		<div class="overlay fadein"></div>
-	</div>
-
-	
-	
-	<h3 class="subheader">Left to right transition</h3>
-	<div class="work-item">
-		<div class="thumb">
-			<img src="./static/img/work/work.jpg" alt=""/>
-		</div>
-		<div class="overlay ltr"></div>
-	</div>
-	
-	
-	<h3 class="subheader">Top to bottom transition</h3>
-	<div class="work-item">
-		<div class="thumb">
-			<img src="./static/img/work/work.jpg" alt=""/>
-		</div>
-		<div class="overlay ttb"></div>
-	</div>
-	<hr/>
-	
-	
-	<h2 class="subheader">Canvas Based transitions</h2>
-	<div class="work-item canvas" data-src="https://si0.twimg.com/profile_images/2997417557/891fedea24cd505d592f8c2116be9812.jpeg">
-	</div>
-	
-	<div id="work-items">
-	
-	</div>
-
+<div id="slider-nav">
+	<h2 class="subheader">See All</h2>
 </div>
+
 
 
 		
@@ -372,12 +357,11 @@
 			<script type="text/javascript" src="./static/js/Isotope.js"></script>
 			<script type="text/javascript" src="./static/js/Vimeo.js"></script>
 			<script type="text/javascript" src="./static/js/Video.js"></script>
-			<script type="text/javascript" src="./static/js/foundation.min.js"></script>
-			<script type="text/javascript" src="./static/js/Transitions.js"></script>
-			<script type="text/javascript" src="./static/js/test.js"></script>
-			<script type="text/javascript" src="./static/js/Util.js"></script>
-			<script type="text/javascript" src="./static/js/Mappy.js"></script>
-			<script src="./static/js/main.js"></script>
+			<script type="text/javascript" src="./static/js/foundation.js"></script>
+			<script type="text/javascript" src="./static/js/Orbit.js"></script>
+			<script type="text/javascript" src="./static/js/Featured.js"></script>
+
+			
 		
 		
 		    
@@ -476,18 +460,7 @@
 	  
 	  
 	  
-	 if(window.location.href.search("contact")){
-		  var m = new Mappy({
-		  	mapAnchor:"map"
-	 
-		  },function(map){
-			 
-			   m.addMarker(map,"1960 E. Grand Ave, El Segundo, CA");
-		  })
-	  
-		  
-
-	 }		</script>
+		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

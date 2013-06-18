@@ -410,6 +410,7 @@ for(var i = 0;i<navlength;++i){
 */
 
 $("header#desktop nav ul li a").on("click",function(e){
+console.log("clicked");
 	var link = e.target;
 	
 	var subnav = $("#subnav");
@@ -485,3 +486,6 @@ $("header#desktop nav ul li a").on("click",function(e){
 	}
 	
 });
+
+
+/*==========================================================================================*/

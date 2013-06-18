@@ -340,7 +340,17 @@
 				
 				<div>
 					<div class="arrow"></div>
-					Conspiracy. We love it. Team One created a new trailer for 2K Games and 2K Marin’s launch of The Bureau: XCOM Declassified video game.   Set in 1962 during the height of the Cold War, The Bureau: XCOM Declassified trailer tells the story of the covert XCOM organization’s first encounter with the enemy. While video
+					<ul data-orbit>
+						<li>				
+						
+						Conspiracy. We love it. Team One created a new trailer for 2K Games and 2K Marin’s launch of The Bureau: XCOM Declassified video game.   Set in 1962 during the height of the Cold War, The Bureau: XCOM Declassified trailer tells the story of the covert XCOM organization’s first encounter with the enemy. While video
+						</li>
+						<li>				
+						
+						Cd trailer tells the story of the covert XCOM organization’s first encounter with the enemy. While video
+						</li>
+
+					</ul>
 				</div>
 			</div>
 			
@@ -450,6 +460,7 @@ Icelandic Glacial Water tapped Team One to help “bring Iceland to the world”
 </div><!--end row-->	
 	
 	
+		
 
 		
 		
@@ -465,16 +476,12 @@ Icelandic Glacial Water tapped Team One to help “bring Iceland to the world”
 		    
     
 		<script>
-		    $(document).foundation();
-			$(document).foundation("orbit");
-			
+				$(document).foundation("orbit",{
+	    bullets:false,
+	  		  timer:5000,
+	});
 		
-		$(".orbit-slides-container li").hover(function(){
-			$(".orbit-caption").fadeOut("slow");		
-		},function(){
-		$(".orbit-caption").fadeIn("slow");	
-		})
-	
+		$(".orbit-container.orbit-stack-on-small")[0].style.height = 500 + "px";	
   document.getElementById("hamburger").addEventListener("click",function(){
 		  $mobilenav = $("#mobile-menu");
 		  $site = $("#SITE");
