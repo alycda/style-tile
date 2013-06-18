@@ -22,7 +22,7 @@ define('DB_NAME', 't1_wp_redesign');
 define('DB_USER', 't1_wp_dev');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'XU5usW4c');
+define('DB_PASSWORD', '[I changed this duh]');
 
 /** MySQL hostname */
 define('DB_HOST', 'teamone-usa.com');
