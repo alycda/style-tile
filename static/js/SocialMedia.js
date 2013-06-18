@@ -1,7 +1,7 @@
 var Social = function(_params){
 	this.params = _params !== undefined ? _params : {};
 	
-	this.twitter = this.params.twitter;
+	
 	this.instagram = this.params.instagram;
 	this.facebook = this.params.facebook;
 	this.google = this.params.google;
@@ -27,5 +27,6 @@ Social.Prototype = {
 			}
 		})	
 	},
-		
+	
+	
 };

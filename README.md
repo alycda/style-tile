@@ -17,3 +17,4 @@ Misc / Component / Functionality demonstration
 2. [vimeo.html](http://team-one.github.io/style-tile/vimeo.html) - shows vimeo integration
 3. index.html - kitchen sink
 4. [canvas.html](http://team-one.github.io/style-tile/canvas.html) - prototype page for creating filters using Canvas 2d context
+5. [featured.html](http://team-one.github.io/style-tile/featured.html) - prototype for the featured case study page
