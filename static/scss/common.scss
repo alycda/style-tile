@@ -1,0 +1,626 @@
+@import "vars";
+/*
+	Since we have a fixed header, this helps push the page down so 
+	content can be seen.
+*/
+.row.page{
+	margin-top: 100px;
+	
+}
+
+.italic{
+	font-style: italic;
+}
+
+/**
+	Basic styles for toggle buttons
+*/
+#toggle-buttons{
+	margin-top: 100px;
+	float: right;
+	.toggle-button{
+		padding: 10px;
+		-webkit-transition: background 0.5s ease-in, color 0.5s ease-in;
+		-moz-transition: background 0.5s ease-in, color 0.5s ease-in;
+		
+		background: $orange;
+		margin-top: 10px;
+	}
+	
+	.toggle-button:hover{
+		cursor: pointer;
+		-webkit-transition: background 0.5s ease-in, color 0.5s ease-in;
+		-moz-transition: background 0.5s ease-in, color 0.5s ease-in;
+	
+		background: $dark-gray;
+		color:#fff;
+	}
+	
+	.toggle-selected{
+		padding: 10px;
+		-webkit-transition: background 0.5s ease-in, color 0.5s ease-in;
+		-moz-transition: background 0.5s ease-in, color 0.5s ease-in;
+		
+		background: $dark-gray;
+		margin-top: 10px;
+	}
+}
+
+
+/*=================
+	GENERAL AND MISC.
+==================*/
+
+p:not(.button){
+	font-family: "Lato";
+}
+.video.large{
+	min-width:100%;
+	height:520px;
+}
+.footer {
+	margin-top: 40px; 
+}
+  
+  
+h1{
+	color:#000;
+	font-style: italic;
+}
+
+.darkgrey{
+	color:$dark-gray;
+}
+
+
+#content{
+    margin-top: 100px;
+    position: relative;
+    z-index: 1;
+}
+
+.sub-navigation{
+	height:0px;
+	overflow: hidden;
+}
+
+/*==================
+  LOGO
+==================*/
+.logo{
+	height:60px;
+	width:60px;
+	float: left;
+	//background: url('../img/logosprite.png');
+	background:url('../img/logo.png');
+	position: absolute;
+	margin-left: -25px;
+	background-color: #ff6a00;
+	z-index: 6;
+	-webkit-box-shadow: 0px 3px 15px #818181;
+	-moz-box-shadow:0px 3px 15px #818181;
+	box-shadow: 0px 3px 15px #818181;
+	-webkit-transition: background-position 0.5s ease-in;
+	-moz-transition: background-position 0.5s ease-in;    
+	background-position: 5px 4px;
+	background-size: 85%;
+	
+}
+  
+.logo:hover{
+	  -webkit-transition: background-position 0.5s ease-in;
+	  -moz-transition: background-position 0.5s ease-in;
+	  cursor: pointer;
+	  background-position: 5px -50px;
+}
+@media screen and(max-width:800px){
+	.logo{
+		margin-left: 0px;
+	}
+	
+  
+}
+/*=================
+  Header
+==================*/
+header:not(#subnav){
+	
+  .row{
+	  padding-left: 15px;
+	  padding-right: 15px;
+  }
+  	position: fixed;
+  	top:0;
+  	z-index: 999;
+  	min-width: 100%;
+  	background:rgba(255,255,255,0.8);
+  ul{
+    list-style: none;
+    li{
+      list-style: none;
+    }
+  }
+  
+  a{
+    font-family: "ProximaNovaA-Semibold","ProximaNovaA-Bold","ProximaNovaA-Regular",sans-serif;
+  }
+  
+  
+
+
+}
+
+header#desktop{
+  
+  border-top:solid 5px #000;
+  height: 65px;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow:$shadow;
+  box-shadow: $shadow;
+  margin-bottom: 30px;
+ 
+  
+  nav{
+    position: relative;
+    bottom:5px;
+    margin-left: 90px;
+    ul{
+      li{
+        float: left;
+        a{
+          font-size: 1em;
+          text-transform: uppercase;
+          color:$dark-gray;
+        }
+        /* Transition needed? */
+        a:hover{
+	        color:$darkOrange;
+        }
+      }
+    }
+  }
+  
+@media screen and (max-width:850px){
+	nav{
+		ul{
+			li{
+				a{
+					font-size: 0.85em;
+				}
+			}
+		}
+	}
+	
+	
+} 
+  
+#searchbox{
+	
+    background: $light-gray;
+    float: right;
+    margin-top: 10px;
+    background-size: 80%;
+    
+    .icon{
+	    height:25px;
+	    width:25px;
+	    background-image: url("../img/icon-search.png");
+		background-size: 100%;
+		position: relative;
+		left:5px;
+		top:5px;
+    }
+    
+}
+
+@media screen and (min-width:960px){
+	#searchbox{
+		height:35px;
+		width:35px;
+	}
+	
+	
+}
+
+@media screen and (min-width:961px){
+	header#desktop{
+		nav{
+			margin-left: 80px;
+		}
+	}
+}
+
+@media screen and (max-width:950px){
+	#searchbox{
+		height:60px;
+		width:60px;
+		margin-top: 0;
+		background-size: 100%;
+		
+		.icon{
+			height:40px;
+			width:40px;
+			left:9px;
+			top:7px;
+		}
+	}	
+
+}
+
+/*#magnifing-glass{
+    position: relative;
+    left:28%;
+    top:22%;
+}
+
+#circle{
+    height:10px;
+    width: 10px;
+    border-radius: 40px;
+    background: $light-gray;
+    position: relative;
+    top:2.5px;
+    left:2.5px;
+}
+
+.outline{
+    height:15px;
+    width:15px;
+    border-radius: 40px;
+    background:#fff;
+}
+
+.post{
+    -webkit-transform: rotateZ(45deg);
+    height:4px;
+    width:10px;
+    position: relative;
+    left:10px;
+    bottom:2px;
+    border-radius: 40px;
+    background: #fff;
+}*/
+
+@media screen and (max-width:768px){
+  #searchbox{
+    height:35px;
+    width:35px;
+    margin-top:10px;
+  } 
+  
+  #magnifing-glass{
+      position: relative;
+    left:25%;
+    top:25%;
+  }
+
+  
+};
+   .divider{
+    width:1px;
+    height:20px;
+    position: relative;
+    top:2px;
+    background: $dark-gray;
+  }
+  
+  
+}//end header desktop
+
+/*==========================================
+  DESKTOP HEADER MEDIA QUERY FIXES.
+  Needed to allow the nav to scale nicely.
+  
+  Notes: More testing needed to be done on 
+  actual devices to get a better sense of 
+  what font sizes work best.
+===========================================*/
+@media screen and (min-width:769px){  
+  .divider{
+   	margin-left: 42px;
+   	margin-right: 42px;
+  }
+}
+
+@media screen and (max-width:850px){
+	header#desktop{
+		nav{
+			ul{
+				li{
+					a{
+						font-size: 0.85em;
+					}
+				}
+			}
+		}
+	}	
+} //end query
+
+@media screen and (min-width:768px) and (max-width:1024px){  
+	.divider{
+		margin-left: 35px;
+		margin-right: 35px;
+	}
+	
+	.logo{
+		margin-left: 0;
+	}
+
+
+	header#desktop{
+		nav{
+			margin-left: 100px;
+		}
+	}	
+}//end query
+
+
+@media screen and (min-width:768px) and (max-width:960px){  
+	.divider{
+		margin-left: 28px;
+		margin-right: 28px;
+	}
+}//end query
+
+
+@media screen and (min-width:768px) and (max-width:920px){  
+	.divider{
+		margin-left: 25px;
+		margin-right: 25px;
+	}
+}//end query
+
+
+@media screen and (min-width:768px) and (max-width:880px){  
+	.divider{
+		margin-left: 20px;
+		margin-right: 20px;
+	}
+}//end query
+
+
+@media screen and (min-width:768px) and (max-width:840px){  
+	.divider{
+		margin-left: 18px;
+		margin-right: 18px;
+	}
+}//end query
+/*========================================
+  SUBNAV
+========================================*/
+#subnav{
+	width:100%;
+	background: $light-gray;
+	height:125px;
+	margin-bottom: 100px;
+	position:relative;
+	z-index:1;
+	margin-top: -120px;
+	//	display: none;
+}
+
+.desktop-sub-nav{
+	display: none;
+}
+.desktop-sub-navigation{
+	position: relative;
+	top:70px;
+	ul{
+		list-style: none;
+		li{
+			list-style: none;
+			float: left;
+			
+			a{
+				text-transform: uppercase;
+				color:$dark-gray;
+			}
+			
+			a.selected{
+				color:$darkOrange;
+			}
+		}
+	}
+}
+
+.line-divider{
+	text-align: center;
+	height:20px;
+	color:$dark-gray;
+	width:100px;
+}
+/*========================================
+  MOBILE HEADER
+========================================*/
+#mobile-menu{
+  height: 400px;
+  width:100%;
+  background: $light-gray;
+  position: absolute;
+  z-index: 20;
+  top:-999px;
+  padding-top: 60px;
+  overflow: scroll;
+  padding-bottom: 200px;
+
+}
+
+
+.link{
+  .link-wrap{
+      padding-top: $mobilePadding;
+      padding-left: 10px;
+      padding-right: 10px;
+      background: $light-gray;
+      position: relative;
+      z-index: 6;
+      width: 300px;
+  
+      
+      width: 100%;
+      display: block;
+      
+      a{
+        width:100%;
+        display: inline-block;
+        color:$dark-gray;
+        font-family: "ProximaNovaA-Semibold",sans-serif;
+        text-transform: uppercase;
+        border-bottom: solid 5px $dark-gray;
+      }
+  }
+  a{
+      padding-bottom: $mobilePadding;
+      padding-left: $mobilePadding;
+      
+  }
+  .sub-nav:hover{
+      cursor: pointer;
+  }
+  .sub-nav{
+      height:65px;
+      padding-left: 60px;
+      margin-bottom: -5px;
+    background: #333;
+      border-top:solid 3px $dark-gray;
+      border-bottom: solid 3px $dark-gray;
+      position: relative;
+      
+      z-index: 1;
+      a{
+        color:#fff;
+        font-family: "ProximaNovaA-Semibold",sans-serif;
+        text-transform: uppercase;
+        position: relative;
+        top:30%;
+      }
+  }
+}
+header#mobile{
+  border-top:solid 5px #000;
+  z-index: 3;
+  height: 65px;
+  -webkit-box-shadow: $shadow;
+  -moz-box-shadow:$shadow;
+   box-shadow: $shadow;
+  margin-bottom: 30px;
+
+  z-index: 999; 
+  #hamburger{
+      height:45px;
+      width:65px;
+      position: relative;
+      top:8px;
+      z-index: 4;
+      border-left:solid 1px $light-gray;
+      overflow: hidden;
+      //background: yellow;
+      //background-image: url("../img/hamburgers.png");
+      //background-size: 100%;
+      float: right;
+      //background-position: 10px 48px;
+    
+    #posts{
+      position: relative;
+      top:10px;
+      left:20px;
+    }
+    .post{
+      width:35px;
+      height:5px;
+      -webkit-transition:background 0.5s ease-in;
+      -moz-transition: background 0.5s ease-in;
+      background: $dark-gray;
+      margin-bottom: 5px;
+    }
+    
+    .orange{
+      -webkit-transition:background 0.5s ease-in;
+      -moz-transition: background 0.5s ease-in;
+      background: $orange;
+    }
+    #post1{
+      
+    }
+    
+    
+    
+    
+  }
+  .row{
+	   position: relative;
+  z-index: 999;
+  }
+  #hamburger:hover{
+      cursor: pointer;    
+  }
+  
+  
+  
+};//end header mobile
+#mobile-search input{
+    height:60px;
+    background: #000;
+    border-bottom: solid 5px $dark-gray;
+    margin-top: -15px;
+    color:#fff;
+    padding-left: 20px;
+    font-family: "ProximaNovaA-Semibold","Lato", sans-serif;
+    text-transform: uppercase;
+   
+    
+  }//end mobile-search
+  
+  .mobile.searchbutton{
+    height:60px;
+    width:65px;
+    background: $dark-gray;
+    float: right;
+    position: absolute;
+    top:5px;
+    right: 10px;
+    border-bottom: solid 5px $orange;
+    background-image: url("../img/icon-search.png");
+    background-size:82%;
+    background-position:6px 0px;
+  	 .magnifying-glass{
+      position: relative;
+	  margin-left: 15px;
+	  margin-top: 12px;
+      
+       .outline{
+		   height:30px;
+		   width:30px;
+		   border-radius: 40px;
+		   background: #fff;
+        
+        .inner-circle{
+           height:20px;
+		   width:20px;
+		   border-radius: 40px;
+		   background: $dark-gray;
+		    position: relative;
+	        left:5.2px;
+	        top:4.9px;
+		  
+        }
+        
+        .handle{
+	      -webkit-transform: rotateZ(-45deg);
+	        height:20px;
+	        width:8px;
+	        border-radius: 30px;
+	        background: #fff;
+	      
+	       position: relative;
+	       left:25px;
+        }
+        
+      }
+      
+      
+
+      
+     }   
+ 
+  }

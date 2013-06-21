@@ -44,6 +44,23 @@
   margin-bottom: 60px;
   max-width: 100%; }
 
+/*=================
+	BUTTONS
+==================*/
+.button {
+  background-color: transparent;
+  color: #ff6a00;
+  border: 1px solid #ff6a00;
+  border-radius: 0;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+.button:hover {
+  background-color: #ff6a00;
+  color: white; }
+
+.button:active {
+  background-color: #cc5500; }
+
 /*
 	Adjusting default button 
 	padding.
@@ -74,40 +91,112 @@
   color: #ffa600;
   font-style: italic; }
 
-/*=================
-	BUTTONS
-==================*/
-.button.small.secondary {
-  background-color: #c8cbc7;
+.button.secondary {
+  background-color: transparent;
   color: #5a5c63;
-  border: none; }
+  border: 1px solid #5a5c63;
+  border-radius: 0; }
 
-.button.small.secondary:hover {
-  -webkit-transition: background-color 0.5s ease-in, color 0.5s ease-in;
-  -moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;
+.button.secondary:hover {
   background-color: #5a5c63;
-  color: #fff; }
+  color: white; }
 
-.button.medium.secondary {
-  background: #5a5c63;
-  color: #fff; }
+.button.secondary:active {
+  background-color: #2c2d30; }
 
-.button.medium.secondary:hover {
-  -webkit-transition: background-color 0.5s ease-in, color 0.5s ease-in;
-  -moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;
-  background: #c8cbc7;
-  color: #000; }
+.button.style3 {
+  background-color: transparent;
+  color: #c8cbc7;
+  border: 1px solid #c8cbc7;
+  border-radius: 0; }
 
-.button.large.secondary {
-  background: #000;
-  color: #c8cbc7; }
+.button.style3:hover {
+  background-color: #c8cbc7;
+  color: white; }
 
-.button.large.secondary:hover {
-  -webkit-transition: background-color 0.5s ease-in, color 0.5s ease-in;
-  -moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;
-  background: #5a5c63;
-  color: #fff; }
+.button.style3:active {
+  background-color: #979996; }
 
+.button-tests li .social-btn,
+.button-tests li .search-btn {
+  padding-left: .9em;
+  padding-right: .9em; }
+
+.social-btn {
+  border: 1px solid #ff6a00;
+  border-radius: 0;
+  min-height: 20px;
+  min-width: 20px; }
+
+.social-btn:hover {
+  background-color: #ff6a00; }
+
+.social-btn:active {
+  background-color: #cc5500; }
+
+.social-btn.twitter {
+  background: no-repeat url(../img/icons/icon-twitter-orange.png) center; }
+
+.social-btn.twitter:hover {
+  background: no-repeat url(../img/icons/icon-twitter-white.png) center; }
+
+.search-btn {
+  background: no-repeat url(../img/icons/icon-search-gray.png) center;
+  border: 1px solid #5a5c63;
+  border-radius: 0;
+  min-height: 20px;
+  min-width: 20px; }
+
+.search-btn:hover {
+  background: no-repeat url(../img/icons/icon-search-white.png) center;
+  background-color: #5a5c63; }
+
+.search-btn:active {
+  background-color: #2c2d30; }
+
+/*.button.small.secondary{
+
+	background-color: $light-gray;
+    color: $dark-gray;
+    border:none;
+}
+
+
+
+.button.small.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background-color: $dark-gray;
+	color:#fff;
+}
+
+
+.button.medium.secondary{
+	background: $dark-gray;
+	color:#fff;
+}
+
+.button.medium.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background: $light-gray;
+	color:#000;
+}
+
+
+
+.button.large.secondary{
+	background:#000;
+	color:$light-gray;
+}
+
+.button.large.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	
+	background: $dark-gray;
+	color:#fff;
+}*/
 /**
 	These two classes are necessary because
 	if the checkboxes are made to be larger than 

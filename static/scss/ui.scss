@@ -1,0 +1,311 @@
+@import "vars";
+/**==================
+	PULL OUT QUOTES
+=====================*/
+.quote-mark{
+	font-size:30px;
+}
+
+.quote-mark.large{
+	font-size: 70px;
+	line-height: 20px;
+}
+.left.quote-mark:after{
+	content:"\201C";
+	margin-right: 20px;
+	position: relative;
+	left:-40px;
+}
+
+.right.quote-mark:before{
+	content:"\201D";
+	position: relative;
+	left:40px;
+	
+}
+
+
+.quote{
+	font-family: "ClarendonBT-Light",serif;
+	font-size: 30px;
+}
+
+.quote-box{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	max-width: 100%;
+}
+/*=================
+	BUTTONS
+==================*/
+.button{
+	background-color: transparent;
+	color: rgba(255,106,0,1.0);
+	border: 1px solid rgba(255,106,0,1.0);
+	border-radius: 0;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.button:hover {
+	background-color: rgba(255,106,0,1.0);
+	color: rgba(255,255,255,1.0);
+}
+
+.button:active {
+	background-color: rgba(204,85,0,1.0);
+}
+
+/*
+	Adjusting default button 
+	padding.
+*/
+
+.button.small{
+	padding-top:12px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.button.medium{
+  padding-right: 1.8em;
+  padding-left: 1.8em;
+
+}
+
+.button.large{
+  padding-top: 0.8em;
+  padding-right: 2.5em;
+  padding-bottom: 0.8em;
+  padding-left: 2.5em;
+
+}
+
+.button.small.transparent, .button.medium.transparent, .button.large.transparent{
+	background: #fff;
+	color:$orange;
+}
+
+.button.transparant{
+	background: none;
+	border: solid 1px #ffa600;
+	color:#ffa600;
+	font-style: italic;
+}	
+
+
+.button.secondary {
+	background-color: transparent;
+	color: rgba(90,92,99,1.0);
+	border: 1px solid rgba(90,92,99,1.0);
+	border-radius: 0;
+}
+
+.button.secondary:hover {
+	background-color: rgba(90,92,99,1.0);
+	color: rgba(255,255,255,1.0);
+}
+
+.button.secondary:active {
+	background-color: rgba(44,45,48,1.0);
+
+}
+
+//button style #3
+
+.button.style3 {
+	background-color: transparent;
+	color: rgba(200,203,199,1.0);
+	border: 1px solid rgba(200,203,199,1.0);
+	border-radius: 0;
+}
+
+.button.style3:hover {
+	background-color: rgba(200,203,199,1.0);
+	color: rgba(255,255,255,1.0);
+}
+
+.button.style3:active {
+	background-color: rgba(151,153,150,1.0);
+}
+
+
+//base social media button styles
+.button-tests li .social-btn,
+.button-tests li .search-btn {
+	padding-left: .9em;
+	padding-right: .9em;
+	
+}
+
+.social-btn {
+	border: 1px solid rgb(255,106,0);
+	border-radius: 0;
+
+	min-height: 20px;
+	min-width: 20px;
+}
+
+.social-btn:hover {
+	background-color: rgb(255,106,0);
+}
+
+.social-btn:active {
+	background-color: rgb(204,85,0);
+}
+
+
+//twitter
+.social-btn.twitter{
+	background: no-repeat url(../img/icons/icon-twitter-orange.png) center;
+}
+.social-btn.twitter:hover{
+	background: no-repeat url(../img/icons/icon-twitter-white.png) center;
+}
+
+//search
+.search-btn {
+	background: no-repeat url(../img/icons/icon-search-gray.png) center;
+	border: 1px solid rgb(90,92,99);
+	border-radius: 0; 
+	min-height: 20px;
+	min-width: 20px;
+}
+
+.search-btn:hover {
+	background: no-repeat url(../img/icons/icon-search-white.png) center;
+	background-color: rgb(90,92,99);
+}
+
+.search-btn:active {
+	background-color: rgb(44,45,48);
+	
+}
+
+
+/*.button.small.secondary{
+
+	background-color: $light-gray;
+    color: $dark-gray;
+    border:none;
+}
+
+
+
+.button.small.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background-color: $dark-gray;
+	color:#fff;
+}
+
+
+.button.medium.secondary{
+	background: $dark-gray;
+	color:#fff;
+}
+
+.button.medium.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background: $light-gray;
+	color:#000;
+}
+
+
+
+.button.large.secondary{
+	background:#000;
+	color:$light-gray;
+}
+
+.button.large.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	
+	background: $dark-gray;
+	color:#fff;
+}*/
+
+
+/**
+	These two classes are necessary because
+	if the checkboxes are made to be larger than 
+	18x18, theres a strange margin issue that appears.
+*/
+.checkbox-label:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.checkbox-label-content{
+	position: relative;
+	left:5px;
+	top:5px;	
+}
+
+.close-button{
+	height:40px;
+	width:40px;
+	background: url("../img/close.png");
+	background-size: 100%;
+	position: absolute;
+	top:0;
+	right:30px;
+}
+/*=======================
+	SLIDERS
+=======================*/
+.orbit-caption{
+    background: #ffa600;
+    width:30%;
+    position: relative;
+    bottom:-5px;
+    height:100px;
+}
+
+.orbit-caption.secondary{
+	position: relative;
+	top:0;
+	left:40px;
+}
+    
+.orbit-timer{
+	display: none;
+}
+
+.orbit-slide-number{
+	display: none;
+}
+
+.orbit-bullets{
+	float: right;
+	
+}
+/*=======================
+	IMAGE SETS
+=======================*/
+.image-set{
+	list-style: none;
+	background: $light-gray;
+	width: 100%;
+	
+	ul {
+		li{
+			float:left;
+			list-style: none;
+			margin-right: 10px;
+		
+			div{
+				height:100px;
+				width:100px;
+				background: yellow;
+			}
+		}
+		
+	}
+}

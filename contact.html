@@ -466,7 +466,7 @@
 			$(".orbit-caption").fadeIn("slow");	
 		})
 	
-  document.getElementById("hamburger").addEventListener("click",function(){
+		document.getElementById("hamburger").addEventListener("click",function(){
 		  $mobilenav = $("#mobile-menu");
 		  $site = $("#SITE");
 		  var sublinks = $(".link-wrap");
@@ -554,11 +554,17 @@
 		  },function(map){
 			 
 			   m.addMarker(map,"1960 E. Grand Ave, El Segundo, CA");
-		  })
+		  },{
+			  center:new google.maps.LatLng(33.918589, -118.393719),
+			  zoom:15,
+			  mapTypeId:google.maps.MapTypeId.ROADMAP,
+			  styles:[]
+	      });
 	  
 		  
 
-	 }		</script>
+	 }		
+	</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

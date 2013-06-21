@@ -8,6 +8,10 @@ works.isotope({
 //helps to make sure only one piece can be seen at a time.
 var contentopen = false;
 
+
+
+
+
 $(".work-in-a-box").each(function(i,obj){
 
 	//set the index as a attribute as it'll play into things later
@@ -72,7 +76,11 @@ $(".work-in-a-box").each(function(i,obj){
 				div.innerHTML = content.innerHTML;
 			
 			
-			
+			$(document).foundation("orbit");
+$(".orbit-next").on("click",function(){
+	console.log("apple");	
+})
+
 			}
 			
 			

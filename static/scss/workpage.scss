@@ -1,0 +1,122 @@
+@import "vars";
+
+//some vars to make it a bit easier to style
+$itemWidth:200px;
+$itemHeight:200px;
+
+$gutter:2px;
+$bottomGutter:2px;
+
+.work-in-a-box.mini-work{
+	-webkit-transition: width 0.5s ease-in, height 0.5s ease-in;
+	-moz-transition: width 0.5s ease-in, height 0.5s ease-in;
+	width:1024px;
+	height:500px;
+}
+
+
+.arrow{
+    height:20px;
+    width:20px;
+    background: #ffa600;
+    -webkit-transform: rotateZ(45deg);
+    position: relative;
+    top:10px;
+    z-index: -1;
+}
+/*========================
+	General item styles
+==========================*/
+.work-in-a-box{
+	width:$itemWidth;
+	height:$itemHeight;
+	background: #ffa600;
+	margin-right: $gutter;
+	margin-bottom: $bottomGutter;
+
+	div{
+		div:not(.arrow){
+			display: none;
+		}
+	}
+}
+.large-item{
+	height:500px;
+	width:100%;
+	background: #ffa600;
+}
+.work-in-a-box-selected{
+	width:100%;
+	height:500px;
+	background: #ffa600;
+}
+.work-item{
+	height:$itemHeight;
+	width:$itemWidth;	
+	position: relative;	
+	background: #333;
+	margin-right: $gutter;
+	margin-bottom: $bottomGutter;
+}
+
+	
+.overlay{
+    height:$itemHeight;
+    width:$itemWidth;
+    background: #ffa600;
+    position: absolute;
+    top:0;
+}
+
+
+/*========================
+	FadeIn transition
+==========================*/
+.work-item .overlay.fadein{
+    -webkit-transition: opacity $transitionTime ease-in;
+    -moz-transition: opacity $transitionTime ease-in;
+    opacity: 0;
+}
+
+.work-item:hover .overlay.fadein{
+    -webkit-transition: opacity $transitionTime ease-in;
+    -moz-transition: opacity $transitionTime ease-in;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/*========================================
+	left-to-right animation transition,
+	abbreviated ltr
+========================================*/
+.work-item .overlay.ltr{
+    -webkit-transition: width $transitionTime ease-in;
+    -moz-transition: width $transitionTime ease-in;
+    width: 0;
+}
+
+.work-item:hover .overlay.ltr{
+    -webkit-transition: width $transitionTime ease-in;
+    -moz-transition: width $transitionTime ease-in;
+    width:$itemWidth;
+    cursor: pointer;
+}
+
+
+/*========================================
+	top-to-bottom animation transition
+	abbreviated ttb
+========================================*/
+.work-item .overlay.ttb{
+	-webkit-transition: height $transitionTime ease-in;
+	-moz-transition: height $transitionTime ease-in;
+	height:0;
+}
+
+.work-item:hover .overlay.ttb{
+	-webkit-transition: height $transitionTime ease-in;
+	-moz-transition: height $transitionTime ease-in;
+	height:$itemHeight;
+}

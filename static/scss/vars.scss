@@ -1,0 +1,77 @@
+/**
+	Various SASS vars that can be used
+*/
+$body-bg: #fff;
+$body-font-color: #222;
+$body-font-family: "Lato","ClarendonBT-Light", "Georgia", serif;
+$body-font-weight: normal;
+$body-font-style: normal;
+
+// Colors
+
+$primary-color: #ffa600;
+$secondary-color: #c8cbc7;
+$alert-color: #c60f13;
+$success-color: #5da423;
+
+//T1 Colors
+$dark-gray:#5a5c63;
+$light-gray:#c8cbc7;
+
+$darkOrange:#ff6a00;
+$orange:#ffa600;
+
+$mobilePadding:20px;
+$mobileNavPadding:20px;
+
+//transition time
+$transitionTime:0.5s;
+
+//drop shadow
+$shadow:0px 3px 15px #818181;
+
+
+// Typography Variables
+
+// Heading font styles
+
+
+$header-font-family-light:"ProximaNovaA-Light", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-family: "ProximaNovaA-Semibold", "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif;
+$header-font-weight: normal;
+$header-font-style: normal;
+$header-font-color: #222;
+$header-line-height: 1.4;
+$header-top-margin: .2em;
+$header-bottom-margin: .5em;
+$header-text-rendering: optimizeLegibility;
+
+
+//find somehting bolder perhaps?
+$quoteFontLight:"ClarendonBT-Light",serif;
+$quoteFontMedium:"ClarendonBT-SemiBold",serif;
+
+//convert px to ems
+@function convertToPercent($pixel){
+	@return ($pixel/16) * 100%;
+}
+
+.center-align-text{
+	position: absolute;
+		text-align: center;
+}
+@media screen and (max-width:868px){
+	.center-align-text{
+		width: 85%;
+	}
+}
+
+@media screen and (max-width:700px){
+	.center-align-text{
+		width:70%;
+	}
+}
+
+.debug{
+	border:solid 1px red;
+}

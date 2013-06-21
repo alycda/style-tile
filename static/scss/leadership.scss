@@ -1,0 +1,448 @@
+/*===========================
+	For the full view for each person
+============================*/
+@import "vars";
+.social-media{
+	height:100px;
+	max-width:300px;
+	margin-left: 0px;
+	li{
+		background: url("../img/socialmedia.png");
+		height:40px;
+		width:40px;
+		background-size: 400%;
+		background-position: -8px -8px;
+		float: left;
+		list-style: none;
+		margin-right: 10px;
+	}
+	
+	li.twitter{
+		background-position: 48px -8px;
+	}
+	
+	li.facebook{
+		background-position: -60px -8px;
+	}
+}
+//title for each person
+
+#title{
+	position: absolute;
+	display: inline-block;
+	width:100%;
+	div{
+		max-width: 1024px;
+		margin: 0 auto;
+		position: relative;
+		top:100px;
+	}
+	margin-left: 0 auto;
+
+	
+	h1{
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+		padding-right: 60px;
+		position: relative;
+		right:22px;
+		font-family:"Lato",sans-serif;
+		text-transform: uppercase;
+		font-weight: 300;
+		max-width: 600px;
+
+	}
+	
+	h3{
+		background: rgba(255,255,255,0.8);
+		padding: 20px;
+		margin-top: -40px;
+		position: relative;
+		right:22px;
+		max-width: 600px;
+	}
+}
+
+/**============================================
+	Need to add some media query fixes for the 
+	person's name and title
+===============================================*/
+@media screen and (min-width:300px) and (max-width:768px){
+	#title{
+		h1,h3{
+			padding: 5px;
+		}
+		h1{
+			font-size: convertToPercent(20);
+			max-width: 200px;
+		}
+		
+		h3{
+			max-width: 200px;
+			margin-top: -10px;
+		}
+		div{
+			position: absolute;
+			left:60px;
+		}
+	}	
+};
+
+@media screen and (min-width:768px){
+	#title{
+		h1{
+			font-size: convertToPercent(50);
+			max-width: 400px;
+		}
+		
+		h3{
+			max-width: 400px;
+			margin-top: -10px;
+		}
+		
+		div{
+			margin-left: 80px;
+		}
+	}
+}
+
+@media screen and(min-width:1024px){
+	#title{
+		h1{
+			font-size: convertToPercent(50);
+			max-width: 400px;
+		}
+		
+		h3{
+			max-width: 400px;
+			margin-top: -10px;
+		}
+		
+		div{
+			max-width: 960px;
+		}
+	}
+}
+
+@media screen and (min-width:1084px){
+	#title{
+		h1{
+			font-size: convertToPercent(90);
+		}
+		
+		h1{
+			//font-size: convertToPercent(50);
+			max-width: 700px;
+		}
+		
+		h3{
+			max-width: 700px;
+			margin-top: -10px;
+		}
+	}	
+};
+
+#social-media-full-page{
+	position:relative;
+	top:15px;
+	left:30px;
+}
+img{
+	max-width: 100%;
+}
+.button.large.transparent{
+	background: #fff;
+}
+
+h3{
+	font-style: italic;
+	
+}
+.social{
+	float: right;
+	position: relative;
+	top:40px;
+}
+.social div{
+	height:40px;
+	width:40px;
+	background: #333;
+	display: inline-block;
+}
+
+.spacer{
+	width:30px;
+}
+
+
+
+.post-set{
+	ul{
+		list-style: none;
+		margin-left: -20px;
+		li{
+			list-style: none;
+		}
+	}
+}
+
+#person{
+	margin-top: 20px;
+
+}
+
+#bio{
+	padding-bottom: 200px;
+	margin-top: 40px;
+	margin-left: 40px;
+}
+
+
+.bio-section{
+	margin-top: 40px;
+	
+}
+
+#leader-posts{
+	margin-top: 30px;
+	hr{
+		margin-bottom: 30px;
+	}
+}
+
+.social-media{
+	li{
+		//background: #333;
+		background-image: url("../img/socialmedia.png");
+		
+	}
+}
+
+.view-more{
+	margin-left: 60px;
+	position: relative;
+	left:30px;
+	
+	.button{
+		margin-left: -40px;
+	}
+}
+.content,.leader-content{
+	display: none;
+}
+/*===========================
+	For the selected view 
+	on the leadership page
+============================*/
+#leader-list-view{
+	display: none;
+	ul{
+		li{
+			list-style: none;
+		}
+	}
+}
+
+
+#content-box{ 
+	//border:solid 1px red;
+	height:0px;
+	overflow: hidden;
+	//height:300px;
+	width:100%;
+	//background: #ffa600;
+//	padding: 20px;
+	position: relative;
+		.large.thumb{
+			height:200px;
+			width:200px;
+			//border-radius: 100px;
+		}
+	
+}
+
+
+.leaderbox{ 
+
+		.large.thumb{
+			height:200px;
+			width:200px;
+			//border-radius: 100px;
+		}
+	
+}
+
+/*====================
+	LEADERSHIP
+=======================*/
+#leadership{
+	max-width:960px;
+	margin: 0 auto;
+	position: relative;
+	left:30px;
+
+}
+.leader{
+	height:140px;
+	width:140px;
+	//border-radius: 80px;
+	background: #333;
+	display: inline-block;
+	background-size:100%;
+	position: relative;
+	margin-right: 80px;
+	margin-top: 40px;
+	margin-bottom: 40px;
+	
+}
+
+.leader:hover{
+	cursor: pointer;
+}
+
+.leader-row{
+
+	
+}
+
+@media screen and (max-width:768px){
+	.leader-row{
+		
+	}
+}
+
+.leader-content{
+	display: none;
+}
+
+.row-2{
+	.wrap{
+		max-width: 720px;
+		margin: 0 auto;
+		
+	}
+}
+.style-selection{
+	float: right;
+	
+}
+.segmented-button{
+	height:45px;
+	width:45px;
+	background: $light-gray;
+	float: left;
+	//background: red;
+	background-image: url("../img/grid.png");
+	background-size: 170%;
+	
+	
+}
+
+.segmented-button.selected:not(.list){
+	background-color: #ffa600;
+}
+
+
+.segmented-button.selected:not(.grid){
+	background-color: #ffa600;
+}
+
+
+.segmented-button.grid{
+	background-position: 4px 3px;
+
+}
+
+.segmented-button.list{
+	background-position: 42px 3px;
+}
+
+.segmented-button.grid.seleced{
+	height:58px;
+	width:58px;
+	background-color: #ffa600;
+	}
+
+/*more specifics*/
+#alastair_green{
+    background-image: url("../img/leaders/alastair_green.jpg");	
+    
+}
+
+#cait_drury{
+    background-image: url("../img/leaders/cait_drury.jpg");	
+}
+
+#chris_graves{
+    background-image: url("../img/leaders/chris_graves.jpg");	
+}
+
+#craig_rowley{
+    background-image: url("../img/leaders/craig_rowley.jpg");	
+}
+
+#elizabeth_brownsen{
+    background-image: url("../img/leaders/elizabeth_brownsen.jpg");	
+}
+
+#julie_michael{
+    background-image: url("../img/leaders/julie_michael.jpg");
+    	
+}
+
+#kurt_ritter{
+    background-image: url("../img/leaders/kurt_ritter.jpg");	
+}
+
+#mark_miller{
+    background-image: url("../img/leaders/mark_miller.jpg");	
+}
+
+#michael_webb{
+    background-image: url("../img/leaders/michael_webb.jpg");
+    	
+}
+
+#paul_mareski{
+    background-image: url("../img/leaders/paul_mareski.jpg");	
+}
+#paul_silverman{
+    background-image: url("../img/leaders/paul_silverman.jpg");	
+}
+
+
+/**
+	Used in the isotope demonstration. 
+	Not really needed in prod.
+
+	#leadership .leader{
+		height:50px;
+		width:50px;
+	}
+	.item {
+		width: 50px;
+		height: 50px;
+		margin: 5px;
+		float: left;
+
+	}
+
+	#leadership .leader.big {
+	  width: 170px;
+	  height: 110px;
+	}
+	
+	#leadership .leader.creative{
+		background: red;
+	}
+	
+	#leadership .leader.account{
+		background: green;
+	}
+	
+	#leadership .leader.manager{
+		background: blue;
+	}
+	
+	*/
+	

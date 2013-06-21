@@ -83,39 +83,3 @@ var Slider = {
 	
 };
 
-
-
-
-Slider.init();
-Slider.getSlides();
-Slider.setThumbnails("slider-nav");
-Slider.addEvent("click",function(_slide,_slider){
-	_slider._goto($(".slider"),$(_slide).index());
-})
-/*================================
-	For the featured case studies
-================================*/
-
-var slidernav = document.getElementById("slider-nav");
-slidernav.addEventListener("click",function(e){
-	
-
-	if(($(slidernav).hasClass("active")) && (e.target.tagName === "DIV")){
-		$(slidernav).animate({
-			bottom:-155
-		})
-		$(".orbit-bullets").fadeIn("slow");
-		$(slidernav).removeClass("active")
-	}else{
-		if(e.target.tagName === "DIV"){
-			$(slidernav).animate({
-				bottom:-40
-			});
-			
-			$(".orbit-bullets").fadeOut("slow");
-			$(slidernav).addClass("active");
-		}
-	}
-	
-	
-});

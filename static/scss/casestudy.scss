@@ -1,0 +1,23 @@
+.thumb{
+    width:200px;
+    height:100px;
+    background: #d1d1d1;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+    
+.thumb-text{
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 40px;
+	position: relative;
+	top:25px;
+	h2{
+		line-height: 0;
+	}
+}
+
+iframe{
+	width: 100%;
+	min-height:500px;
+}

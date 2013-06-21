@@ -1,5 +1,5 @@
 var Mappy = function(_params,_callback,_options){
-	this.options = _options !== undefined ? _options : {}
+
 	this.params = _params !== undefined ? _params :{
 		mapAnchor:"map"
 	}
@@ -14,11 +14,7 @@ var Mappy = function(_params,_callback,_options){
 	//load the map	
 	var parent = this;
 	this.addEvent("load",function(){
-		var options = {
-		  	center:new google.maps.LatLng(33.918589, -118.393719),
-		  	zoom:15,
-		  	mapTypeId:google.maps.MapTypeId.ROADMAP
-	  	}
+		var options = _options
 		var map = new google.maps.Map(document.getElementById(parent.params.mapAnchor), options);	
 		 _callback(map);
 	})

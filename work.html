@@ -324,6 +324,10 @@
 		display: none;
 	}
 	
+	.orbit-slides-container li{
+		background: #ffa600;
+	}
+	
 
 </style>
 	
@@ -466,8 +470,10 @@ Icelandic Glacial Water tapped Team One to help “bring Iceland to the world”
 		
 		</div>
 			<script type="text/javascript" src="./static/js/jquery.js"></script>
-			<script type="text/javascript" src="./static/js/foundation.min.js"></script>
+			<script type="text/javascript" src="./static/js/foundation.js"></script>
+			<script type="text/javascript" src="./static/js/Orbit.js"></script>
 			<script type="text/javascript" src="./static/js/Isotope.js"></script>
+			<script type="text/javascript" src="./static/js/Slider.js"></script>
 			<script type="text/javascript" src="./static/js/Work.js"></script>
 	   
 	   
@@ -476,12 +482,8 @@ Icelandic Glacial Water tapped Team One to help “bring Iceland to the world”
 		    
     
 		<script>
-				$(document).foundation("orbit",{
-	    bullets:false,
-	  		  timer:5000,
-	});
-		
-		$(".orbit-container.orbit-stack-on-small")[0].style.height = 500 + "px";	
+						
+		$(".orbit-container.orbit-stack-on-small")[0].style.height = 300 + "px";	
   document.getElementById("hamburger").addEventListener("click",function(){
 		  $mobilenav = $("#mobile-menu");
 		  $site = $("#SITE");

@@ -1,0 +1,199 @@
+@import "vars";
+.mail-icon{
+    height:20px;
+    width:20px;
+    background: #ffa600;
+}
+#map-and-contact{
+
+}
+.orange{
+	color:$darkOrange;
+}
+
+div{
+	font-family: "Lato",sans-serif;
+}
+/*============================
+	Contact Information
+============================*/
+
+#contact-information{
+    border-bottom: solid 1px $light-gray;
+    border-right: solid 1px $light-gray;
+    padding-bottom: 20px;
+    
+    h2{
+	  margin-bottom: 5px;  
+    }
+    p{
+	    margin-top: 5px;
+    }
+}
+
+
+
+
+.info-box{
+    border: solid 1px $dark-gray;
+    padding: 20px;
+    margin-bottom: 10px;
+    
+    div{
+	    display: inline-block;
+	    vertical-align: middle;
+    }
+}
+
+.transparant-button{
+	margin: 0 auto;
+	text-align: center;
+	padding: 20px;
+	color:$darkOrange;
+	border:solid 1px $dark-gray;
+	margin-top: 20px;
+	font-family:"Lato";
+}
+
+
+/*============================
+	Social Media Information
+============================*/
+#social-media-information{
+  // border-bottom: solid 1px $light-gray;
+   border-right: solid 1px $light-gray;
+   padding-top: 20px;
+   height: 140px;
+   h2{
+	   text-transform: uppercase;
+	   font-size: 120%;
+	   font-weight: bolder;
+   }
+   
+   .social-media{
+	   margin-left: -4px;
+	   height:80px;
+   }
+}	
+
+#offices{
+	h2{
+		font-size: 150%;
+		text-transform: uppercase;
+	}
+}
+/*============================
+	Maps
+============================*/
+
+#maps{
+	position: relative;
+	
+		
+	
+}
+hr{
+	background: $light-gray;
+	color:$light-gray;
+}
+#map{
+    height:300px;
+    max-width:700px;
+    padding: 20px;
+}
+
+/*============================
+	Offices
+============================*/
+#offices{
+	margin-left: 18px;
+	.office{
+		float: left;
+		margin-right: 30px;
+		margin-bottom: 10px;
+	}
+}
+
+
+
+@media screen and (max-width:768px){
+	.office{
+		width: 95%;
+		h4{
+			font-size: 160%;
+		}
+	}
+	
+	.info-box{
+		div.orange{
+			text-align: center;
+	
+		}
+	}
+	
+	#contact-information{
+	    div.orange{
+	    	font-size: 16px;
+	    }
+	}
+	
+	#maps{
+		.transparant-button{
+			width:100%;
+		}
+	}
+	
+};
+@media screen and (max-width:900px){
+	.info-box{
+	
+		div{
+			display: inline-block;
+			font-size: 100%;
+		}
+		
+		div.orange{
+			text-align: center;
+		
+		}
+	}
+	
+	.office{
+		.info-box{
+			width: 100%;
+		}
+	}
+	
+	#contact-information{
+		border: none;
+	}
+	
+	
+
+	
+	
+}
+
+@media screen and (min-width:1024px){
+	.info-box{
+		max-width: 290px;
+	}
+	
+	.office{
+		max-width:200px;
+	}
+	
+	#maps{
+		.transparant-button{
+			max-width: 300px;
+		}
+	}
+
+	
+	.info-box div{
+   		display: inline-block;
+   		vertical-align: middle;   		
+   		text-align: center;
+    
+   	}
+}
