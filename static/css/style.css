@@ -5968,6 +5968,7 @@ header#mobile {
   color: #ff6a00;
   border: 1px solid #ff6a00;
   border-radius: 0;
+  font-weight: 400;
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 .button:hover {
@@ -6033,8 +6034,7 @@ header#mobile {
 .button.style3:active {
   background-color: #979996; }
 
-.button-tests li .social-btn,
-.button-tests li .search-btn {
+.social-btn, .search-btn {
   padding-left: .9em;
   padding-right: .9em; }
 
@@ -6057,6 +6057,9 @@ header#mobile {
   background: no-repeat url(../img/icons/icon-twitter-white.png) center; }
 
 .search-btn {
+  position: absolute;
+  z-index: 999;
+  right: 0;
   background: no-repeat url(../img/icons/icon-search-gray.png) center;
   border: 1px solid #5a5c63;
   border-radius: 0;
