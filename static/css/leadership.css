@@ -36,6 +36,14 @@
   overflow: hidden; }
   .leader .content {
     display: none; }
+  .leader img {
+    position: absolute; }
+  .leader img.color {
+    -webkit-transition: opacity 0.5s ease-in;
+    opacity: 1; }
+  .leader img.color:hover {
+    -webkit-transition: opacity 0.5s ease-in;
+    opacity: 0; }
 
 .leader:hover {
   cursor: pointer; }
@@ -89,44 +97,55 @@
 #logo.leader {
   background: #ff6a00; }
 
-/**==========================
-	Everyone's images
-============================*/
-#alastair_green {
-  background-image: url("../img/leaders/alastair_green.jpg"); }
-  #alastair_green .caption {
-    bottom: -35px; }
+/*
+#alastair_green{
+    background-image: url("../img/leaders/alastair_green.jpg");	
+	.caption{
+		    bottom:-35px;
+	}
+}
 
-#cait_drury {
-  background-image: url("../img/leaders/cait_drury.jpg"); }
+#cait_drury{
+    background-image: url("../img/leaders/cait_drury.jpg");	
+}
 
-#chris_graves {
-  background-image: url("../img/leaders/chris_graves.jpg"); }
+#chris_graves{
+    background-image: url("../img/leaders/chris_graves.jpg");	
+}
 
-#craig_rowley {
-  background-image: url("../img/leaders/craig_rowley.jpg"); }
+#craig_rowley{
+    background-image: url("../img/leaders/craig_rowley.jpg");	
+}
 
-#elizabeth_brownsen {
-  background-image: url("../img/leaders/elizabeth_brownsen.jpg"); }
+#elizabeth_brownsen{
+    background-image: url("../img/leaders/elizabeth_brownsen.jpg");	
+}
 
-#julie_michael {
-  background-image: url("../img/leaders/julie_michael.jpg"); }
+#julie_michael{
+    background-image: url("../img/leaders/julie_michael.jpg");
+    	
+}
 
-#kurt_ritter {
-  background-image: url("../img/leaders/kurt_ritter.jpg"); }
+#kurt_ritter{
+    background-image: url("../img/leaders/kurt_ritter.jpg");	
+}
 
-#mark_miller {
-  background-image: url("../img/leaders/mark_miller.jpg"); }
+#mark_miller{
+    background-image: url("../img/leaders/mark_miller.jpg");	
+}
 
-#michael_webb {
-  background-image: url("../img/leaders/michael_webb.jpg"); }
+#michael_webb{
+    background-image: url("../img/leaders/michael_webb.jpg");
+    	
+}
 
-#paul_mareski {
-  background-image: url("../img/leaders/paul_mareski.jpg"); }
-
-#paul_silverman {
-  background-image: url("../img/leaders/paul_silverman.jpg"); }
-
+#paul_mareski{
+    background-image: url("../img/leaders/paul_mareski.jpg");	
+}
+#paul_silverman{
+    background-image: url("../img/leaders/paul_silverman.jpg");	
+}
+*/
 #logo {
   background-image: url("../img/leaders/logo.png");
   height: 240px;

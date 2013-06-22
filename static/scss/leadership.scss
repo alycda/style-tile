@@ -26,6 +26,19 @@
 		display: none;
 	}
 	
+	img{
+		position: absolute;
+	
+	}
+	img.color{
+		-webkit-transition: opacity 0.5s ease-in;
+		opacity: 1;
+	}
+	img.color:hover{
+		-webkit-transition: opacity 0.5s ease-in;
+		opacity: 0;
+	}
+	
 }
 
 .leader:hover{
@@ -105,9 +118,7 @@
 	background: #ff6a00;
 }
 
-/**==========================
-	Everyone's images
-============================*/
+/*
 #alastair_green{
     background-image: url("../img/leaders/alastair_green.jpg");	
 	.caption{
@@ -155,7 +166,7 @@
 #paul_silverman{
     background-image: url("../img/leaders/paul_silverman.jpg");	
 }
-
+*/
 #logo{
 	background-image: url("../img/leaders/logo.png");	
 height:240px;

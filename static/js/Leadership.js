@@ -199,12 +199,11 @@ for(var i = 0;i<leaderlen;++i){
 		
 	
 		
-		
 		if(!box.hasClass("active")){
 			//set content
 			title.innerHTML = leader.getAttribute("data-name");
 			subtitle.innerHTML = leader.getAttribute("data-title");
-			content.innerHTML = leader.children[0].innerHTML;
+			content.innerHTML = leader.parentNode.children[2].innerHTML;
 			
 			//set profile image
 			var largeProfile = document.getElementsByClassName("large thumb")[0];
@@ -412,8 +411,10 @@ var Leader = {
 		for(var i = 0;i<leaders.length;++i){
 				var leader = leaders[i];
 				
+				var images = leader.getElementsByTagName("img");
+		
 			
-			
+				console.log(leader);
 			
 			
 								
