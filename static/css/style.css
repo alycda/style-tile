@@ -5555,7 +5555,7 @@ h1 {
   height: 60px;
   width: 60px;
   float: left;
-  background: url("../img/logo.png");
+  background: url("../img/logosprite.png");
   position: absolute;
   margin-left: -25px;
   background-color: #ff6a00;
@@ -6217,7 +6217,6 @@ header#mobile {
   display: inline-block;
   background-size: 100%;
   position: relative;
-  margin-top: 40px;
   overflow: hidden; }
   .leader .content {
     display: none; }
@@ -6225,8 +6224,10 @@ header#mobile {
     position: absolute; }
   .leader img.color {
     -webkit-transition: opacity 0.5s ease-in;
+    -moz-transition: opacity 0.5s ease-in;
     opacity: 1; }
   .leader img.color:hover {
+    -moz-transition: opacity 0.5s ease-in;
     -webkit-transition: opacity 0.5s ease-in;
     opacity: 0; }
 
@@ -6241,9 +6242,23 @@ header#mobile {
   padding: 5px;
   padding-left: 8px;
   padding-top: 10px;
-  bottom: -25px; }
+  bottom: -40px;
+  pointer-events: none;
+  -webkit-transition: bottom 0.5s ease;
+  -moz-transition: bottom 0.5s ease; }
   .caption div {
-    padding: 5px; }
+    padding: 5px;
+    height: 100px;
+    background-color: none; }
+  .caption div.hover {
+    -webkit-transition: background 0.2s ease;
+    -moz-transition: background 0.2s ease;
+    background-color: rgba(255, 106, 0, 0.8); }
+
+.caption.hover {
+  -webkit-transition: bottom 0.2s ease;
+  -moz-transition: bottom 0.2s ease;
+  bottom: -5px; }
 
 .caption-title {
   line-height: -10px;
@@ -6256,9 +6271,16 @@ header#mobile {
 .caption-subtitle {
   font-size: 80%;
   position: relative;
+  -webkit-transition: top 0.2s ease;
+  -moz-transition: top 0.2s ease;
   top: 40px;
   text-transform: uppercase;
   color: #fff; }
+
+.caption-subtitle.hover {
+  -webkit-transition: top 0.2s ease;
+  -moz-transition: top 0.2s ease;
+  top: 0px; }
 
 /**==========================
 	For the different
@@ -6339,7 +6361,6 @@ header#mobile {
   display: inline-block;
   background-size: 100%;
   position: relative;
-  margin-top: 40px;
   overflow: hidden; }
   #logo img {
     position: absolute;

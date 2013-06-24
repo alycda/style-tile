@@ -319,7 +319,7 @@ for(var i = 0;i<navlength;++i){
 */
 
 $("header#desktop nav ul li a").on("click",function(e){
-console.log("clicked");
+
 	var link = e.target;
 	
 	var subnav = $("#subnav");
@@ -401,7 +401,7 @@ console.log("clicked");
 var Leader = {
 	init:function(_selector){
 		if(!_selector){
-			var leaders = $(".leader");
+			var leaders = document.getElementsByClassName("leader");
 		}else{
 			var leaders = $(_selector);			
 		}
@@ -409,50 +409,44 @@ var Leader = {
 		
 		
 		for(var i = 0;i<leaders.length;++i){
-				var leader = leaders[i];
-				
-				var images = leader.getElementsByTagName("img");
+			var leader = leaders[i];
+			
+			//var caption = leader.getElementsByClassName("caption")[0];
+			var images = leader.getElementsByTagName("img");
+			
+			var color = images[1];
+			var gray = images[0]
+			
 		
 			
-				console.log(leader);
+			color.addEventListener("mouseover",function(){
+				var caption = this.parentNode.getElementsByClassName("caption")[0];		
 			
 			
-								
-				/*
-					//first one is BW, second one is color
-				var images = leader.getElementsByClassName("images")[0].children;
-				var title = leader.getElementsByClassName("title")[0].children;
+				$(caption.children[0]).addClass("hover");	
+				$(caption.children[0].children[1]).addClass("hover");	
+				$(caption).addClass("hover");
+			
+				$(leader).addClass("active");
+			});
+			
+			
+			
+			color.addEventListener("mouseout",function(e){
 				
-				$(leader).hover(function(){
-				    $(images[1]).animate({
-				    	opacity:0
-				    })
-				    	
-				    $(".title").addClass("leader-title-background");	
-				    
-				    $(".title").animate({
-				    	bottom:0
-				    })
-				    
-				    $(".title h4").animate({
-				    	top:0
-				    })
-				},function(){
-				    $(images[1]).animate({
-				    	opacity:1
-				    })
-				    	$(".title").animate({
-				    	bottom:-65
-				    })
-				    
-				    
-				    $(".title h4").animate({
-				    	top:200
-				    })
-				    $(".title").removeClass("leader-title-background");	
-				})
-*/		
-
+				var caption = this.parentNode.getElementsByClassName("caption")[0];		
+				
+				
+	
+			
+				$(caption.children[0]).removeClass("hover");
+						$(caption.children[0].children[1]).removeClass("hover");			
+				$(caption).removeClass("hover");	
+			
+			
+			})
+							
+				
 		}
 
 	}

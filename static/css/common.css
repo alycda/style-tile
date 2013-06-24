@@ -85,7 +85,7 @@ h1 {
   height: 60px;
   width: 60px;
   float: left;
-  background: url("../img/logo.png");
+  background: url("../img/logosprite.png");
   position: absolute;
   margin-left: -25px;
   background-color: #ff6a00;

@@ -18,7 +18,7 @@
 	display: inline-block;
 	background-size:100%;
 	position: relative;
-	margin-top: 40px;
+	
 
 	overflow: hidden;
 	//hide content
@@ -32,9 +32,11 @@
 	}
 	img.color{
 		-webkit-transition: opacity 0.5s ease-in;
+		-moz-transition: opacity 0.5s ease-in;
 		opacity: 1;
 	}
 	img.color:hover{
+		-moz-transition: opacity 0.5s ease-in;
 		-webkit-transition: opacity 0.5s ease-in;
 		opacity: 0;
 	}
@@ -49,19 +51,38 @@
     position: absolute;
     bottom:5px;
     width:210px;
+
     color:#fff;
 	padding: 5px;
 	padding-left: 8px;
 	padding-top: 10px;
-	bottom:-25px;
+	bottom:-40px;
+	pointer-events: none;
+	
+	-webkit-transition: bottom 0.5s ease;
+	-moz-transition:bottom 0.5s ease;
 	//wrapper for caption
 	div{
 		padding: 5px;
+		height:100px;
+		background-color:none;
+	//	background-color: rgba(255,106,0,0.8);
 		
-		//background: rgba(255,106,0,0.8);
+	}
+	
+	div.hover{
+		-webkit-transition: background 0.2s ease;
+		-moz-transition:background 0.2s ease;
+		background-color: rgba(255,106,0,0.8);
 	}
 }
 
+
+.caption.hover{
+	-webkit-transition: bottom 0.2s ease;
+	-moz-transition:bottom 0.2s ease;
+	bottom:-5px;
+}
 
 .caption-title{
     line-height: -10px;
@@ -75,12 +96,18 @@
 .caption-subtitle{
     font-size: 80%;
     position: relative;
+    -webkit-transition:top 0.2s ease;
+    -moz-transition:top 0.2s ease;
     top:40px;
 	text-transform: uppercase;
 	color:#fff;
 }
 
-
+.caption-subtitle.hover{
+	-webkit-transition:top 0.2s ease;
+    -moz-transition:top 0.2s ease;
+    top:0px;
+}
 
 /**==========================
 	For the different
@@ -176,7 +203,7 @@ height:240px;
 	display: inline-block;
 	background-size:100%;
 	position: relative;
-	margin-top: 40px;
+
 
 	overflow: hidden;
 	
