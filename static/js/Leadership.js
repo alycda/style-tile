@@ -6,11 +6,12 @@ var leaderlen = leaders.length;
 var pageMode = "grid";
 			  
 $(".segmented-button").bind("click",function(e){
+
 	var parent = e.target.parentNode;
 	var children = parent.children;
 	
   var list = buildList();
-   
+	   
    //temporary measure
     $("#leader-list-view").html("");
     $("#leader-list-view").append(list);
@@ -24,12 +25,15 @@ $(".segmented-button").bind("click",function(e){
 			$(e.target).addClass("selected");
 		}
 	}
-	
+	console.log(e.target);
 	var newMode = e.target.getAttribute("data-type");
-	
+	$(e.target.children[0]).removeClass("hover");
+		$(e.target.children[1]).removeClass("hover");
 	if(newMode === "list"){
+		$(e.target.children[1]).addClass("hover");
 		goToList();
 	}else if(newMode == "grid"){
+		$(e.target.children[0]).addClass("hover");
 		goToGrid();
 	}
 	
@@ -62,7 +66,8 @@ $(".segmented-button").bind("click",function(e){
 	
 		
 		for(var i = 0;i<leaderlen;++i){
-				var leader = leaders[i]
+				var leader = leaders[i];
+				//console.log(leader.children[1]);
 				//take the template we have, copy it, and build out a list using those elements
 				var box = $("#content-box");
 				var copy = box.clone()[0];
@@ -98,12 +103,13 @@ $(".segmented-button").bind("click",function(e){
 				//set the content 
 				title.innerHTML = leader.getAttribute("data-name");
 				subtitle.innerHTML = leader.getAttribute("data-title");
-				content.innerHTML = leader.children[0].innerHTML;
+				content.innerHTML = leader.children[2].innerHTML;
 				
 				//set profile image
-				var largeProfile = copy.children[1].children[0].children[0];
+				var largeProfile = leader.children[1].cloneNode(true);
 				largeProfile.id = leader.id;
 				
+				copy.children[1].getElementsByClassName("large thumb")[0].appendChild(largeProfile);
 				
 				//remove close button
 				var close = children[1];

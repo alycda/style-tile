@@ -9,15 +9,18 @@
 	max-width:1024px;
 	margin: 0 auto;
 	position: relative;
+	top:40px;
 }
 .leader{
-	height:240px;
-	width:214px;
+	height:257px;
+	width:215px;
 	//border-radius: 80px;
 	background: #333;
 	display: inline-block;
 	background-size:100%;
 	position: relative;
+	margin-right: 26px;
+	margin-bottom: 26px;
 	
 
 	overflow: hidden;
@@ -58,7 +61,7 @@
 	padding-top: 10px;
 	bottom:-40px;
 	pointer-events: none;
-	
+	    font-style: italic;
 	-webkit-transition: bottom 0.5s ease;
 	-moz-transition:bottom 0.5s ease;
 	//wrapper for caption
@@ -91,9 +94,10 @@
     max-width: 100px;
     text-transform: uppercase;
     color:#fff;
+
 }
 
-.caption-subtitle{
+.subheader.caption-subtitle{
     font-size: 80%;
     position: relative;
     -webkit-transition:top 0.2s ease;
@@ -141,70 +145,26 @@
 	
 }
 
+
+
+/*==========================
+	Last panel for the logo
+==========================*/
 #logo.leader{
 	background: #ff6a00;
 }
 
-/*
-#alastair_green{
-    background-image: url("../img/leaders/alastair_green.jpg");	
-	.caption{
-		    bottom:-35px;
-	}
-}
 
-#cait_drury{
-    background-image: url("../img/leaders/cait_drury.jpg");	
-}
-
-#chris_graves{
-    background-image: url("../img/leaders/chris_graves.jpg");	
-}
-
-#craig_rowley{
-    background-image: url("../img/leaders/craig_rowley.jpg");	
-}
-
-#elizabeth_brownsen{
-    background-image: url("../img/leaders/elizabeth_brownsen.jpg");	
-}
-
-#julie_michael{
-    background-image: url("../img/leaders/julie_michael.jpg");
-    	
-}
-
-#kurt_ritter{
-    background-image: url("../img/leaders/kurt_ritter.jpg");	
-}
-
-#mark_miller{
-    background-image: url("../img/leaders/mark_miller.jpg");	
-}
-
-#michael_webb{
-    background-image: url("../img/leaders/michael_webb.jpg");
-    	
-}
-
-#paul_mareski{
-    background-image: url("../img/leaders/paul_mareski.jpg");	
-}
-#paul_silverman{
-    background-image: url("../img/leaders/paul_silverman.jpg");	
-}
-*/
 #logo{
 	background-image: url("../img/leaders/logo.png");	
-height:240px;
-	width:214px;
-	//border-radius: 80px;
+	height:257px;
+	width:215px;
+	position: absolute;
+	top:-27px;
 	background: #ff6a00;
 	display: inline-block;
 	background-size:100%;
 	position: relative;
-
-
 	overflow: hidden;
 	
 	img{
@@ -212,5 +172,50 @@ height:240px;
 		left:35%;
 		border: none;
 		top:35%;
+	}
+}
+
+
+/*==========================
+	Segmented button
+==========================*/
+.style-selection{
+
+	position: relative;
+	left:50px;
+	float: right;
+	div{
+		height:50px;
+		width:50px;
+		background: $light-gray;
+		float: left;
+	}
+	
+	.grid{
+		background-image:url("../img/grid.png");
+		background-size: 200%;
+		background-position: 2px 0px;
+	}
+	
+	.grid.hover{
+		background-position: 1px 48px;
+	}
+	
+	.list{
+		background-image: url("../img/grid.png");
+		background-size:200%;
+		background-position: 145px 0px;
+	}
+	
+	.list.hover{
+		background-position: 145px 46px;
+	}
+	
+	div.hover{
+		background: $darkOrange;
+	}
+	
+	.segmented-button{
+		border: solid 1px $dark-gray;
 	}
 }

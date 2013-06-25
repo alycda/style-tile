@@ -23,15 +23,18 @@
 #leadership {
   max-width: 1024px;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  top: 40px; }
 
 .leader {
-  height: 240px;
-  width: 214px;
+  height: 257px;
+  width: 215px;
   background: #333;
   display: inline-block;
   background-size: 100%;
   position: relative;
+  margin-right: 26px;
+  margin-bottom: 26px;
   overflow: hidden; }
   .leader .content {
     display: none; }
@@ -59,6 +62,7 @@
   padding-top: 10px;
   bottom: -40px;
   pointer-events: none;
+  font-style: italic;
   -webkit-transition: bottom 0.5s ease;
   -moz-transition: bottom 0.5s ease; }
   .caption div {
@@ -83,7 +87,7 @@
   text-transform: uppercase;
   color: #fff; }
 
-.caption-subtitle {
+.subheader.caption-subtitle {
   font-size: 80%;
   position: relative;
   -webkit-transition: top 0.2s ease;
@@ -116,62 +120,18 @@
     height: 200px;
     width: 200px; }
 
+/*==========================
+	Last panel for the logo
+==========================*/
 #logo.leader {
   background: #ff6a00; }
 
-/*
-#alastair_green{
-    background-image: url("../img/leaders/alastair_green.jpg");	
-	.caption{
-		    bottom:-35px;
-	}
-}
-
-#cait_drury{
-    background-image: url("../img/leaders/cait_drury.jpg");	
-}
-
-#chris_graves{
-    background-image: url("../img/leaders/chris_graves.jpg");	
-}
-
-#craig_rowley{
-    background-image: url("../img/leaders/craig_rowley.jpg");	
-}
-
-#elizabeth_brownsen{
-    background-image: url("../img/leaders/elizabeth_brownsen.jpg");	
-}
-
-#julie_michael{
-    background-image: url("../img/leaders/julie_michael.jpg");
-    	
-}
-
-#kurt_ritter{
-    background-image: url("../img/leaders/kurt_ritter.jpg");	
-}
-
-#mark_miller{
-    background-image: url("../img/leaders/mark_miller.jpg");	
-}
-
-#michael_webb{
-    background-image: url("../img/leaders/michael_webb.jpg");
-    	
-}
-
-#paul_mareski{
-    background-image: url("../img/leaders/paul_mareski.jpg");	
-}
-#paul_silverman{
-    background-image: url("../img/leaders/paul_silverman.jpg");	
-}
-*/
 #logo {
   background-image: url("../img/leaders/logo.png");
-  height: 240px;
-  width: 214px;
+  height: 257px;
+  width: 215px;
+  position: absolute;
+  top: -27px;
   background: #ff6a00;
   display: inline-block;
   background-size: 100%;
@@ -182,3 +142,32 @@
     left: 35%;
     border: none;
     top: 35%; }
+
+/*==========================
+	Segmented button
+==========================*/
+.style-selection {
+  position: relative;
+  left: 50px;
+  float: right; }
+  .style-selection div {
+    height: 50px;
+    width: 50px;
+    background: #c8cbc7;
+    float: left; }
+  .style-selection .grid {
+    background-image: url("../img/grid.png");
+    background-size: 200%;
+    background-position: 2px 0px; }
+  .style-selection .grid.hover {
+    background-position: 1px 48px; }
+  .style-selection .list {
+    background-image: url("../img/grid.png");
+    background-size: 200%;
+    background-position: 145px 0px; }
+  .style-selection .list.hover {
+    background-position: 145px 46px; }
+  .style-selection div.hover {
+    background: #ff6a00; }
+  .style-selection .segmented-button {
+    border: solid 1px #5a5c63; }

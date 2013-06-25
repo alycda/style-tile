@@ -161,3 +161,23 @@ document.getElementById("hamburger").addEventListener("click",function(){
 			  
 		  }
 	  });
+
+
+/**=======================
+	Trigger the search
+=========================*/
+var search = document.getElementsByClassName("search-button")[0];
+
+var searchpage = document.getElementById("search-page");
+
+search.addEventListener("click",function(){
+	$(searchpage).animate({
+		top:80,
+		height:window.innerHeight + "px"
+	})
+})
+
+window.addEventListener("resize",function(){
+	searchpage.style.width = window.innerWidth + "px";
+	searchpage.style.height = window.innerHeight + "px";
+})

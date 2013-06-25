@@ -27,6 +27,50 @@
         
         
         
+<div id="search-page">
+	
+	
+	<div class="row" id="search">
+	
+		<form action="" method="post">
+			<input id="autocomplete" type="text" id="search-field" placeholder="Start Typing"/>
+		</form>
+	</div><!--end search row-->
+	
+		
+	<div class="row">
+			<div class="results" id="posts">
+			<h1>Posts</h1>
+		</div>
+		<div class="results" id="work">
+			<h1>Work</h1>
+		</div>
+		<div class="results" id="feed">
+			<h1>Feed</h1>
+		</div>
+		<div class="results" id="team">
+			<h1>Team</h1>
+		</div>
+	
+	</div><!--end results row-->	
+		
+</div><!--end search-page-->
+
+<!--<form method="get" id="searchform" action="<?php echo esc_url( home_url( '/' ) ); ?>">
+	<div class="row">
+		<div class="large-12 columns">
+			<div class="row collapse">
+				<div class="large-8 mobile-three columns">
+					<input type="text" name="s" id="s" placeholder="<?php esc_attr_e( 'Search', 'foundation' ); ?>" />
+				</div>
+				<div class="large-4 mobile-one columns">
+					<input type="submit" class="button prefix" name="submit" id="searchsubmit" value="<?php esc_attr_e( 'Search', 'foundation' ); ?>" />
+				</div>
+			</div>
+		</div>
+	</div>
+</form>
+-->
         
               
 
@@ -324,11 +368,13 @@
     </script>
 			<script type="text/javascript" src="./static/js/jquery.js"></script>
 			<script type="text/javascript" src="./static/js/Isotope.js"></script>
+			<script type="text/javascript" src="./static/js/Search.js"></script>
 			<script type="text/javascript" src="./static/js/Vimeo.js"></script>
 			<script type="text/javascript" src="./static/js/Video.js"></script>
 			<script type="text/javascript" src="./static/js/foundation.min.js"></script>
 			<script type="text/javascript" src="./static/js/Transitions.js"></script>
 			<script type="text/javascript" src="./static/js/test.js"></script>
+			<script type="text/javascript" src="./static/js/Nav.js"></script>
 			<script type="text/javascript" src="./static/js/Util.js"></script>
 			<script type="text/javascript" src="./static/js/Mappy.js"></script>
 			<script src="./static/js/main.js"></script>
@@ -349,85 +395,7 @@
 			$(".orbit-caption").fadeIn("slow");	
 		})
 	
-		document.getElementById("hamburger").addEventListener("click",function(){
-		  $mobilenav = $("#mobile-menu");
-		  $site = $("#SITE");
-		  var sublinks = $(".link-wrap");
-	  
-		  if($mobilenav.hasClass("active")){
-		  				  $mobilenav.removeClass("active");
-			  $(".post").removeClass("orange");
-			   $mobilenav.animate({
-			   top:"-999px",
-			   height:0
-			   },500)
-			    $("body").css("overflow","scroll");
-			 //  document.getElementsByTagName("content")[0].style.display = "block";
-			  
-			  //reset sub nav links in case any have been open
-			  for(var i = 0;i<sublinks.length;++i){
-				  var sublink = sublinks[i];
-				  var parent = sublink.parentNode;
-				  var sublinkitems = parent.children;
-				  
-				  $(sublinkitems[1]).animate({
-				   	height:0
-				   })
 
-		 
-
-			  }
-			  
-		  }else{
-		
-			   $mobilenav.animate({
-			  	 top:$(window).scrollTop()-35,
-			  	 height:window.innerHeight + 40 + "px"
-			   },500,function(){
-				     // $mobilenav.css("padding-top","110px");
-			   
-					 
-					 $("body").css("overflow","hidden");
-			   })
-			   
-			   $mobilenav.addClass("active");
-			   $(".post").addClass("orange");
-			   
-			     
-			//   document.getElementsByTagName("content")[0].style.display = "none";			  
-			  
-		  }
-		  
-	  });
-	  
-	  $(".link-wrap").bind("click",function(e){
-	  	 var children = e.target.parentNode.parentNode.children;
-	  	 
-
-		  if($(children[1]).hasClass("active")){
-			  $(children[1]).removeClass("active");
-			 
-			   $(children[1]).animate({
-				   height:0
-			   })
-		 
-			   
-			 //  document.getElementsByTagName("content")[0].style.display = "block";
-			  
-		  }else{
-			   $(children[1]).animate({
-				    height:62 * 3 + "px"
-				})
-		 
-			  
-			    $(children[1]).addClass("active");
-			   
-			     
-			//   document.getElementsByTagName("content")[0].style.display = "none";			  
-			  
-		  }
-	  });
-	  
 	  
 	  
 	 if(window.location.href.search("contact")){

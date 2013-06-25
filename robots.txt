@@ -6,6 +6,7 @@ index.html
 isotope.html
 leadership-full.html
 leadership.html
+portfolio.html
 test.html
 transitions.html
 vimeo.html

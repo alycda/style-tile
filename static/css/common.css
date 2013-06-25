@@ -195,6 +195,8 @@ header#desktop {
       position: relative;
       left: 5px;
       top: 5px; }
+  header#desktop #searchbox.hover {
+    background: #5a5c63; }
   @media screen and (min-width: 960px) {
     header#desktop #searchbox {
       height: 35px;
@@ -443,3 +445,28 @@ header#mobile {
         background: #fff;
         position: relative;
         left: 25px; }
+
+/*=================
+ Search Page
+==================*/
+#search-page {
+  position: absolute;
+  z-index: 9999;
+  background: rgba(50, 50, 50, 0.97);
+  min-height: 100%;
+  min-width: 100%;
+  top: -9999px; }
+  #search-page .row {
+    padding-top: 100px;
+    max-width: 1224px; }
+  #search-page input[type="text"] {
+    border: none;
+    background: none;
+    box-shadow: none;
+    border-bottom: solid 1px #fff;
+    font-size: 60px;
+    padding: none;
+    text-transform: uppercase;
+    color: #fff; }
+  #search-page .results {
+    display: inline-block; }
