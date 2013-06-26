@@ -1,3 +1,16 @@
+/**
+	This bit of code was used in a project involving isotope. 
+	It was for a portfolio page and the idea was that when you 
+	click on a particular piece of work, a little mini-profile would 
+	pop out.
+	
+	To do that, I needed to figure out a good point to insert that
+	new content, logically speaking it would go nicely at the end of that
+	item's row. 
+	
+	This figured out what index that was.
+*/
+
 var works = $("#works");
 var work = document.getElementsByClassName("work");
 
@@ -35,9 +48,7 @@ box_height = works[0].style.height;
 
 $(window).on("resize",function(){
 	box_width = works.width();
-	
 	orderIndex(true);
-
 });
 
 
@@ -56,19 +67,66 @@ $(".work").on("click",function(e){
 	var index = e.target.getAttribute("data-index");
 	
 	
-	getRow(index);
+	//get the point of insertion of the content div
+	var insert_point = getRow(index);
+	insert_point+=1;
 	
-	//if a item is not currently open
-	if($("#works")[0].getAttribute("data-open") !== "true"){
+	var open = item.getAttribute("data-open");
+
+			//see if the object we clicked on is "open"
+		//var open = obj.getAttribute("data-open");
+		
+		//if it's open and contentopen is not false, init closing process.
+		if((open)&&(contentopen)){
+			//get the elment
+			var el = document.getElementsByClassName("work mini-work")[0];
+			works.isotope("remove",$(el));
+			item.removeAttribute("data-open");
+			works.isotope("reLayout")
+		
+			//recent contentopen
+			contentopen = false;
 			
-		//first see if we're on a item thats in the last row as that'll be easier to work with
-				
+			console.log("closing item "+ item.getAttribute("data-index"));
+			
+		//otherwise start oepn process
+		}else if(contentopen == false){
+			contentopen = true;
+			console.log("opening item "+ item.getAttribute("data-index"));
+			
+		//build the content box
+		var content = document.createElement("div");
+		content.style.width = "1024px";
+		content.style.height = "500px";
+		content.style.background = "red";
+		content.className = "work mini-work";
+		
+		
+		//make a copy of the content and make it visible
+		var list = item.children[0].cloneNode(true);
+		list.style.display = "block";
+		list.setAttribute("data-orbit", "");
+
+		
+	
+		//set the content box's html
+		content.appendChild(list);
 		
 		
 		
-	}//end work open check
+		all.splice(insert_point,0,content);
+		works[0].innerHTML = "";
+		works.isotope("insert",$(all));				
+		works.isotope("reLayout")
 	
 	
+		//init orbit
+		$(document).foundation("orbit")
+			item.setAttribute("data-open", true)
+			
+			
+		}
+
 });
 
 
@@ -177,35 +235,32 @@ function getRow(index){
 		if(index < ends[a]){
 			possible.push(a+=1);
 		}else if(index == ends[a]){
-		
-			possible.push(ends[a]);
+			//console.log(ends[a]);
+			return ends[a];
+			//possible.push(ends[a]);
 		}
 	}
-
+	var end = ends[possible[0]-1];
 	
 	
+	return end;
+	//loop through to see if our value m
 	
+/*	
 	//get the point where we attach the minibox
 	if(possible[0] !== undefined){
-		var return_val = 0;
+		var end = ends[possible[0]-1];
+	
+	
 		
-		for(var i = 0;i<ends.length;++i){
-			if(possible[0] == ends[i]){
-				return_val = ends[i];
-			}
-		}
+	
+	
 		
-		
-		if(return_val !== 0){
-			console.log(return_val);
-		}else{
-			console.log(ends[possible[0]-1]);
-		}
-		
+				
 	}else{
 		console.log(ends[ends.length-1]);
 		return ends[ends.length-1];
-	}
+	}*/
 }
 
 function orderIndex(_clear){
@@ -221,7 +276,7 @@ function orderIndex(_clear){
 		}
 	
 		
-		obj.innerHTML = i;
+	//	obj.innerHTML = i;
 		
 	});
 
