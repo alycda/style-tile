@@ -1,5 +1,24 @@
 @import url(foundation/normalize.css);
 @import url(foundation/custom_fonts.css);
+
+
+	#works{
+			height:900px;
+			max-width:1024px;
+			margin: 0 auto;
+		}
+		.work{
+			height:150px;
+			width:150px;
+			margin-right: 2px;
+			margin-bottom: 2px;
+			background: #ffa600;
+		}
+		
+		.work ul{
+			display: none;
+		}
+
 /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_global.scss */
 *,
 *:before,
