@@ -89,6 +89,18 @@ $(".work").on("click",function(e){
 			
 			console.log("closing item "+ item.getAttribute("data-index"));
 			
+			//unbind foundation
+			$(document).foundation("off")
+			
+			//reset array 
+			for(var i = 0;i<all.length;++i){
+				if(all[i].className.search("work mini-work") !== -1){
+					all.splice(i, 1);
+				}
+			}
+			
+	
+			
 		//otherwise start oepn process
 		}else if(contentopen == false){
 			contentopen = true;
@@ -104,6 +116,7 @@ $(".work").on("click",function(e){
 		
 		//make a copy of the content and make it visible
 		var list = item.children[0].cloneNode(true);
+		console.log(list);
 		list.style.display = "block";
 		list.setAttribute("data-orbit", "");
 
@@ -115,7 +128,7 @@ $(".work").on("click",function(e){
 		
 		
 		all.splice(insert_point,0,content);
-		works[0].innerHTML = "";
+		
 		works.isotope("insert",$(all));				
 		works.isotope("reLayout")
 	
