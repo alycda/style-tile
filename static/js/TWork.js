@@ -12,9 +12,60 @@
 */
 
 var works = $("#works");
+var featured = $("#featured-works");
 var work = document.getElementsByClassName("work");
 
 
+var sizes = [
+	{
+		width:178,
+		height:78
+	},
+	
+	{
+		width:290,
+		height:206
+		
+	}
+]
+
+
+var bigcount = 0;
+
+
+for(var a = 0;a<10;++a){
+
+	var big = Math.floor(Math.random() * 10);
+	var rand = Math.floor(Math.random() * 2);
+	var work = makeBox();
+	work.className = "featured-work"
+	work.style.marginRight = 2 + "px";
+	work.style.marginBottom = 2 + "px";
+	
+	if((rand == 1) && (bigcount < 2)){
+	
+		work.style.height = sizes[1].height + "px";
+		work.style.width = sizes[1].width + "px";	
+		work.style.background = "#ffa600";		
+		bigcount++;
+	}else{
+			work.style.height = sizes[0].height + "px";
+	work.style.width = sizes[0].width + "px";	
+	work.style.background = "#ffa600";	
+	}
+	
+	//append to featured div
+	document.getElementById("featured-works").appendChild(work);
+	
+};//end outter for loop
+
+
+
+
+
+featured.isotope({
+	itemSelector:".featured-work",
+})
 works.isotope({
 	itemSelector:".work",
 })
@@ -298,8 +349,6 @@ function orderIndex(_clear){
 
 function makeBox(){
 	var div = document.createElement("div");
-	div.style.width = box_width + "px";
-	div.style.height = 400 + "px";
 	div.style.background = "#ffa600";
 	return div;
 }

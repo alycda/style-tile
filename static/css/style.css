@@ -2,10 +2,15 @@
 @import url(foundation/custom_fonts.css);
 
 
-	#works{
+	#works,#featured-works{
 			height:900px;
 			max-width:1024px;
 			margin: 0 auto;
+		}
+		
+		
+		#featured-works{
+			margin-bottom: 99px;
 		}
 		.work{
 			height:202px;
