@@ -1,28 +1,20 @@
 @import url(foundation/normalize.css);
 @import url(foundation/custom_fonts.css);
+/**
+	Various SASS vars that can be used
+*/
+.center-align-text {
+  position: absolute;
+  text-align: center; }
 
-
-	#works,#featured-works{
-			height:900px;
-			max-width:1024px;
-			margin: 0 auto;
-		}
-		
-		
-		#featured-works{
-			margin-bottom: 99px;
-		}
-		.work{
-			height:202px;
-			width:202px;
-			margin-right: 2px;
-			margin-bottom: 2px;
-			background: #ffa600;
-		}
-		
-		.work ul{
-			display: none;
-		}
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
 
 /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_global.scss */
 *,
@@ -3464,7 +3456,8 @@ form.custom .custom.disabled {
   width: 100%;
   height: auto;
   display: block;
-  background: #333333;
+  border: solid 1px #d1d1d1;
+  color: #ffa600;
   font-size: 16px;
   margin: 0; }
 
@@ -3485,13 +3478,9 @@ form.custom .custom.disabled {
   padding: 12px 0 12px 0;
   padding-left: 15px;
   font-size: 0.8125em;
-  font-weight: bold;
-  background: #333333; }
+  font-weight: bold; }
 
 /* line 221, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a:hover {
-  background: #2b2b2b; }
-
 /* line 224, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
   background: #ff6a00;
@@ -3678,12 +3667,9 @@ form.custom .custom.disabled {
   .top-bar-section li a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
-    background: #111111; }
+    color: #5a5c63; }
 
   /* line 366, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
-  .top-bar-section li a:not(.button):hover {
-    background: black; }
-
   /* line 371, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
     padding-right: 35px !important; }
@@ -3727,11 +3713,11 @@ form.custom .custom.disabled {
 
   /* line 411, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li a {
-    color: white;
+    color: #5a5c63;
     line-height: 1;
     white-space: nowrap;
     padding: 7px 15px;
-    background: #1e1e1e; }
+    border: solid 1px #c8cbc7; }
 
   /* line 419, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li label {
@@ -6234,6 +6220,68 @@ header#mobile {
       width: 100px;
       background: yellow; }
 
+/*=======================
+	DROP-DOWN BUTTONS
+=======================*/
+ul, li {
+  list-style: none; }
+
+.dropdown-title {
+  margin-left: 40px;
+  border: none;
+  position: relative;
+  color: #5a5c63; }
+
+.top-bar-section ul.large-drop {
+  width: 200px; }
+
+.top-bar-section ul.small {
+  width: 100px; }
+
+.top-bar-section form.custom .custom {
+  top: -1px; }
+.top-bar-section form.custom .custom.checkbox.checked:before {
+  top: -10px; }
+
+.top-bar-section .dropdown li a {
+  background: #fff; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #5a5c63;
+  position: relative;
+  top: 8px; }
+
+.arrow-box {
+  height: 47px;
+  position: absolute;
+  padding: 10px;
+  border-right: solid 1px #c8cbc7; }
+
+/**
+	Represents a item in the sorting navigation on the 
+	portfolio page
+*/
+.sort-item {
+  display: inline-block;
+  vertical-align: middle; }
+
+/**
+	Add color styles
+*/
+.top-bar-section.orange ul {
+  border: solid 1px #ffa600;
+  color: #ffa600; }
+  .top-bar-section.orange ul .dropdown-title {
+    color: #ffa600; }
+  .top-bar-section.orange ul .arrow-box {
+    border-right: solid 1px #ffa600; }
+  .top-bar-section.orange ul form.custom .custom {
+    border: solid 1px #ffa600; }
+
 /*===========================
 	For the full view for each person
 ============================*/
@@ -6570,6 +6618,24 @@ iframe {
   -webkit-transition: height 0.5s ease-in;
   -moz-transition: height 0.5s ease-in;
   height: 200px; }
+
+#works, #featured-works {
+  height: 900px;
+  max-width: 1024px;
+  margin: 0 auto; }
+
+#featured-works {
+  margin-bottom: 99px; }
+
+.work {
+  height: 202px;
+  width: 202px;
+  margin-right: 2px;
+  margin-bottom: 2px;
+  background: #ffa600; }
+
+.work ul {
+  display: none; }
 
 /**
 	Various SASS vars that can be used

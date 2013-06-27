@@ -266,3 +266,65 @@
       height: 100px;
       width: 100px;
       background: yellow; }
+
+/*=======================
+	DROP-DOWN BUTTONS
+=======================*/
+ul, li {
+  list-style: none; }
+
+.dropdown-title {
+  margin-left: 40px;
+  border: none;
+  position: relative;
+  color: #5a5c63; }
+
+.top-bar-section ul.large-drop {
+  width: 200px; }
+
+.top-bar-section ul.small {
+  width: 100px; }
+
+.top-bar-section form.custom .custom {
+  top: -1px; }
+.top-bar-section form.custom .custom.checkbox.checked:before {
+  top: -10px; }
+
+.top-bar-section .dropdown li a {
+  background: #fff; }
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 10px solid #5a5c63;
+  position: relative;
+  top: 8px; }
+
+.arrow-box {
+  height: 47px;
+  position: absolute;
+  padding: 10px;
+  border-right: solid 1px #c8cbc7; }
+
+/**
+	Represents a item in the sorting navigation on the 
+	portfolio page
+*/
+.sort-item {
+  display: inline-block;
+  vertical-align: middle; }
+
+/**
+	Add color styles
+*/
+.top-bar-section.orange ul {
+  border: solid 1px #ffa600;
+  color: #ffa600; }
+  .top-bar-section.orange ul .dropdown-title {
+    color: #ffa600; }
+  .top-bar-section.orange ul .arrow-box {
+    border-right: solid 1px #ffa600; }
+  .top-bar-section.orange ul form.custom .custom {
+    border: solid 1px #ffa600; }

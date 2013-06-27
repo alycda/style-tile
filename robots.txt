@@ -9,5 +9,6 @@ leadership.html
 portfolio.html
 test.html
 transitions.html
+ui.html
 vimeo.html
 work.html

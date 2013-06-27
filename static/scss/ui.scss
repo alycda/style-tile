@@ -312,3 +312,89 @@
 		
 	}
 }
+/*=======================
+	DROP-DOWN BUTTONS
+=======================*/
+
+ul,li{
+    list-style: none;
+}
+
+.dropdown-title{
+    margin-left: 40px;
+    border:none;
+    position: relative;
+    color:$dark-gray;
+    
+}
+//sizes of each drop down
+.top-bar-section ul.large-drop{
+	width:200px;
+}
+
+.top-bar-section ul.small{
+	width:100px;
+}
+
+.top-bar-section{
+	form.custom .custom{
+		top:-1px;
+	}
+	form.custom .custom.checkbox.checked:before{
+		top:-10px;
+	}
+}
+
+.top-bar-section .dropdown li a {
+	background: #fff;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-top: 10px solid $dark-gray;
+    position: relative;
+    top:8px;
+}
+
+
+.arrow-box{
+    height:47px;
+    position: absolute;
+    padding: 10px;
+    border-right: solid 1px $light-gray;
+}
+
+
+/**
+	Represents a item in the sorting navigation on the 
+	portfolio page
+*/
+.sort-item{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/**
+	Add color styles
+*/
+.top-bar-section.orange ul{
+	border:solid 1px $orange;
+	color:$orange;
+	
+	.dropdown-title{
+		color:$orange;
+	}
+	
+	.arrow-box{
+		border-right: solid 1px $orange;
+	}
+	
+	form.custom .custom{
+		border:  solid 1px $orange;
+	}
+}
+	

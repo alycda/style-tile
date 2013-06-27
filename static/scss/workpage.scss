@@ -120,3 +120,27 @@ $bottomGutter:2px;
 	-moz-transition: height $transitionTime ease-in;
 	height:$itemHeight;
 }
+
+
+#works,#featured-works{
+	height:900px;
+    max-width:1024px;
+    margin: 0 auto;
+}
+		
+
+#featured-works{
+    margin-bottom: 99px;
+}
+.work{
+    height:202px;
+    width:202px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background: #ffa600;
+}
+
+.work ul{
+    display: none;
+}
+

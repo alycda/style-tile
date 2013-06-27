@@ -1,3 +1,19 @@
+/**
+	Various SASS vars that can be used
+*/
+.center-align-text {
+  position: absolute;
+  text-align: center; }
+
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
+
 /* line 220, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_global.scss */
 *,
 *:before,
@@ -3438,7 +3454,8 @@ form.custom .custom.disabled {
   width: 100%;
   height: auto;
   display: block;
-  background: #333333;
+  border: solid 1px #d1d1d1;
+  color: #ffa600;
   font-size: 16px;
   margin: 0; }
 
@@ -3459,13 +3476,9 @@ form.custom .custom.disabled {
   padding: 12px 0 12px 0;
   padding-left: 15px;
   font-size: 0.8125em;
-  font-weight: bold;
-  background: #333333; }
+  font-weight: bold; }
 
 /* line 221, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
-.top-bar-section ul li > a:hover {
-  background: #2b2b2b; }
-
 /* line 224, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
 .top-bar-section ul li > a.button {
   background: #ff6a00;
@@ -3652,12 +3665,9 @@ form.custom .custom.disabled {
   .top-bar-section li a:not(.button) {
     padding: 0 15px;
     line-height: 45px;
-    background: #111111; }
+    color: #5a5c63; }
 
   /* line 366, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
-  .top-bar-section li a:not(.button):hover {
-    background: black; }
-
   /* line 371, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
   .top-bar-section .has-dropdown > a {
     padding-right: 35px !important; }
@@ -3701,11 +3711,11 @@ form.custom .custom.disabled {
 
   /* line 411, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li a {
-    color: white;
+    color: #5a5c63;
     line-height: 1;
     white-space: nowrap;
     padding: 7px 15px;
-    background: #1e1e1e; }
+    border: solid 1px #c8cbc7; }
 
   /* line 419, ../../../../../Library/Ruby/Gems/1.8/gems/zurb-foundation-4.1.5/scss/foundation/components/_top-bar.scss */
   .top-bar-section .dropdown li label {
