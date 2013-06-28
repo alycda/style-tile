@@ -133,7 +133,7 @@ header:not(#subnav){
   	top:0;
   	z-index: 999;
   	min-width: 100%;
-  	background:rgba(255,255,255,0.8);
+  	background:rgba(255,255,255,0.93);
   ul{
     list-style: none;
     li{
@@ -394,12 +394,15 @@ header#desktop{
 ========================================*/
 #subnav{
 	width:100%;
-	background: $light-gray;
-	height:125px;
-	margin-bottom: 100px;
-	position:relative;
-	z-index:1;
-	margin-top: -120px;
+	background:rgba(255,255,255,0.93);
+	border-bottom:  1px solid rgba(200,203,199,1.0);
+	height:100px;
+
+	margin-bottom: 200px;
+
+	position:fixed;
+	z-index:99;
+	margin-top: -200px;
 	//	display: none;
 }
 
@@ -408,7 +411,7 @@ header#desktop{
 }
 .desktop-sub-navigation{
 	position: relative;
-	top:70px;
+	top:35px;
 	ul{
 		list-style: none;
 		li{

@@ -5595,7 +5595,7 @@ header:not(#subnav) {
   top: 0;
   z-index: 999;
   min-width: 100%;
-  background: rgba(255, 255, 255, 0.8); }
+  background: rgba(255, 255, 255, 0.93); }
   header:not(#subnav) .row {
     padding-left: 15px;
     padding-right: 15px; }
@@ -5757,19 +5757,20 @@ header#desktop {
 ========================================*/
 #subnav {
   width: 100%;
-  background: #c8cbc7;
-  height: 125px;
-  margin-bottom: 100px;
-  position: relative;
-  z-index: 1;
-  margin-top: -120px; }
+  background: rgba(255, 255, 255, 0.93);
+  border-bottom: 1px solid #c8cbc7;
+  height: 100px;
+  margin-bottom: 200px;
+  position: fixed;
+  z-index: 99;
+  margin-top: -200px; }
 
 .desktop-sub-nav {
   display: none; }
 
 .desktop-sub-navigation {
   position: relative;
-  top: 70px; }
+  top: 35px; }
   .desktop-sub-navigation ul {
     list-style: none; }
     .desktop-sub-navigation ul li {

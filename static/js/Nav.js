@@ -30,7 +30,7 @@ $("header#desktop nav ul li a").on("click",function(e){
 			*/
 			if(linksub == currentsub){
 				subnav.animate({
-					marginTop:-120
+					marginTop:-200
 				},function(){
 					subnav[0].innerHTML = "";
 				})
@@ -38,14 +38,14 @@ $("header#desktop nav ul li a").on("click",function(e){
 			//otherwise animate close and then re-open with new info	
 			}else{
 				subnav.animate({
-				marginTop:-120
+				marginTop:-200
 			},function(){
 				var box = setContent(link);		
 				subnav.append(box);
 			})
 			
 				subnav.animate({
-					marginTop:0
+					marginTop:-200
 				})
 			}
 			
@@ -55,7 +55,7 @@ $("header#desktop nav ul li a").on("click",function(e){
 			subnav.append(box);
 			
 			subnav.animate({
-				marginTop:0
+				marginTop:-70
 			})
 			
 			subnav.addClass("active");
