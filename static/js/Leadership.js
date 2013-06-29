@@ -4,9 +4,9 @@
 var leaders = $(".leader");
 var leaderlen = leaders.length;
 var pageMode = "grid";
-
-
 			  
+			  
+$(".grid").css("background-color","#ffa600");
 $(".segmented-button").bind("click",function(e){
 
 	var parent = e.target.parentNode;
@@ -41,6 +41,9 @@ $(".segmented-button").bind("click",function(e){
 	
 	
 	function goToGrid(){
+		//set the background of the grid icon to orange
+		$(".grid").css("background-color","#ffa600");
+		$(".list").css("background-color","#c8cbc7");
 		$("#leader-list-view").fadeOut("slow",function(){
 			$("#leader-grid-view").fadeIn("slow");
 		});
@@ -51,6 +54,8 @@ $(".segmented-button").bind("click",function(e){
 	
 	
 	function goToList(){
+		$(".list").css("background-color","#ffa600");
+		$(".grid").css("background-color","#c8cbc7");
 		$("#leader-grid-view").fadeOut("slow",function(){
 			$("#leader-list-view").fadeIn("slow");		
 		});
@@ -195,12 +200,12 @@ $(".segmented-button").bind("click",function(e){
 
 for(var i = 0;i<leaderlen;++i){
 	leaders[i].addEventListener("click",function(e){
-		var leader = e.target;
-		
+		var leader = e.target.parentNode;	
 	
 		var title = document.getElementById("mini-profile-title");
 		var subtitle = document.getElementById("mini-profile-subtitle");
 		var content = document.getElementById("mini-profile-content");
+		var profilelink = document.getElementById("profilelink");
 		
 		//grab aspects from content box
 		var box = $("#content-box");
@@ -211,7 +216,8 @@ for(var i = 0;i<leaderlen;++i){
 			//set content
 			title.innerHTML = leader.getAttribute("data-name");
 			subtitle.innerHTML = leader.getAttribute("data-title");
-			content.innerHTML = leader.parentNode.children[2].innerHTML;
+			content.innerHTML = leader.children[2].innerHTML;
+			profilelink.onclick = function() { window.location = leader.getAttribute("data-permalink"); }
 			
 			//set profile image
 			var largeProfile = document.getElementsByClassName("large thumb")[0];
@@ -232,7 +238,9 @@ for(var i = 0;i<leaderlen;++i){
 				//set content
 				title.innerHTML = leader.getAttribute("data-name");
 				subtitle.innerHTML = leader.getAttribute("data-title");
-				content.innerHTML = leader.children[0].innerHTML;
+				content.innerHTML = leader.children[2].innerHTML;
+				profilelink.onclick = function() { window.location = leader.getAttribute("data-permalink"); }
+
 				
 				//set profile image
 				var largeProfile = document.getElementsByClassName("large thumb")[0];
@@ -289,6 +297,7 @@ $(".close-button").bind("click",function(){
 		height:0
 	},function(){
 		$(this).removeClass("active");
+		document.getElementById("profilelink").removeAttribute('onclick');
 	});
 })
 
