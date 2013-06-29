@@ -298,7 +298,13 @@ header#desktop {
       float: left; }
       .desktop-sub-navigation ul li a {
         text-transform: uppercase;
-        color: #5a5c63; }
+        color: #5a5c63;
+        -webkit-transition: color 0.5s ease;
+        -moz-transition: color 0.5s ease; }
+      .desktop-sub-navigation ul li a:hover {
+        color: #ff6a00;
+        -webkit-transition: color 0.5s ease;
+        -moz-transition: color 0.5s ease; }
       .desktop-sub-navigation ul li a.selected {
         color: #ff6a00; }
 

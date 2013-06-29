@@ -82,6 +82,59 @@
 
 }
 
+
+.button.image:hover{
+	background: none;
+}
+
+
+/**
+	Change of styles for twitter
+*/
+.button.twitter{
+	border:solid 1px #00aced;
+	color:#00aced;
+}
+
+
+
+/**
+	For buttons with images
+*/
+.button.image{
+	padding:0px;
+	max-width:200px;
+	vertical-align: top;
+	img{
+		position: relative;
+		display: inline;
+		max-width: 30%;
+		right:25px;
+	}
+	
+	span{
+		position: relative;
+		top:1px;
+		text-transform: uppercase;
+	}
+}
+
+.button.icon-only.twitter{
+	height: 50px;
+	width:50px;
+	background: url("../img/icons/twitter-bird.png");
+	background-size: 100%;
+}
+
+.button.icon-only.twitter.orange{
+	height: 50px;
+	width:50px;
+	background: url("../img/icons/icon-twitter-orange.png");
+	background-size: 100%;
+	border: solid 1px #ffa600;
+}
+
+
 .button.small.transparent, .button.medium.transparent, .button.large.transparent{
 	background: #fff;
 	color:$orange;

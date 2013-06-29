@@ -126,3 +126,52 @@
 
 .work ul {
   display: none; }
+
+/*===================
+	load more button
+====================*/
+.load-more {
+  position: absolute;
+  left: 42%;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/*==================
+	Clients section
+====================*/
+#clients {
+  margin-top: 200px;
+  margin-left: 29px; }
+
+.client {
+  height: 200px;
+  width: 200px;
+  background: url("../img/clients.jpg");
+  background-size: 500%;
+  border: solid 1px #ffa600;
+  display: inline-block; }
+
+#amex {
+  background-position: -200px 0px; }
+
+#heal {
+  background-position: 200px 0px; }
+
+#flexjet {
+  background-position: -400px 0px; }
+
+#haagandazs {
+  background-position: -595px 0px; }
+
+/*==================
+	Research
+====================*/
+.research-image {
+  width: 500px;
+  height: 200px;
+  background: #ffa600; }
+
+.research {
+  display: inline-block; }
+  .research p {
+    max-width: 400px; }

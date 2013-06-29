@@ -5778,7 +5778,13 @@ header#desktop {
       float: left; }
       .desktop-sub-navigation ul li a {
         text-transform: uppercase;
-        color: #5a5c63; }
+        color: #5a5c63;
+        -webkit-transition: color 0.5s ease;
+        -moz-transition: color 0.5s ease; }
+      .desktop-sub-navigation ul li a:hover {
+        color: #ff6a00;
+        -webkit-transition: color 0.5s ease;
+        -moz-transition: color 0.5s ease; }
       .desktop-sub-navigation ul li a.selected {
         color: #ff6a00; }
 
@@ -6035,6 +6041,46 @@ header#mobile {
   padding-right: 2.5em;
   padding-bottom: 0.8em;
   padding-left: 2.5em; }
+
+.button.image:hover {
+  background: none; }
+
+/**
+	Change of styles for twitter
+*/
+.button.twitter {
+  border: solid 1px #00aced;
+  color: #00aced; }
+
+/**
+	For buttons with images
+*/
+.button.image {
+  padding: 0px;
+  max-width: 200px;
+  vertical-align: top; }
+  .button.image img {
+    position: relative;
+    display: inline;
+    max-width: 30%;
+    right: 25px; }
+  .button.image span {
+    position: relative;
+    top: 1px;
+    text-transform: uppercase; }
+
+.button.icon-only.twitter {
+  height: 50px;
+  width: 50px;
+  background: url("../img/icons/twitter-bird.png");
+  background-size: 100%; }
+
+.button.icon-only.twitter.orange {
+  height: 50px;
+  width: 50px;
+  background: url("../img/icons/icon-twitter-orange.png");
+  background-size: 100%;
+  border: solid 1px #ffa600; }
 
 .button.small.transparent, .button.medium.transparent, .button.large.transparent {
   background: #fff;
@@ -6638,6 +6684,55 @@ iframe {
 .work ul {
   display: none; }
 
+/*===================
+	load more button
+====================*/
+.load-more {
+  position: absolute;
+  left: 42%;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+
+/*==================
+	Clients section
+====================*/
+#clients {
+  margin-top: 200px;
+  margin-left: 29px; }
+
+.client {
+  height: 200px;
+  width: 200px;
+  background: url("../img/clients.jpg");
+  background-size: 500%;
+  border: solid 1px #ffa600;
+  display: inline-block; }
+
+#amex {
+  background-position: -200px 0px; }
+
+#heal {
+  background-position: 200px 0px; }
+
+#flexjet {
+  background-position: -400px 0px; }
+
+#haagandazs {
+  background-position: -595px 0px; }
+
+/*==================
+	Research
+====================*/
+.research-image {
+  width: 500px;
+  height: 200px;
+  background: #ffa600; }
+
+.research {
+  display: inline-block; }
+  .research p {
+    max-width: 400px; }
+
 /**
 	Various SASS vars that can be used
 */
@@ -6778,3 +6873,56 @@ hr {
     display: inline-block;
     vertical-align: middle;
     text-align: center; } }
+/**
+	Various SASS vars that can be used
+*/
+.center-align-text {
+  position: absolute;
+  text-align: center; }
+
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
+
+.about-section {
+  margin-bottom: 100px; }
+
+#about-intro {
+  min-width: 100%;
+  height: 500px;
+  background-image: url("../img/about.jpg");
+  background-color: #333; }
+  #about-intro p {
+    position: relative;
+    top: 140px;
+    background: rgba(255, 255, 255, 0.83);
+    max-width: 900px;
+    padding: 20px;
+    left: 100px; }
+
+#who-we-are {
+  position: relative; }
+  #who-we-are #content {
+    width: 1024px;
+    left: 50%;
+    margin-left: -512px; }
+    #who-we-are #content div {
+      max-width: 400px;
+      display: inline-block;
+      vertical-align: top; }
+      #who-we-are #content div img {
+        margin-left: 100px;
+        display: block; }
+
+#agency-offerings {
+  max-width: 1104px;
+  margin: 0 auto; }
+  #agency-offerings div {
+    display: inline-block;
+    max-width: 300px;
+    margin-right: 60px; }

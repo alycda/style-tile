@@ -1,3 +1,4 @@
+about.html
 canvas.html
 component-list.html
 contact.html

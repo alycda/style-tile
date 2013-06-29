@@ -421,6 +421,18 @@ header#desktop{
 			a{
 				text-transform: uppercase;
 				color:$dark-gray;
+				
+				-webkit-transition: color 0.5s ease;
+				-moz-transition:color 0.5s ease;
+			}
+			
+			a:hover{
+				color:#ff6a00;
+				
+				
+				-webkit-transition: color 0.5s ease;
+				-moz-transition:color 0.5s ease;
+				
 			}
 			
 			a.selected{

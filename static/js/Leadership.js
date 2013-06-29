@@ -4,6 +4,8 @@
 var leaders = $(".leader");
 var leaderlen = leaders.length;
 var pageMode = "grid";
+
+
 			  
 $(".segmented-button").bind("click",function(e){
 
