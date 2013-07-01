@@ -15,7 +15,11 @@
   border: solid 1px red; }
 
 .about-section {
-  margin-bottom: 100px; }
+  margin-bottom: 50px; }
+
+.about-hr {
+  margin-bottom: 40px;
+  margin-top: 40px; }
 
 #about-intro {
   min-width: 100%;
@@ -30,20 +34,27 @@
     padding: 20px;
     left: 100px; }
 
-#who-we-are {
-  position: relative; }
-  #who-we-are #content {
-    width: 1024px;
-    left: 50%;
-    margin-left: -512px; }
-    #who-we-are #content div {
-      max-width: 400px;
-      display: inline-block;
-      vertical-align: top; }
-      #who-we-are #content div img {
-        margin-left: 100px;
-        display: block; }
-
+/*
+#who-we-are{
+	position: relative;
+	
+	#content{
+	
+		width:1024px;
+		left: 50%;
+		margin-left: -512px;
+		div{
+			max-width: 400px;
+			display: inline-block;
+			vertical-align: top;
+			img{
+				margin-left: 100px;
+				display: block;
+			}
+		}
+	}
+}
+*/
 #agency-offerings {
   max-width: 1104px;
   margin: 0 auto; }
@@ -51,3 +62,10 @@
     display: inline-block;
     max-width: 300px;
     margin-right: 60px; }
+
+.about-section div {
+  max-width: 1100px;
+  margin: 0 auto; }
+  .about-section div p {
+    display: inline-block;
+    max-width: 400px; }

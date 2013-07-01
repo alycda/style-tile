@@ -24,6 +24,12 @@
 .italic {
   font-style: italic; }
 
+.sticky {
+  position: fixed;
+  top: 65px;
+  z-index: 99;
+  background: #fff; }
+
 /**
 	Basic styles for toggle buttons
 */
@@ -183,7 +189,6 @@ header#desktop {
     header#desktop nav ul li a {
       font-size: 0.85em; } }
   header#desktop #searchbox {
-    background: #c8cbc7;
     float: right;
     margin-top: 10px;
     background-size: 80%; }

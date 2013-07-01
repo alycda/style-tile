@@ -30,6 +30,20 @@ var sizes = [
 ]
 
 
+$(window).on("scroll",function(e){
+	var stickpoint = 650;
+	var offset = window.pageYOffset;
+	
+	if(offset >= stickpoint){
+		$("#work-filter").addClass("sticky");
+		//$("#work-filter").css("position","fixed");
+		//$("#work-filter").css("top","100px");
+	}else{
+			$("#work-filter").removeClass("sticky");
+	}
+	
+})
+
 var bigcount = 0;
 
 

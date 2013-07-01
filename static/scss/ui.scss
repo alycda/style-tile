@@ -88,51 +88,7 @@
 }
 
 
-/**
-	Change of styles for twitter
-*/
-.button.twitter{
-	border:solid 1px #00aced;
-	color:#00aced;
-}
 
-
-
-/**
-	For buttons with images
-*/
-.button.image{
-	padding:0px;
-	max-width:200px;
-	vertical-align: top;
-	img{
-		position: relative;
-		display: inline;
-		max-width: 30%;
-		right:25px;
-	}
-	
-	span{
-		position: relative;
-		top:1px;
-		text-transform: uppercase;
-	}
-}
-
-.button.icon-only.twitter{
-	height: 50px;
-	width:50px;
-	background: url("../img/icons/twitter-bird.png");
-	background-size: 100%;
-}
-
-.button.icon-only.twitter.orange{
-	height: 50px;
-	width:50px;
-	background: url("../img/icons/icon-twitter-orange.png");
-	background-size: 100%;
-	border: solid 1px #ffa600;
-}
 
 
 .button.small.transparent, .button.medium.transparent, .button.large.transparent{
@@ -451,3 +407,77 @@ ul,li{
 	}
 }
 	
+	
+/*======================== ICON SPECIFIC =======================*/
+/**
+	Change of styles for twitter
+*/
+.button.twitter{
+	border:solid 1px #00aced;
+	color:#00aced;
+	padding: 0px;
+}
+
+
+
+/**
+	For buttons with images
+*/
+.button.image{
+	padding:0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	max-width:200px;
+	max-height:50px;
+	vertical-align: top;
+	img{
+		position: relative;
+		display: inline;
+		max-width: 30%;
+		right:25px;
+		bottom: 5px;
+	}
+	
+	span{
+		position: relative;
+		top:-4px;
+		text-transform: uppercase;
+	}
+}
+/*======================================
+	Twitter buttons
+======================================*/
+.button.icon-only.twitter{
+	height: 50px;
+	width:50px;
+	background: url("../img/icons/twitter-bird.png");
+	background-size: 100%;
+}
+
+.button.icon-only.twitter.orange{
+	height: 50px;
+	width:50px;
+	background: url("../img/icons/icon-twitter-orange.png");
+	background-size: 100%;
+	border: solid 1px #ffa600;
+}
+
+/*======================================
+	Search
+======================================*/
+
+.button.icon-only.search{
+	height: 50px;
+	width:50px;
+	background-image: url("../img/icons/icon-search-gray.png");
+	background-size: 95%;
+	background-position: 3px 1px;
+	border: solid 1px $light-gray;
+}
+.button.icon-only.search:hover{
+	background: #333;
+	background-size: 100%;
+	background-image: url("../img/icons/icon-search-white.png");
+	
+}
+

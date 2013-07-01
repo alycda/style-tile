@@ -247,16 +247,9 @@
 <header id="desktop" class="show-for-medium-up hide-for-small">
 	<div class="row">
 	  <div class="logo" onclick="goHome();"></div>
+	  
 	  <div id="searchbox">
-	     <div class="search-button icon"></div>
-	     <div id="magnifing-glass">
-	     	<div class="outline">
-	     	<div id="circle"></div>
-	     </div>
-	     
-	     <div class="post"></div>
-	     </div>
-	  </div>
+	     		<div class="button small icon-only search"></div>	  </div>
 	 
 	 
 	 <nav class="top-nav menu">
@@ -441,7 +434,7 @@
       </div>
 
 	<div class="row" style="margin-top:100px;">
-	  <h2>Social Media Icons</h2>
+	  <h2>Icons</h2>
   	<!-- twitter button -->
   		<div class="button small image twitter">
   			<img src="./static/img/icons/twitter-bird.png" alt="twitter"/>
@@ -452,6 +445,12 @@
   		<div class="button small icon-only twitter"></div>
   		<div class="button small icon-only twitter orange"></div>
   	<!-- end twitter button -->
+  	
+  	<!-- search-->
+  	<div class="row" style="margin-left:0px;">
+  		<div class="button small icon-only search"></div>
+  	</div>
+  	<!--end search-->
 
 	</div>
 
@@ -482,34 +481,7 @@
 				bullets:false
 			});
 			
-		$(".orbit-slides-container").css("min-height","100%");
-		$(".orbit-slides-container li").hover(function(){
-			$(".orbit-caption").fadeOut("slow");		
-		},function(){
-			$(".orbit-caption").fadeIn("slow");	
-		})
-	
-
-	  
-	  
-	 if(window.location.href.search("contact")){
-		  var m = new Mappy({
-		  	mapAnchor:"map"
-	 
-		  },function(map){
-			 
-			   m.addMarker(map,"1960 E. Grand Ave, El Segundo, CA");
-		  },{
-			  center:new google.maps.LatLng(33.918589, -118.393719),
-			  zoom:15,
-			  mapTypeId:google.maps.MapTypeId.ROADMAP,
-			  styles:[]
-	      });
-	  
-		  
-
-	 }		
-	</script>
+		</script>
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
             var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];

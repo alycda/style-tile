@@ -12,6 +12,14 @@
 	font-style: italic;
 }
 
+//for making things "stick" to the top at points
+.sticky{
+	position: fixed;
+	top:65px;
+	z-index: 99;
+	background: #fff;
+}
+
 /**
 	Basic styles for toggle buttons
 */
@@ -196,7 +204,7 @@ header#desktop{
   
 #searchbox{
 	
-    background: $light-gray;
+   // background: $light-gray;
     float: right;
     margin-top: 10px;
     background-size: 80%;

@@ -175,3 +175,7 @@
   display: inline-block; }
   .research p {
     max-width: 400px; }
+
+#work-filter {
+  margin-left: 30px;
+  padding: 23px; }

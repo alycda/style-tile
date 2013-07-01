@@ -1,7 +1,13 @@
 @import "vars";
 .about-section{
-	margin-bottom: 100px;
+	margin-bottom: 50px;
+	
 }
+.about-hr{
+	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
 #about-intro{
 	min-width: 100%;
 	height:500px;
@@ -20,7 +26,7 @@
 	}
 }
 
-
+/*
 #who-we-are{
 	position: relative;
 	
@@ -40,7 +46,7 @@
 		}
 	}
 }
-
+*/
 
 #agency-offerings{
 	max-width: 1104px;
@@ -49,5 +55,19 @@
 		display: inline-block;
 		max-width: 300px;
 		margin-right: 60px;
+	}
+}
+
+
+.about-section{
+	div{
+		max-width: 1100px;
+		margin: 0 auto;
+		p{
+			display: inline-block;
+			max-width: 400px;
+		}
+		
+		
 	}
 }
