@@ -308,8 +308,7 @@ ul, li {
 .arrow-box {
   height: 47px;
   position: absolute;
-  padding: 10px;
-  border-right: solid 1px #c8cbc7; }
+  padding: 10px; }
 
 /**
 	Represents a item in the sorting navigation on the 
@@ -327,10 +326,6 @@ ul, li {
   color: #ffa600; }
   .top-bar-section.orange ul .dropdown-title {
     color: #ffa600; }
-  .top-bar-section.orange ul .arrow-box {
-    border-right: solid 1px #ffa600; }
-  .top-bar-section.orange ul form.custom .custom {
-    border: solid 1px #ffa600; }
 
 /*======================== ICON SPECIFIC =======================*/
 /**
@@ -390,6 +385,20 @@ ul, li {
   border: solid 1px #c8cbc7; }
 
 .button.icon-only.search:hover {
+  background: #333;
+  background-size: 100%;
+  background-image: url("../img/icons/icon-search-white.png"); }
+
+.button.icon-only.search.header {
+  height: 41px;
+  width: 44px;
+  background-image: url("../img/icons/icon-search-gray.png");
+  background-size: 95%;
+  background-position: 3px 1px;
+  border: solid 1px #c8cbc7;
+  -webkit-transform: scaleY(-1deg); }
+
+.button.icon-only.search.header:hover {
   background: #333;
   background-size: 100%;
   background-image: url("../img/icons/icon-search-white.png"); }

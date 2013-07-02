@@ -5,9 +5,21 @@ var checkboxes = $(".custom.checkbox");
 
 items.isotope({
 	itemSelector:".item",
-	gutter:2
+	  masonry : {
+          columnWidth : 5
+        },
+        masonryHorizontal : {
+          rowHeight: 120
+        },
+        cellsByRow : {
+          columnWidth : 240,
+          rowHeight : 240
+        },
+        cellsByColumn : {
+          columnWidth : 240,
+          rowHeight : 240
+        }
 })
-
 
 
 //set some random values for the items
@@ -16,11 +28,11 @@ item.each(function(i,obj){
 	
 	//set height and width
 	if((obj.className.search("news") !== -1)||(obj.className.search("blog") !== -1)){
-		$(this).height(400);
-		$(this).width(600);
+		$(this).height(305);
+		$(this).width(513);
 	}else{
-		$(this).height(200);
-		$(this).width(200);
+		$(this).height(147);
+		$(this).width(256);
 	}
 	
 	
@@ -30,11 +42,13 @@ item.each(function(i,obj){
 		$(this).css("background","red");
 	}else{
 		
-		if(obj.className.search("twitter") !== -1){
+		if(obj.className.search("press") !== -1){
 			$(this).css("background","#00aced");
 		}
-		
-		if(obj.className.search("instagram") !== -1){
+		if(obj.className.search("thinking") !== -1){
+			$(this).css("background", "aqua" );
+		}
+		if(obj.className.search("social") !== -1){
 			$(this).css("background","#437197");
 		}
 	}
@@ -172,3 +186,10 @@ checkboxes.on("click",function(e){
 function getFilter(target){
 	return target.parentNode.parentNode.parentNode.children[1].innerHTML.toLowerCase()
 }
+
+	items.isotope({
+		filter:".item"
+	})
+	
+	items.isotope("reLayout");
+	
