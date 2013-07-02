@@ -193,3 +193,65 @@ function getFilter(target){
 	
 	items.isotope("reLayout");
 	
+
+/**
+	NOTE JUST FOLLOW THE SAME LEADERSHIP PAGE FORMAT
+*/
+var Leader = {
+	init:function(_selector){
+		if(!_selector){
+			var leaders = document.getElementsByClassName("leader");
+		}else{
+			var leaders = $(_selector);			
+		}
+		
+		
+		
+		for(var i = 0;i<leaders.length;++i){
+			var leader = leaders[i];
+			
+			//var caption = leader.getElementsByClassName("caption")[0];
+			var images = leader.getElementsByTagName("img");
+			
+			var color = images[1];
+			var gray = images[0]
+			
+		
+			
+			color.addEventListener("mouseover",function(){
+				var caption = this.parentNode.getElementsByClassName("caption")[0];		
+			
+			
+				$(caption.children[0]).addClass("hover");	
+				$(caption.children[0].children[1]).addClass("hover");	
+				$(caption).addClass("hover");
+			
+				$(leader).addClass("active");
+			});
+			
+			
+			
+			color.addEventListener("mouseout",function(e){
+				
+				var caption = this.parentNode.getElementsByClassName("caption")[0];		
+				
+				
+	
+			
+				$(caption.children[0]).removeClass("hover");
+						$(caption.children[0].children[1]).removeClass("hover");			
+				$(caption).removeClass("hover");	
+			
+			
+			})
+							
+				
+		}
+
+	}
+				
+				
+				
+}
+
+Leader.init();
