@@ -1,0 +1,17 @@
+.item {
+  position: relative;
+  margin-bottom: 2px; }
+  .item h3 {
+    position: absolute;
+    z-index: 99;
+    font-size: 60px;
+    bottom: 0;
+    color: #fff; }
+  .item img {
+    display: inline;
+    position: absolute; }
+  .item p {
+    max-width: 256px; }
+
+.item.news .leader img {
+  max-width: 100%; }

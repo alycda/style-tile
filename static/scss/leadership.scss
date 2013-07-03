@@ -1,0 +1,222 @@
+/*===========================
+	For the full view for each person
+============================*/
+@import "vars";
+/*====================
+	LEADERSHIP
+=======================*/
+#leadership{
+	max-width:1024px;
+	margin: 0 auto;
+	position: relative;
+	top:40px;
+}
+.leader{
+	height:257px;
+	width:215px;
+	//border-radius: 80px;
+	background: #333;
+	display: inline-block;
+	background-size:100%;
+	position: relative;
+	margin-right: 26px;
+	margin-bottom: 26px;
+	
+
+	overflow: hidden;
+	//hide content
+	.content{
+		display: none;
+	}
+	
+	img{
+		position: absolute;
+	
+	}
+	img.color{
+		-webkit-transition: opacity 0.5s ease-in;
+		-moz-transition: opacity 0.5s ease-in;
+		opacity: 1;
+	}
+	img.color:hover{
+		-moz-transition: opacity 0.5s ease-in;
+		-webkit-transition: opacity 0.5s ease-in;
+		opacity: 0;
+	}
+	
+}
+
+.leader:hover{
+	cursor: pointer;
+}
+
+.caption{
+    position: absolute;
+    bottom:5px;
+    width:210px;
+
+    color:#fff;
+	padding: 5px;
+	padding-left: 8px;
+	padding-top: 10px;
+	bottom:-40px;
+	pointer-events: none;
+	    font-style: italic;
+	-webkit-transition: bottom 0.5s ease;
+	-moz-transition:bottom 0.5s ease;
+	//wrapper for caption
+	div{
+		padding: 5px;
+		height:100px;
+		background-color:none;
+	//	background-color: rgba(255,106,0,0.8);
+		
+	}
+	
+	div.hover{
+		-webkit-transition: background 0.2s ease;
+		-moz-transition:background 0.2s ease;
+		background-color: rgba(255,106,0,0.8);
+	}
+}
+
+
+.caption.hover{
+	-webkit-transition: bottom 0.2s ease;
+	-moz-transition:bottom 0.2s ease;
+	bottom:-5px;
+}
+
+.caption-title{
+    line-height: -10px;
+    margin-bottom: 0px;
+    font-size: 120%;
+    max-width: 100px;
+    text-transform: uppercase;
+    color:#fff;
+
+}
+
+.subheader.caption-subtitle{
+    font-size: 80%;
+    position: relative;
+    -webkit-transition:top 0.2s ease;
+    -moz-transition:top 0.2s ease;
+    top:40px;
+	text-transform: uppercase;
+	color:#fff;
+}
+
+.caption-subtitle.hover{
+	-webkit-transition:top 0.2s ease;
+    -moz-transition:top 0.2s ease;
+    top:0px;
+}
+
+/**==========================
+	For the different
+	types of views
+	on the leadership page
+============================*/
+#leader-list-view{
+	display: none;
+	ul{
+		li{
+			list-style: none;
+		}
+	}
+}
+
+
+#content-box{ 
+	//border:solid 1px red;
+	height:0px;
+	overflow: hidden;
+	//height:300px;
+	width:100%;
+	//background: #ffa600;
+//	padding: 20px;
+	position: relative;
+		.large.thumb{
+			height:200px;
+			width:200px;
+			//border-radius: 100px;
+		}
+	
+}
+
+
+
+/*==========================
+	Last panel for the logo
+==========================*/
+#logo.leader{
+	background: #ff6a00;
+}
+
+
+#logo{
+	background-image: url("../img/leaders/logo.png");	
+	height:257px;
+	width:215px;
+	position: absolute;
+	top:-27px;
+	background: #ff6a00;
+	display: inline-block;
+	background-size:100%;
+	position: relative;
+	overflow: hidden;
+	
+	img{
+		position: absolute;
+		left:35%;
+		border: none;
+		top:35%;
+	}
+}
+
+
+/*==========================
+	Segmented button
+==========================*/
+.style-selection{
+
+	position: relative;
+	left:50px;
+	float: right;
+	div{
+		height:50px;
+		width:50px;
+		background: $light-gray;
+		float: left;
+	}
+	
+	.grid{
+	
+		background-image:url("../img/grid.png");
+		background-size: 200%;
+		background-position: 2px 0px;
+	}
+	
+	.grid.hover{
+		background-position: 1px 48px;
+	}
+	
+	.list{
+		background-image: url("../img/grid.png");
+		background-size:200%;
+		background-position: 145px 0px;
+	}
+	
+	.list.hover{
+		background-position: 145px 46px;
+	}
+	
+	div.hover{
+		background: $darkOrange;
+	}
+	
+	.segmented-button{
+		border: solid 1px $dark-gray;
+	}
+}

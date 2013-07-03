@@ -1,0 +1,683 @@
+@import "vars";
+/**==================
+	PULL OUT QUOTES
+=====================*/
+.quote-mark{
+	font-size:30px;
+}
+
+.quote-mark.large{
+	font-size: 70px;
+	line-height: 20px;
+}
+.left.quote-mark:after{
+	content:"\201C";
+	margin-right: 20px;
+	position: relative;
+	left:-40px;
+}
+
+.right.quote-mark:before{
+	content:"\201D";
+	position: relative;
+	left:40px;
+	
+}
+
+
+.quote{
+	font-family: "ClarendonBT-Light",serif;
+	font-size: 30px;
+}
+
+.quote-box{
+	margin-top: 60px;
+	margin-bottom: 60px;
+	max-width: 100%;
+}
+/*=================
+	BUTTONS
+==================*/
+.button{
+	background-color: transparent;
+	color: rgba(255,106,0,1.0);
+	border: 1px solid rgba(255,106,0,1.0);
+	border-radius: 0;
+	font-weight: 400;
+	font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.button:hover {
+	background-color: rgba(255,106,0,1.0);
+	color: rgba(255,255,255,1.0);
+}
+
+.button:active {
+	background-color: rgba(204,85,0,1.0);
+}
+
+/*
+	Adjusting default button 
+	padding.
+*/
+
+.button.small{
+	padding-top:12px;
+	padding-bottom: 12px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.button.medium{
+  padding-right: 1.8em;
+  padding-left: 1.8em;
+
+}
+
+.button.large{
+  padding-top: 0.8em;
+  padding-right: 2.5em;
+  padding-bottom: 0.8em;
+  padding-left: 2.5em;
+
+}
+
+
+.button.image:hover{
+	background: none;
+}
+
+
+
+
+
+.button.small.transparent, .button.medium.transparent, .button.large.transparent{
+	background: #fff;
+	color:$orange;
+}
+
+.button.transparant{
+	background: none;
+	border: solid 1px #ffa600;
+	color:#ffa600;
+	font-style: italic;
+}	
+
+
+.button.secondary {
+	background-color: transparent;
+	color: rgba(90,92,99,1.0);
+	border: 1px solid rgba(90,92,99,1.0);
+	border-radius: 0;
+}
+
+.button.secondary:hover {
+	background-color: rgba(90,92,99,1.0);
+	color: rgba(255,255,255,1.0);
+}
+
+.button.secondary:active {
+	background-color: rgba(44,45,48,1.0);
+
+}
+
+//button style #3
+
+.button.style3 {
+	background-color: transparent;
+	color: rgba(200,203,199,1.0);
+	border: 1px solid rgba(200,203,199,1.0);
+	border-radius: 0;
+}
+
+.button.style3:hover {
+	background-color: rgba(200,203,199,1.0);
+	color: rgba(255,255,255,1.0);
+}
+
+.button.style3:active {
+	background-color: rgba(151,153,150,1.0);
+}
+
+
+//base social media button styles
+.social-btn, .search-btn {
+	padding-left: .9em;
+	padding-right: .9em;
+	
+}
+
+.social-btn {
+	border: 1px solid rgb(255,106,0);
+	border-radius: 0;
+
+	min-height: 20px;
+	min-width: 20px;
+}
+
+.social-btn:hover {
+	background-color: rgb(255,106,0);
+}
+
+.social-btn:active {
+	background-color: rgb(204,85,0);
+}
+
+
+//twitter
+.social-btn.twitter{
+	background: no-repeat url(../img/icons/icon-twitter-orange.png) center;
+}
+.social-btn.twitter:hover{
+	background: no-repeat url(../img/icons/icon-twitter-white.png) center;
+}
+
+//search
+.search-btn {
+	position: absolute;
+	z-index: 999;
+	right: 0;
+	background: no-repeat url(../img/icons/icon-search-gray.png) center;
+	border: 1px solid rgb(90,92,99);
+	border-radius: 0; 
+	min-height: 20px;
+	min-width: 20px;
+}
+
+.search-btn:hover {
+	background: no-repeat url(../img/icons/icon-search-white.png) center;
+	background-color: rgb(90,92,99);
+}
+
+.search-btn:active {
+	background-color: rgb(44,45,48);
+	
+}
+
+
+/*.button.small.secondary{
+
+	background-color: $light-gray;
+    color: $dark-gray;
+    border:none;
+}
+
+
+
+.button.small.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background-color: $dark-gray;
+	color:#fff;
+}
+
+
+.button.medium.secondary{
+	background: $dark-gray;
+	color:#fff;
+}
+
+.button.medium.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	background: $light-gray;
+	color:#000;
+}
+
+
+
+.button.large.secondary{
+	background:#000;
+	color:$light-gray;
+}
+
+.button.large.secondary:hover{
+	-webkit-transition:background-color 0.5s ease-in, color 0.5s ease-in;
+	-moz-transition: background-color 0.5s ease-in,color 0.5s ease-in;	
+	
+	background: $dark-gray;
+	color:#fff;
+}*/
+
+
+/**
+	These two classes are necessary because
+	if the checkboxes are made to be larger than 
+	18x18, theres a strange margin issue that appears.
+*/
+.checkbox-label:after{
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+.checkbox-label-content{
+	position: relative;
+	left:5px;
+	top:5px;	
+}
+
+.close-button{
+	height:40px;
+	width:40px;
+	background: url("../img/close.png");
+	background-size: 100%;
+	position: absolute;
+	top:0;
+	right:30px;
+}
+/*=======================
+	SLIDERS
+=======================*/
+.orbit-caption{
+    background: #ffa600;
+    width:30%;
+    position: relative;
+    bottom:-5px;
+    height:100px;
+}
+
+.orbit-caption.secondary{
+	position: relative;
+	top:0;
+	left:40px;
+}
+    
+.orbit-timer{
+	display: none;
+}
+
+.orbit-slide-number{
+	display: none;
+}
+
+.orbit-bullets{
+	float: right;
+	
+}
+/*=======================
+	IMAGE SETS
+=======================*/
+.image-set{
+	list-style: none;
+	background: $light-gray;
+	width: 100%;
+	
+	ul {
+		li{
+			float:left;
+			list-style: none;
+			margin-right: 10px;
+		
+			div{
+				height:100px;
+				width:100px;
+				background: yellow;
+			}
+		}
+		
+	}
+}
+/*=======================
+	DROP-DOWN BUTTONS
+=======================*/
+
+ul,li{
+    list-style: none;
+}
+
+.dropdown-title{
+    margin-left: 40px;
+    border:none;
+    position: relative;
+    color:$dark-gray;
+    
+}
+//sizes of each drop down
+.top-bar-section ul.large-drop{
+	width:200px;
+}
+
+.top-bar-section ul.small{
+	width:100px;
+}
+
+.top-bar-section{
+	form.custom .custom{
+		top:-1px;
+	}
+	form.custom .custom.checkbox.checked:before{
+		top:-10px;
+	}
+}
+
+.top-bar-section .dropdown li a {
+	background: #fff;
+}
+
+.arrow-down {
+    width: 0; 
+    height: 0; 
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    
+    border-top: 10px solid $dark-gray;
+    position: relative;
+    top:8px;
+}
+
+
+.arrow-box{
+    height:47px;
+    position: absolute;
+    padding: 10px;
+  //  border-right: solid 1px $light-gray;
+}
+
+
+/**
+	Represents a item in the sorting navigation on the 
+	portfolio page
+*/
+.sort-item{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/**
+	Add color styles
+*/
+.top-bar-section.orange ul{
+	border:solid 1px $orange;
+	color:$orange;
+	
+	.dropdown-title{
+		color:$orange;
+	}
+	
+	.arrow-box{
+		//border-right: solid 1px $orange;
+	}
+	
+	form.custom .custom{
+		//border:  solid 1px $orange;
+	}
+}
+	
+	
+/*======================== ICON SPECIFIC =======================*/
+/**
+	Change of styles for twitter
+*/
+.button.twitter{
+	border:solid 1px #00aced;
+	color:#00aced;
+	padding: 0px;
+}
+
+
+
+/**
+	For buttons with images
+*/
+.button.image{
+	padding:0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+	max-width:200px;
+	max-height:50px;
+	vertical-align: top;
+	img{
+		position: relative;
+		display: inline;
+		max-width: 30%;
+		right:25px;
+		bottom: 5px;
+	}
+	
+	span{
+		position: relative;
+		top:-4px;
+		text-transform: uppercase;
+	}
+}
+/*======================================
+	Twitter buttons
+======================================*/
+.button.icon-only.twitter{
+	height: 50px;
+	width:50px;
+	background: url("../img/icons/twitter-bird.png");
+	background-size: 100%;
+}
+
+.button.icon-only.twitter.orange{
+	height: 50px;
+	width:50px;
+	background: url("../img/icons/icon-twitter-orange.png");
+	background-size: 100%;
+	border: solid 1px #ffa600;
+}
+
+/*======================================
+	Search
+======================================*/
+
+.button.icon-only.search{
+	height: 50px;
+	width:50px;
+	background-image: url("../img/icons/icon-search-gray.png");
+	background-size: 95%;
+	background-position: 3px 1px;
+	border: solid 1px $light-gray;
+}
+.button.icon-only.search:hover{
+	background: #333;
+	background-size: 100%;
+	background-image: url("../img/icons/icon-search-white.png");
+	
+}
+
+
+
+.button.icon-only.search.header{
+	height: 41px;
+	width:44px;
+	background-image: url("../img/icons/icon-search-gray.png");
+	background-size: 95%;
+	background-position: 3px 1px;
+	border: solid 1px $light-gray;
+	-webkit-transform: scaleY(-1deg);
+}
+.button.icon-only.search.header:hover{
+	background: #333;
+	background-size: 100%;
+	background-image: url("../img/icons/icon-search-white.png");
+	
+}
+
+.menu-reveal{
+	background: url("../img/arrows.png");
+	background-size:300%;
+	height:50px;
+	width:30px;
+	border:solid 1px $dark-gray;
+}
+
+.menu-reveal:hover{
+	cursor: pointer;
+}
+.menu-reveal.up{
+	//-webkit-transition: background-position 0.5s ease-in;
+	
+	background-position: -40px 8px;
+}
+
+.menu-reveal.show-menu{
+	//-webkit-transition: background-position 0.5s ease-in;
+	background-position: -65px 40px;
+	border:solid 1px $darkOrange;
+}
+
+.slide-count{
+	p{
+		font-size: 30px;
+		position: relative;
+		top:5px;
+	}
+}
+
+#other-slides{
+	position:relative;
+	z-index: 99;
+	
+	div{
+		-webkit-transition: height 0.5s ease;
+		-moz-transition: height 0.5s ease;
+		position: absolute;
+		bottom:30px;
+		background: $light-gray;
+		width: 100%;
+		height:0px;
+		//open height should be 300px	
+	}
+}
+.share{
+	div{
+		border:solid 1px $dark-gray;
+		position: relative;
+		height: 50px;
+		max-width: 200px;
+		
+		
+		
+		p{
+		    position: absolute;
+		    right: 60px;
+		    text-transform: uppercase;
+		    top:10px;
+		    
+		}
+		
+		.arrows-dropdown{
+		    background: url("../img/arrows.png");
+		    background-size:300%;
+		    height:45px;
+		    width:40px;
+		    //background: #333;
+		    position: relative;
+		    border:none;
+		    left:10px;
+		    background-position: 40px 4px;
+		    
+		}
+		
+	
+		
+	}
+}
+
+#other-slides.show{
+	div{
+		-webkit-transition: height 0.5s ease;
+		-moz-transition: height 0.5s ease;
+		height:300px;
+		//open height should be 300px	
+	}
+}
+
+.slide-controls{
+	height:80px;
+	width:180px;
+	margin-left: -120px;
+	position: relative;
+	bottom: 10px;
+	//background: red;
+
+
+	.slide-control{
+		background-image: url("../img/arrows.png");
+		height:75px;
+		width:75px;
+		background-size: 400%;
+		background-position: 15px -10px;
+		//background-color: red;
+		border: solid 1px $dark-gray;
+		display: inline-block;
+		
+	}
+	
+	.slide-next{
+		background-position: -45px -10px;
+	}
+	
+	
+	.slide-control.orange{
+		background-position: 15px -120px;
+			border: solid 1px $darkOrange;
+	}
+	
+	.slide-next.orange{
+		background-position: -60px -118px;
+	}
+}
+
+
+/*
+
+
+.arrows.up{
+	background-position: -60px 8px;
+}
+
+.share{
+	border:solid 1px $dark-gray;
+	position: relative;
+	height: 50px;
+	top:10px;
+	
+	p{
+		position: absolute;
+		right: 30px;
+		text-transform: uppercase;
+		top:10px;
+	}
+
+	.arrows-dropdown{
+		background: url("../img/arrows.png");
+		background-size:300%;
+		height:35px;
+		width:20px;
+		//background: #333;
+		position: relative;
+		right:15px;
+		top:8px;
+	}
+
+	.arrows-dropdown.down{
+		background-position: 30px 0px;
+	}
+}
+
+.share.selected{
+	border:solid 1px $darkOrange;
+}
+
+.prev-button{
+	
+}
+
+.next-button{
+	
+}
+
+.slider-controls{
+	background: url("../img/arrows.png");
+	height:60px;
+	width:40px;
+	border:$dark-gray;
+	//background-color:#ff0000;
+}*/

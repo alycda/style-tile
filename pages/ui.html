@@ -1,0 +1,133 @@
+
+{% extends "ui.html" %}
+{% block content %}
+
+<style>
+
+</style>
+	
+      <div class="row page">
+    	
+		      	<p>
+    		This shows a listing of various ui components. 
+    		Some additional styling will be needed.
+    	</p>
+      	<!-- drop down menu -->
+
+  <section class="top-bar-section">
+    <!-- Left Nav Section -->
+    <ul class="left large-drop">
+    
+      <li class="has-dropdown">
+      <div class="arrow-box">
+      <div class="arrow-down"></div>
+      </div>  
+      <a class="dropdown-title" href="#">Drop down</a>
+
+        <ul class="dropdown">
+          <li class="has-dropdown"><a href="#">Dropdown Level 1a</a>
+
+            <ul class="dropdown">
+              <li><label>Dropdown Level 2 Label</label></li>
+              <li><a href="#">Dropdown Level 2a</a></li>
+              <li><a href="#">Dropdown Level 2b</a></li>
+             
+          
+          <li><a href="#">See all &rarr;</a></li>
+        </ul>
+      </li>
+     
+    </ul>
+      </li>
+    </ul>
+  </section>
+      	<!-- end drop down menu -->        
+       
+       
+       
+       <!-- checkbox -->
+       
+       <section class="top-bar-section">
+			<!-- Left Nav Section -->
+			<ul class="left large-drop">
+		
+			  <li class="has-dropdown">
+			  	<div class="arrow-box">
+					<form class="custom">
+			  		   <input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span>  	
+			  		</form> 		      
+  				</div>  
+			 
+			  
+				   <a class="dropdown-title" href="#">Checkbox</a>
+
+			  </li>
+			  <li>
+			 
+			  </li>
+			</ul>
+        </section>
+		<section class="top-bar-section orange">
+			<!-- Left Nav Section -->
+			<ul class="left large-drop">
+		
+			  <li class="has-dropdown">
+			  	<div class="arrow-box">
+					<form class="custom">
+			  		   <input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span class="custom checkbox checked"></span>  	
+			  		</form> 		      
+  				</div>  
+			 
+			  
+				   <a class="dropdown-title" href="#">Checkbox</a>
+
+			  </li>
+			  <li>
+			 
+			  </li>
+			</ul>
+        </section>
+
+
+
+
+  <!-- end checkbox-->
+  
+<!--small with-image-on-left image twitter-->
+
+
+      </div>
+
+	<div class="row" style="margin-top:100px;">
+	  <h2>Icons</h2>
+  	<!-- twitter button -->
+  		<div class="button small image twitter">
+  			<img src="{{STATIC_URL}}/img/icons/twitter-bird.png" alt="twitter"/>
+  			<span>On Twitter</span>
+  		</div>
+  		
+  		
+  		<div class="button small icon-only twitter"></div>
+  		<div class="button small icon-only twitter orange"></div>
+  	<!-- end twitter button -->
+  	
+  	<!-- search-->
+  	<div class="row" style="margin-left:0px;">
+  		<div class="button small icon-only search"></div>
+  	</div>
+  	<!--end search-->
+  	
+  	
+  	<!-- buttons with arrows -->
+  		<div class="up button arrows"></div>
+  	
+  	<!-- end buttons with arrows -->
+
+	</div>
+		  
+      </div><!--end row-->
+{% endblock %}
+
+        
+        
+      

@@ -1,0 +1,140 @@
+/**
+	Various SASS vars that can be used
+*/
+.center-align-text {
+  position: absolute;
+  text-align: center; }
+
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
+
+.mail-icon {
+  height: 20px;
+  width: 20px;
+  background: #ffa600; }
+
+.orange {
+  color: #ff6a00; }
+
+div {
+  font-family: "Lato",sans-serif; }
+
+/*============================
+	Contact Information
+============================*/
+#contact-information {
+  border-bottom: solid 1px #c8cbc7;
+  border-right: solid 1px #c8cbc7;
+  padding-bottom: 20px; }
+  #contact-information h2 {
+    margin-bottom: 5px; }
+  #contact-information p {
+    margin-top: 5px; }
+
+.info-box {
+  border: solid 1px #5a5c63;
+  padding: 20px;
+  margin-bottom: 10px; }
+  .info-box div {
+    display: inline-block;
+    vertical-align: middle; }
+
+.transparant-button {
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
+  color: #ff6a00;
+  border: solid 1px #5a5c63;
+  margin-top: 20px;
+  font-family: "Lato"; }
+
+/*============================
+	Social Media Information
+============================*/
+#social-media-information {
+  border-right: solid 1px #c8cbc7;
+  padding-top: 20px;
+  height: 140px; }
+  #social-media-information h2 {
+    text-transform: uppercase;
+    font-size: 120%;
+    font-weight: bolder; }
+  #social-media-information .social-media {
+    margin-left: -4px;
+    height: 80px; }
+
+#offices h2 {
+  font-size: 150%;
+  text-transform: uppercase; }
+
+/*============================
+	Maps
+============================*/
+#maps {
+  position: relative; }
+
+hr {
+  background: #c8cbc7;
+  color: #c8cbc7; }
+
+#map {
+  height: 300px;
+  max-width: 700px;
+  padding: 20px; }
+
+/*============================
+	Offices
+============================*/
+#offices {
+  margin-left: 18px; }
+  #offices .office {
+    float: left;
+    margin-right: 30px;
+    margin-bottom: 10px; }
+
+@media screen and (max-width: 768px) {
+  .office {
+    width: 95%; }
+    .office h4 {
+      font-size: 160%; }
+
+  .info-box div.orange {
+    text-align: center; }
+
+  #contact-information div.orange {
+    font-size: 16px; }
+
+  #maps .transparant-button {
+    width: 100%; } }
+@media screen and (max-width: 900px) {
+  .info-box div {
+    display: inline-block;
+    font-size: 100%; }
+  .info-box div.orange {
+    text-align: center; }
+
+  .office .info-box {
+    width: 100%; }
+
+  #contact-information {
+    border: none; } }
+@media screen and (min-width: 1024px) {
+  .info-box {
+    max-width: 290px; }
+
+  .office {
+    max-width: 200px; }
+
+  #maps .transparant-button {
+    max-width: 300px; }
+
+  .info-box div {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center; } }

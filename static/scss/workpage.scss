@@ -1,0 +1,207 @@
+@import "vars";
+
+//some vars to make it a bit easier to style
+$itemWidth:200px;
+$itemHeight:200px;
+
+$gutter:2px;
+$bottomGutter:2px;
+
+.work-in-a-box.mini-work{
+	-webkit-transition: width 0.5s ease-in, height 0.5s ease-in;
+	-moz-transition: width 0.5s ease-in, height 0.5s ease-in;
+	width:1024px;
+	height:500px;
+}
+
+
+.arrow{
+    height:20px;
+    width:20px;
+    background: #ffa600;
+    -webkit-transform: rotateZ(45deg);
+    position: relative;
+    top:10px;
+    z-index: -1;
+}
+/*========================
+	General item styles
+==========================*/
+.work-in-a-box{
+	width:$itemWidth;
+	height:$itemHeight;
+	background: #ffa600;
+	margin-right: $gutter;
+	margin-bottom: $bottomGutter;
+
+	div{
+		div:not(.arrow){
+			display: none;
+		}
+	}
+}
+.large-item{
+	height:500px;
+	width:100%;
+	background: #ffa600;
+}
+.work-in-a-box-selected{
+	width:100%;
+	height:500px;
+	background: #ffa600;
+}
+.work-item{
+	height:$itemHeight;
+	width:$itemWidth;	
+	position: relative;	
+	background: #333;
+	margin-right: $gutter;
+	margin-bottom: $bottomGutter;
+}
+
+	
+.overlay{
+    height:$itemHeight;
+    width:$itemWidth;
+    background: #ffa600;
+    position: absolute;
+    top:0;
+}
+
+
+/*========================
+	FadeIn transition
+==========================*/
+.work-item .overlay.fadein{
+    -webkit-transition: opacity $transitionTime ease-in;
+    -moz-transition: opacity $transitionTime ease-in;
+    opacity: 0;
+}
+
+.work-item:hover .overlay.fadein{
+    -webkit-transition: opacity $transitionTime ease-in;
+    -moz-transition: opacity $transitionTime ease-in;
+    opacity: 1;
+    cursor: pointer;
+}
+
+
+
+/*========================================
+	left-to-right animation transition,
+	abbreviated ltr
+========================================*/
+.work-item .overlay.ltr{
+    -webkit-transition: width $transitionTime ease-in;
+    -moz-transition: width $transitionTime ease-in;
+    width: 0;
+}
+
+.work-item:hover .overlay.ltr{
+    -webkit-transition: width $transitionTime ease-in;
+    -moz-transition: width $transitionTime ease-in;
+    width:$itemWidth;
+    cursor: pointer;
+}
+
+
+/*========================================
+	top-to-bottom animation transition
+	abbreviated ttb
+========================================*/
+.work-item .overlay.ttb{
+	-webkit-transition: height $transitionTime ease-in;
+	-moz-transition: height $transitionTime ease-in;
+	height:0;
+}
+
+.work-item:hover .overlay.ttb{
+	-webkit-transition: height $transitionTime ease-in;
+	-moz-transition: height $transitionTime ease-in;
+	height:$itemHeight;
+}
+
+
+#works,#featured-works{
+	height:900px;
+    max-width:1024px;
+    margin: 0 auto;
+}
+		
+
+#featured-works{
+    margin-bottom: 99px;
+}
+.work{
+    height:202px;
+    width:202px;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    background: #ffa600;
+}
+
+.work ul{
+    display: none;
+}
+/*===================
+	load more button
+====================*/
+.load-more{
+	position: absolute;
+	left: 42%;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+/*==================
+	Clients section
+====================*/
+#clients{
+	margin-top: 200px;
+	margin-left: 29px;
+}
+.client{
+	height:200px;
+	width:200px;
+	background: url("../img/clients.jpg");
+	background-size:500%;
+	border:solid 1px $orange;
+	display: inline-block;
+}
+
+#amex{
+	background-position: -200px 0px;
+}
+
+#heal{
+	background-position: 200px 0px;
+}
+
+#flexjet{
+	background-position: -400px 0px;
+}
+
+#haagandazs{
+	background-position: -595px 0px;
+}
+
+/*==================
+	Research
+====================*/
+.research-image{
+	width: 500px;
+	height:200px;
+	background: #ffa600;
+	
+}
+.research{
+	display: inline-block;
+	p{
+		max-width: 400px;
+	}
+}
+
+#work-filter{
+	margin-left: 30px;
+	padding: 23px;
+}

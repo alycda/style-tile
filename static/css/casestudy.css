@@ -1,0 +1,79 @@
+/**
+	Various SASS vars that can be used
+*/
+.center-align-text {
+  position: absolute;
+  text-align: center; }
+
+@media screen and (max-width: 868px) {
+  .center-align-text {
+    width: 85%; } }
+@media screen and (max-width: 700px) {
+  .center-align-text {
+    width: 70%; } }
+.debug {
+  border: solid 1px red; }
+
+.row.page {
+  margin-top: 50px;
+  padding: 20px; }
+
+/**
+	Need to adjust orbit styles a bit
+*/
+.teamone-orbit .orbit-prev, .teamone-orbit .orbit-next {
+  top: 100px; }
+
+#logo {
+  margin-left: 20px; }
+
+.work-slider li img {
+  position: relative;
+  z-index: 1; }
+.work-slider li .description {
+  width: 100%;
+  position: absolute;
+  bottom: -50px;
+  z-index: 2;
+  padding: 50px; }
+  .work-slider li .description .content {
+    background: rgba(255, 106, 0, 0.8);
+    height: 150px;
+    width: 100%; }
+
+#study-controls {
+  margin-top: -40px; }
+  #study-controls .up {
+    height: 70px;
+    width: 50px;
+    border: solid 1px #5a5c63; }
+  #study-controls .slidecount {
+    font-size: 30px;
+    position: relative; }
+
+.mentions {
+  padding: 10px;
+  border-top: solid 3px #ff6a00;
+  text-transform: uppercase;
+  position: relative; }
+
+#project-tweets {
+  position: relative;
+  left: 10px; }
+  #project-tweets h2 {
+    color: #00aced; }
+
+#related-work ul li {
+  height: 206px;
+  width: 206px;
+  background: #c8cbc7;
+  display: inline-block; }
+#related-work ul li.item.end {
+  width: 412px;
+  height: 206px;
+  background: #ff6a00; }
+
+.button.back {
+  position: absolute;
+  left: 50%;
+  margin-left: -40px; }

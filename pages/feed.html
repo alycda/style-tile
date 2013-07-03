@@ -1,0 +1,238 @@
+
+{% extends "feed.html" %}
+{% block content %}
+
+
+
+
+
+<div class="row page">
+<p>This shows a exploration of the functionality of the feed.</p>
+<br/>
+
+<p>Red = blog/ news posts</p>
+<p>Teal like = Twitter</p>
+<p>Blue = Instagram</p>
+
+<style>
+	.item{
+		margin-bottom: 2px;
+	}
+</style>
+
+<hr/>
+
+
+	<div id="work-filter">
+	
+	
+		<div class="sort-item">
+			<p class="sort-item-title">View</p>
+				<section class="top-bar-section orange">
+			<!-- Left Nav Section -->
+			<ul class="left small">
+		
+			  <li class="has-dropdown">
+			  	<div class="arrow-box">
+					<form class="custom">
+			  		   <input type="checkbox" CHECKED id="checkbox3" style="display: none;"><span id="allbox" class="custom checkbox checked"></span>  	
+			  		</form> 		      
+  				</div>  
+			 
+			  
+				   <a class="dropdown-title" href="#">All</a>
+
+			  </li>
+			  <li>
+			 
+			  </li>
+			</ul>
+        </section>
+
+
+		</div><!--end sort item-->
+	
+	<style>
+		.checkbox-group{
+			display: inline-block;
+			vertical-align: bottom;
+			margin-left: 100px;
+		}
+	</style>
+		
+		<div class="checkbox-group">
+		
+		<div class="sort-item">
+		
+			<section class="top-bar-section orange">
+			<!-- Left Nav Section -->
+			<ul class="left">
+		
+			  <li class="has-dropdown">
+			  	<div class="arrow-box">
+					<form class="custom">
+			  		   <input type="checkbox" id="checkbox3" style="display: none;"><span class="custom checkbox"></span>  	
+			  		</form> 		      
+  				</div>  
+			 
+			  
+				   <a class="dropdown-title" href="#">Social</a>
+
+			  </li>
+			  <li>
+			 
+			  </li>
+			</ul>
+        </section>
+
+		</div><!--end sort item-->
+	
+
+
+		<div class="sort-item">
+			
+			<section class="top-bar-section orange">
+			<!-- Left Nav Section -->
+			<ul class="left">
+		
+			  <li class="has-dropdown">
+			  	<div class="arrow-box">
+					<form class="custom">
+			  		   <input type="checkbox" id="checkbox3" style="display: none;"><span class="custom checkbox"></span>  	
+			  		</form> 		      
+  				</div>  
+			 
+			  
+				   <a class="dropdown-title" href="#">Press</a>
+
+			  </li>
+			  <li>
+			 
+			  </li>
+			</ul>
+        </section>
+
+		</div><!--end sort item-->
+	
+
+
+		<div class="sort-item">
+			
+			<section class="top-bar-section orange">
+			<!-- Left Nav Section -->
+			<ul class="left">
+		
+			  <li class="has-dropdown">
+			  	<div class="arrow-box">
+					<form class="custom">
+			  		   <input type="checkbox" id="checkbox3" style="display: none;"><span class="custom checkbox"></span>  	
+			  		</form> 		      
+  				</div>  
+			 
+			  
+				   <a class="dropdown-title" href="#">Thinking</a>
+
+			  </li>
+			  <li>
+			 
+			  </li>
+			</ul>
+        </section>
+
+		</div><!--end sort item-->
+	
+
+
+
+		<div class="sort-item">
+	
+			<section class="top-bar-section orange">
+			<!-- Left Nav Section -->
+			<ul class="left">
+		
+			  <li class="has-dropdown">
+			  	<div class="arrow-box">
+					<form class="custom">
+			  		   <input type="checkbox" id="checkbox3" style="display: none;"><span class="custom checkbox"></span>  	
+			  		</form> 		      
+  				</div>  
+			 
+			  
+				   <a class="dropdown-title" href="#">News</a>
+
+			  </li>
+			  <li>
+			 
+			  </li>
+			</ul>
+        </section>
+
+		</div><!--end sort item-->
+	
+
+		
+		</div><!--end sort group-->	
+
+	
+	
+
+	
+	
+	
+	
+	
+	</div><!--end work filter-->
+
+<style>
+	
+</style>
+
+
+	<div id="items" style="width:1200px;">
+		<div class="item news">
+			<img src="http://placekitten.com/513/305"/>
+			<a href="#"><h3 class="subheader italic">Test title</h3></a>
+		</div>
+		<div class="item social">
+			<p>blahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblahblah</p>
+		</div>
+		<div class="item thinking"></div>
+		<div class="item press"></div>
+		<div class="item thinking"></div>
+		<div class="item social"></div>
+		<div class="item press"></div>
+		<div class="item news">
+		
+		<div style="width:100%;height:100%;" class="leader  creative" id="chris_graves" data-name="Chris Graves" data-title="Chairman">
+			<img src="http://placekitten.com/513/305"/>
+			<img class="color" src="{{STATIC_URL}}/img/leaders/chris_graves.jpg" style="opacity:0;width:100%;"/>
+			 	<div class="content">
+		I began my career at a few large agencies in New York, which eventually led me to Los Angeles. Before joining Team One, I was responsible for several widely recognized and successful advertising campaigns for brands such as Nissan, Range Rover, J&B Scotch, Sony PlayStation and Energizer. In 2003, I got my dream job, Chief Creative Officer at Team One. In my time at Team One, I have helped to grow the agency both physically and creatively. Our campaigns have been recognized at Cannes, the One Show, the Webbys, CLIOs, CA, ADDYs and Beldings. But, more importantly, those campaigns helped drive brand preference and, ultimately, sales for our clients. Over the years, I have recruited many highly talented art directors, designers and writers, who continue to make Team One the envy of the industry and, coveted place to work.	</div>
+	
+			<div class="caption" style="width:100%;">
+				<div>
+					<h1 class="caption-title">Chris Graves</h1>
+					<h2 class="italic subheader caption-subtitle">Chief Creative Officer</h2>
+				</div>
+			</div>
+		</div>
+	
+
+		</div>
+		<div class="item social"></div>
+		<div class="item press"></div>
+		<div class="item news"></div>
+		<div class="item thinking"></div>
+		<div class="item social"></div>
+
+	</div><!--end items-->
+
+
+</div>
+
+	
+{% endblock %}
+
+        
+        
+      
