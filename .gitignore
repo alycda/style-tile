@@ -1,2 +1,6 @@
 .DS_Store
 wp-config.php
+
+node_modules/
+.cache
+dist/

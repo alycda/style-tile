@@ -1,6 +1,8 @@
 style-tile
 ==========
 
+[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/alycda/style-tile)
+
 Visual style reference page for Team One Website Design
 
 http://team-one.github.io/style-tile/
