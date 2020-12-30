@@ -127,7 +127,7 @@
   background: #ff6a00; }
 
 #logo {
-  background-image: url("../img/leaders/logo.png");
+  /* background-image: url("../img/leaders/logo.png"); */
   height: 257px;
   width: 215px;
   position: absolute;
